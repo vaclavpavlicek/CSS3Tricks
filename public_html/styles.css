@@ -2,23 +2,23 @@ body {
     margin: 0px;
 }
 header {
-    padding: 3em;
     background-color: #409ad6;
+    padding: 3em;
 }
 header div {
-    width: 50%;
-    display: flex;
-    margin: auto;
     align-items: center;
+    margin: auto;
+    display: flex;
+    width: 50%;
 }
 header div img {
     height: 10em;
     margin-right: 4em;
 }
 header div h1 {
-    margin: 0;
     color: white;
     font-size: 6em;
+    margin: 0;
 }
 .menu {
     list-style: none;
@@ -26,18 +26,20 @@ header div h1 {
     padding: 0px;
 }
 .menu li {
-    background-color: #409ad6;
-    float: left;
-    margin: 0px;
-    width: 12.785714286%;
-    text-align: center;
+    display: inline-block;
     font-size: 1.75em;
-    padding: 0.75%;
+    height: 4em;    
+    margin: 0px;
+    text-align: center;
+    width: 14.285714286%;
 }
-.menu li:hover {
+.menu li a:hover {
     background-color: #0d57a7;
  }
 .menu li a {
+    background-color: #409ad6;
     color: white;
+    display: block;
+    padding: 0.75em;
     text-decoration: none;
 }
