@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC:900|Sumana');
 body {
     background-color: #ebebeb;
     margin: 0px;
+}
+a {
+    text-decoration: none;
+    outline: none;
 }
 header {
     background-color: #409ad6;
     padding: 3em;
 }
 header div {
-    align-items: center;
-    margin: auto;
+    align-content: center;
     display: flex;
-    width: 50%;
+    justify-content: center;
 }
 header div img {
     height: 10em;
@@ -20,52 +24,77 @@ header div h1 {
     color: white;
     font-size: 6em;
     margin: 0;
+    line-height: 1.75em;
+}
+nav {
+    background-color: #409ad6;
 }
 .menu {
     list-style: none;
-    margin: 0px;
+    margin: auto;
     padding: 0px;
+    width: 96%;
 }
 .menu li {
     display: inline-block;
     font-family: "Arial Black";
     font-size: 1.75em;
-    height: 2.9em;    
     margin: 0px;
     text-align: center;
-    width: 14.285714286%;
+    width: 16.666666667%;
 }
-.menu li a:hover {
+.menu-item:hover {
     background-color: #0d57a7;
  }
-.menu li a {
+.menu-item {
     background-color: #409ad6;
     color: white;
     display: block;
     padding: 0.75em;
     text-decoration: none;
+    transition: background 0.75s;
+}
+.actual-page {
+    background-color: #0d57a7;
 }
 section {
     background-color: white;
     margin: 2%;
     padding: 2%;
     width: 92%;
+    border-radius: 15px;
 }
-section p{
+section p {
+    font-family: "Sumana", serif;
+    font-size: 1.75em;
+    line-height: 1.5em;
     margin-bottom: 0px;
+}
+
+section h2 {
+    color: #0d57a7;
+    font-family: "Alegreya SC", serif;
+    font-size: 4em;
+    margin: 0;
+}
+section h3 {
+    color: #409ad6;
+    font-family: "Alegreya SC", serif;
+    font-size: 3em;
+    margin: 0.75em 0em 0em 0em;    
 }
 .home-info {
     margin-bottom: 3em;
 }
-.home-info h2 {
-    color: #0d57a7;
-    font-family: "Arial Black";
-    font-size: 3em;
-    margin: 0;
+footer {
+    background-color: #409ad6;
+    padding: 1.5em 0em 0.75em 0em;
 }
-.home-categories h3 {
-    color: #0d57a7;
-    font-family: "Arial Black";
-    font-size: 1.75em;
-    margin: 0.75em 0em 0em 0em;    
+footer h6 {
+    color: white;
+    margin: 0px;
+    font-family: "Sumana", serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-left: 2%;
 }
