@@ -10,9 +10,15 @@
     font-weight: 400;
     src: local("Sumana"), local("Sumana-Regular"), url("fonts/Sumana.woff") format("woff");
 }
+@font-face {
+    font-family: "Sumana Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Sumana Bold"), local("Sumana-Bold"), url("fonts/Sumana-Bold.woff2") format("woff2");
+}
 body {
     background-color: #ebebeb;
-    margin: 0px;
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -33,9 +39,10 @@ header div img {
 }
 header div h1 {
     color: white;
+    font-family: "Sumana", serif;
     font-size: 6em;
     margin: 0;
-    line-height: 1.75em;
+    line-height: 1.5em;
 }
 nav {
     background-color: #409ad6;
@@ -43,14 +50,14 @@ nav {
 .menu {
     list-style: none;
     margin: auto;
-    padding: 0px;
+    padding: 0;
     width: 96%;
 }
 .menu li {
     display: inline-block;
-    font-family: "Arial Black";
+    font-family: "Arial Black", serif;
     font-size: 1.75em;
-    margin: 0px;
+    margin: 0;
     text-align: center;
     width: 16.666666667%;
 }
@@ -76,10 +83,10 @@ section {
     border-radius: 15px;
 }
 section p {
-    font-family: "Sumana", serif;
+    font-family: "Sumana A", serif;
     font-size: 1.75em;
     line-height: 1.5em;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 section h2 {
@@ -92,20 +99,19 @@ section h3 {
     color: #409ad6;
     font-family: "Alegreya SC", serif;
     font-size: 3em;
-    margin: 0.75em 0em 0em 0em;    
+    margin: 0.75em 0 0 0;
 }
 .home-info {
     margin-bottom: 3em;
 }
 footer {
     background-color: #409ad6;
-    padding: 1.5em 0em 0.75em 0em;
+    padding: 1.5em 0 0.75em 0;
 }
 footer h6 {
     color: white;
-    margin: 0px;
     font-family: "Sumana", serif;
     font-size: 1em;
     line-height: 1.5em;
-    margin-left: 2%;
+    margin: 0 0 0 2%;
 }
