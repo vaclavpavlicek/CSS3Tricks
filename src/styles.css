@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya+SC:900|Sumana');
+@font-face {
+    font-family: "Alegreya SC";
+    font-style: normal;
+    font-weight: 900;
+    src: local("Alegreya SC Black"), local("AlegreyaSC-Black"), url("fonts/AlegreyaSC-Black.woff") format("woff");
+}
+@font-face {
+    font-family: "Sumana";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Sumana"), local("Sumana-Regular"), url("fonts/Sumana.woff") format("woff");
+}
 body {
     background-color: #ebebeb;
     margin: 0px;
