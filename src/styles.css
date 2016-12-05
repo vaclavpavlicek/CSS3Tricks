@@ -21,8 +21,8 @@ body {
     margin: 0;
 }
 a {
-    text-decoration: none;
     outline: none;
+    text-decoration: none;
 }
 header {
     background-color: #409ad6;
@@ -41,8 +41,8 @@ header div h1 {
     color: white;
     font-family: "Sumana", serif;
     font-size: 6em;
-    margin: 0;
     line-height: 1.5em;
+    margin: 0;
 }
 nav {
     background-color: #409ad6;
@@ -77,10 +77,10 @@ nav {
 }
 section {
     background-color: white;
+    border-radius: 15px;
     margin: 2%;
     padding: 2%;
     width: 92%;
-    border-radius: 15px;
 }
 section p {
     font-family: "Sumana", serif;
