@@ -142,10 +142,10 @@ code p {
     border: solid 1px #ebebeb;
 }
 .text {
-    padding: 0 2.1%;
+    padding: 0 2.5em;
 }
 .opening-text {
-    padding: 0% 2.1%;
+    padding: 0 2.5em;
 }
 .css-property {
     color: #0000FF;
@@ -170,4 +170,32 @@ code p {
 }
 .tag-name {
     color: #000080;
+}
+.example .square {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+}
+.example .square:hover {
+    background-color: yellow;
+    -webkit-animation: red-to-yellow;
+    -webkit-animation-duration: 3s;
+    animation: red-to-yellow;
+    animation-duration: 3s;
+}
+@-webkit-keyframes red-to-yellow {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: yellow;
+    }
+}
+@keyframes red-to-yellow {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: yellow;
+    }
 }
