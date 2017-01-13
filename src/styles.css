@@ -102,6 +102,11 @@ section h3 {
     font-size: 3em;
     margin: 0.75em 0 0 0;
 }
+.heading-link {
+    color: #cccccc;
+    font-size: 1em;
+    margin-right: 0.25em;
+}
 .home-info {
     margin-bottom: 3em;
 }
@@ -135,6 +140,12 @@ code p {
     margin: 0;
     padding: 0.15em;
     border: solid 1px #ebebeb;
+}
+.text {
+    padding: 0 2.1%;
+}
+.opening-text {
+    padding: 0% 2.1%;
 }
 .css-property {
     color: #0000FF;
