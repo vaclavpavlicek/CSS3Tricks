@@ -20,6 +20,7 @@
 }
 
 body {
+    background-color: #ebebeb;
     margin: 0;
 }
 
@@ -97,8 +98,9 @@ section {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    margin: 2%;
     padding: 2%;
-    width: 96%;
+    width: 92%;
 }
 
 section p {
