@@ -4,39 +4,46 @@
     font-weight: 900;
     src: local("Alegreya SC Black"), local("AlegreyaSC-Black"), url("fonts/AlegreyaSC-Black.woff") format("woff");
 }
+
 @font-face {
     font-family: "Sumana";
     font-style: normal;
     font-weight: 400;
     src: local("Sumana"), local("Sumana-Regular"), url("fonts/Sumana.woff") format("woff");
 }
+
 @font-face {
     font-family: "Sumana Bold";
     font-style: normal;
     font-weight: 700;
     src: local("Sumana Bold"), local("Sumana-Bold"), url("fonts/Sumana-Bold.woff2") format("woff2");
 }
+
 body {
-    background-color: #ebebeb;
     margin: 0;
 }
+
 a {
     outline: none;
     text-decoration: none;
 }
+
 header {
     background-color: #409ad6;
     padding: 3em;
 }
+
 header div {
     align-content: center;
     display: flex;
     justify-content: center;
 }
+
 header div img {
     height: 10em;
     margin-right: 4em;
 }
+
 header div h1 {
     color: white;
     font-family: "Sumana", serif;
@@ -44,15 +51,18 @@ header div h1 {
     line-height: 1.5em;
     margin: 0;
 }
+
 nav {
     background-color: #409ad6;
 }
+
 .menu {
     list-style: none;
     margin: auto;
     padding: 0;
-    width: 96%;
+    width: 100%;
 }
+
 .menu li {
     display: inline-block;
     font-family: "Arial Black", serif;
@@ -61,9 +71,11 @@ nav {
     text-align: center;
     width: 16.666666667%;
 }
+
 .menu-item:hover {
     background-color: #0d57a7;
- }
+}
+
 .menu-item {
     background-color: #409ad6;
     color: white;
@@ -72,16 +84,23 @@ nav {
     text-decoration: none;
     transition: background 0.75s;
 }
+
 .actual-page {
     background-color: #0d57a7;
 }
+
 section {
     background-color: white;
     border-radius: 15px;
-    margin: 2%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
     padding: 2%;
-    width: 92%;
+    width: 96%;
 }
+
 section p {
     font-family: "Sumana", serif;
     font-size: 1.75em;
@@ -94,26 +113,68 @@ section h2 {
     color: #0d57a7;
     font-family: "Alegreya SC", serif;
     font-size: 4em;
+    line-height: 1em;
     margin: 0;
 }
+
 section h3 {
     color: #409ad6;
     font-family: "Alegreya SC", serif;
     font-size: 3em;
     margin: 0.75em 0 0 0;
 }
+
+section div {
+    display: inline-block;
+}
+
+.content-table {
+    background-color: #ebebeb;
+    height: fit-content;
+    width: 20%;
+    -moz-height: -moz-fit-content;
+    -webkit-height: -webkit-fit-content;
+}
+
+.content-table h3 {
+    color: #0d57a7;
+    margin: 0;
+    text-align: center;
+}
+
+.content-table ul {
+    list-style: none;
+}
+
+.content-table ul li a {
+    color: #409ad6;
+    font-family: "Alegreya SC", serif;
+    font-size: 1.75em;
+}
+
+.content-table ul li a:hover {
+    color: #0d57a7;
+}
+
+.content {
+    width: 80%;
+}
+
 .heading-link {
     color: #cccccc;
     font-size: 1em;
     margin-right: 0.25em;
 }
+
 .home-info {
     margin-bottom: 3em;
 }
+
 footer {
     background-color: #409ad6;
     padding: 1.5em 0 0.75em 0;
 }
+
 footer h6 {
     color: white;
     font-family: "Sumana", serif;
@@ -121,6 +182,7 @@ footer h6 {
     line-height: 1.5em;
     margin: 0 0 0 2%;
 }
+
 code {
     background-color: #ebebeb;
     border-radius: 15px;
@@ -128,61 +190,88 @@ code {
     margin: 2em 0;
     padding: 1em 1.5em;
 }
+
 code p {
     color: black;
     font-family: "Arial", serif;
     margin: 0;
 }
+
 .keyword {
+    border: solid 1px #ebebeb;
     border-radius: 0;
     color: #e74c3c;
     display: inline;
     margin: 0;
     padding: 0.15em;
-    border: solid 1px #ebebeb;
 }
+
 .text {
     padding: 0 2.5em;
 }
+
 .opening-text {
     padding: 0 2.5em;
 }
+
 .css-property {
     color: #0000FF;
 }
+
 .css-number-value {
     color: #0000FF;
 }
+
 .css-text-value {
     color: #000080;
 }
+
 .css-unit {
     color: #008000;
 }
+
 .css-selector {
     color: #000080;
 }
+
 .tag-attribute {
     color: #0000FF;
 }
+
 .tag-attribute-value {
     color: #008000;
 }
+
 .tag-name {
     color: #000080;
 }
+
 .example .square {
     background-color: red;
     height: 200px;
     width: 200px;
 }
-.example .square:hover {
-    background-color: yellow;
-    -webkit-animation: red-to-yellow;
-    -webkit-animation-duration: 3s;
+
+.example .color-transition-square:hover {
     animation: red-to-yellow;
+    -webkit-animation: red-to-yellow;
     animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    background-color: yellow;
 }
+
+.example .movement-square {
+    animation: move-from-left-to-right-and-back;
+    -webkit-animation: move-from-left-to-right-and-back;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    left: 0;
+    position: relative;
+    top: 0;
+}
+
 @-webkit-keyframes red-to-yellow {
     from {
         background-color: red;
@@ -191,11 +280,42 @@ code p {
         background-color: yellow;
     }
 }
+
 @keyframes red-to-yellow {
     from {
         background-color: red;
     }
     to {
         background-color: yellow;
+    }
+}
+
+@-webkit-keyframes move-from-left-to-right-and-back {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    50% {
+        top: 0;
+        left: 400px;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes move-from-left-to-right-and-back {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    50% {
+        top: 0;
+        left: 400px;
+    }
+    100% {
+        top: 0;
+        left: 0;
     }
 }
