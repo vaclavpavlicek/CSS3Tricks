@@ -157,7 +157,8 @@ section div {
 }
 
 .content {
-    width: 80%;
+    padding-left: 2%;
+    width: 78%;
 }
 
 .heading-link {
