@@ -55,6 +55,7 @@ header div h1 {
 
 nav {
     background-color: #409ad6;
+    padding: 0 2%;
 }
 
 .menu {
@@ -158,9 +159,14 @@ section div {
     color: #0d57a7;
 }
 
-.content {
+.article-content {
     padding-left: 2%;
     width: 78%;
+}
+
+.index-content {
+    padding: 2%;
+    width: 96%;
 }
 
 .heading-link {
@@ -171,6 +177,14 @@ section div {
 
 .home-info {
     margin-bottom: 3em;
+}
+
+.arrow-up {
+    bottom: 10%;
+    height: 4em;
+    position: fixed;
+    right: 2%;
+    visibility: hidden;
 }
 
 footer {

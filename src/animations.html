@@ -11,18 +11,19 @@
     <link rel="icon" type="image/png" href="images/favicon-96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="images/favicon-128.png" sizes="128x128">
     <link rel="icon" type="image/png" href="images/favicon-256.png" sizes="256x256">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
 <header>
-    <a href="index.html">
-        <div>
-            <img src="images/css3.svg" alt="logo of CSS3"/>
-            <h1>CSS3 Tricks</h1>
-        </div>
-    </a>
+    <div>
+        <a href="index.html">
+            <div>
+                <img src="images/css3.svg" alt="logo of CSS3"/>
+                <h1>CSS3 Tricks</h1>
+            </div>
+        </a>
+    </div>
 </header>
-<nav id="js-navigation">
+<nav id="js-navigation-animations">
     <ul class="menu">
         <li><a class="menu-item" href="index.html">Home</a>
         <li><a class="actual-page menu-item" href="#">Animations</a>
@@ -45,7 +46,7 @@
             <li><a href="#comparison-with-js">Comparions with JS</a></li>
         </ul>
     </div>
-    <div id="js-animations-content" class="content">
+    <div id="js-animations-content" class="article-content">
         <div class="opening-text">
             <h2>Animations</h2>
             <p>
@@ -249,17 +250,26 @@
         </div>
     </div>
 </section>
+<img id="js-arrow-up-animations" class="arrow-up" onclick="scrollUp()" src="images/arrow_up.png">
 <footer>
     <h6>©2017 Created by VendaskyCZ</h6>
 </footer>
 <script>
     var contentTable = document.getElementById("js-animations-content-table");
     var content = document.getElementById("js-animations-content");
+    var arrowUp = document.getElementById("js-arrow-up-animations");
+    var navigation = document.getElementById("js-navigation-animations");
+    arrowUp.style.visibility = 'hidden';
     var contentTableWidth = contentTable.clientWidth;
     var stuck = false;
     var stickPoint = contentTable.offsetTop;
 
     window.onscroll = function (e) {
+        if (window.pageYOffset > navigation.offsetTop + navigation.clientHeight) {
+            arrowUp.style.visibility = 'visible';
+        } else {
+            arrowUp.style.visibility = 'hidden';
+        }
         var distance = contentTable.offsetTop - window.pageYOffset;
         var offset = window.pageYOffset;
         if ((distance <= 0) && !stuck) {
@@ -273,6 +283,17 @@
             content.style.marginLeft = '0%';
             stuck = false;
         }
+    };
+
+    function scrollUp() {
+        var scrollStep = -window.scrollY / (1000 / 20);
+        var scrollInterval = setInterval(function () {
+            if (window.scrollY != 0) {
+                window.scrollBy(0, scrollStep);
+            } else {
+                clearInterval(scrollInterval);
+            }
+        }, 15);
     }
 </script>
 </body>
