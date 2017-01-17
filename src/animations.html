@@ -4,6 +4,7 @@
     <title>CSS3 Tricks</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon-16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32">
@@ -286,7 +287,7 @@
     };
 
     function scrollUp() {
-        var scrollStep = -window.scrollY / (1000 / 20);
+        var scrollStep = -window.scrollY / (window.pageYOffset / 40);
         var scrollInterval = setInterval(function () {
             if (window.scrollY != 0) {
                 window.scrollBy(0, scrollStep);
