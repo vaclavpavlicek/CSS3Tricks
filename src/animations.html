@@ -1,170 +1,279 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
-    <head>
-        <title>CSS3 Tricks</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="styles.css" rel="stylesheet">
-        <link rel="icon" type="image/png" href="images/favicon-16.png" sizes="16x16">
-        <link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="images/favicon-64.png" sizes="64x64">
-        <link rel="icon" type="image/png" href="images/favicon-96.png" sizes="96x96">
-        <link rel="icon" type="image/png" href="images/favicon-128.png" sizes="128x128">
-        <link rel="icon" type="image/png" href="images/favicon-256.png" sizes="256x256">
-    </head>
-    <body>
-        <header>
-            <a href="index.html">
-                <div>
-                    <img src="images/css3.svg" alt="logo of CSS3"/><h1>CSS3 Tricks</h1>
-                </div>
-            </a>
-        </header>
-        <nav>
-            <ul class="menu">
-                <li><a class="menu-item" href="index.html">Home</a>
-                <li><a class="actual-page menu-item" href="#">Animations</a>
-                <li><a class="menu-item" href="#">Gradients</a>
-                <li><a class="menu-item" href="#">Media Queries</a>
-                <li><a class="menu-item" href="#">Shadows</a>
-                <li><a class="menu-item" href="#">Transforms</a>
-            </ul>
-        </nav>
-        <section>
-            <div class="content-table">
-                <h3>Content</h3>
-                <ul>
-                    <li><a href="#">Animations</a></li>
-                    <li><a href="#css-animation">CSS animation</a></li>
-                    <li><a href="#css-@keyframes">CSS @keyframes</a></li>
-                    <li><a href="#movement">Movement</a></li>
-                    <li><a href="#sizing">Sizing</a></li>
-                    <li><a href="#rotation">Rotation</a></li>
-                    <li><a href="#comparison-with-js">Comparions with JS</a></li>
-                </ul>
+<head>
+    <title>CSS3 Tricks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon-64.png" sizes="64x64">
+    <link rel="icon" type="image/png" href="images/favicon-96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/favicon-128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="images/favicon-256.png" sizes="256x256">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <div>
+            <img src="images/css3.svg" alt="logo of CSS3"/>
+            <h1>CSS3 Tricks</h1>
+        </div>
+    </a>
+</header>
+<nav id="js-navigation">
+    <ul class="menu">
+        <li><a class="menu-item" href="index.html">Home</a>
+        <li><a class="actual-page menu-item" href="#">Animations</a>
+        <li><a class="menu-item" href="#">Gradients</a>
+        <li><a class="menu-item" href="#">Media Queries</a>
+        <li><a class="menu-item" href="#">Shadows</a>
+        <li><a class="menu-item" href="#">Transforms</a>
+    </ul>
+</nav>
+<section>
+    <div id="js-animations-content-table" class="content-table">
+        <h3>Content</h3>
+        <ul>
+            <li><a href="#">Animations</a></li>
+            <li><a href="#css-animation">CSS animation</a></li>
+            <li><a href="#css-@keyframes">CSS @keyframes</a></li>
+            <li><a href="#movement">Movement</a></li>
+            <li><a href="#sizing">Sizing</a></li>
+            <li><a href="#rotation">Rotation</a></li>
+            <li><a href="#comparison-with-js">Comparions with JS</a></li>
+        </ul>
+    </div>
+    <div id="js-animations-content" class="content">
+        <div class="opening-text">
+            <h2>Animations</h2>
+            <p>
+                Some time before the most animations on web were written in jQuery. But with mobile devices came very
+                emphasis on performance. And here comes CSS animations on stage. CSS animations allows you to gradually
+                change styles of each element. They consist from two components&nbsp;-&nbsp;<code class="keyword">animation</code>
+                properties and <code class="keyword">@keyframes</code>. <code class="keyword">animation</code>
+                properties allows you to set animation duration, count of repetitions and so on. <code class="keyword">@keyframes</code>
+                changes CSS properties during animation. For example they change element background color or position.
+                If you want to create simple animation CSS is good for you. For complex animations use JS instead of
+                CSS.
+            </p>
+        </div>
+        <h3><a class="heading-link" id="css-animation" href="#css-animation">#</a>CSS animation</h3>
+        <div class="text">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <h3><a class="heading-link" id="css-@keyframes" href="#css-@keyframes">#</a>CSS @keyframes</h3>
+        <div class="text">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <h3><a class="heading-link" id="movement" href="#movement">#</a>Movement</h3>
+        <div class="text">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <div class="example">
+                <div class="square movement-square"></div>
             </div>
-            <div class="content">
-                <div class="opening-text">
-                    <h2>Animations</h2>
-                    <p>
-                        Some time before the most animations on web were written in jQuery. But with mobile devices came very emphasis on performance. And here comes CSS animations on stage. CSS animations allows you to gradually change styles of each element. They consist from two components&nbsp;-&nbsp;<code class="keyword">animation</code> properties and <code class="keyword">@keyframes</code>. <code class="keyword">animation</code> properties allows you to set animation duration, count of repetitions and so on. <code class="keyword">@keyframes</code> changes CSS properties during animation. For example they change element background color or position. If you want to create simple animation CSS is good for you. For complex animations use JS instead of CSS.
-                    </p>
-                </div>
-                <h3><a class="heading-link" id="css-animation" href="#css-animation">#</a>CSS animation</h3>
-                <div class="text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <h3><a class="heading-link" id="css-@keyframes" href="#css-@keyframes">#</a>CSS @keyframes</h3>
-                <div class="text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <h3><a class="heading-link" id="movement" href="#movement">#</a>Movement</h3>
-                <div class="text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <div class="example">
-                        <div class="square movement-square"></div>
-                    </div>
-                    <code>
-                        <p>
-                            &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span class="tag-attribute-value"><b>"square"</b></span>&gt;
-                            &lt;/<span class="tag-name"><b>div</b></span>&gt;
-                        </p>
-                    </code>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <code>
-                        <p>
-                            <span class="css-selector"><b>.square</b></span>&nbsp;{<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span class="css-text-value"><b>red</b></span>;<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;position</b></span>: <span class="css-text-value"><b>relative</b></span>;<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span class="css-number-value">0</span><span class="css-unit"><b>px</b></span>;<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span class="css-number-value">0</span><span class="css-unit"><b>px</b></span>;<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation</b></span>: <span class="css-text-value"><b>move-from-left-to-right-and-back</b></span>;<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation-duration</b></span>: <span class="css-number-value">3</span><span class="css-unit"><b>s</b></span>;<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation-iteration-count</b></span>: <span class="css-unit"><b>infinite</b></span>;<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;animation</b></span>: <span class="css-text-value"><b>move-from-left-to-right-and-back</b></span>;<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;animation-duration</b></span>: <span class="css-number-value">3</span><span class="css-unit"><b>s</b></span>;<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;animation-iteration-count</b></span>: <span class="css-unit"><b>infinite</b></span>;<br>
-                            }<br>
-                            <span class="css-selector"><b>@-webkit-keyframes</b></span>&nbsp;<span class="css-selector"><b>move-from-left-to-right-and-back</b></span>&nbsp;{<br>
-                            <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;0%</b></span>&nbsp;{<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span class="css-number-value">0</span>;<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span class="css-number-value">0</span>;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                            <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;50%</b></span>&nbsp;{<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span class="css-number-value">0</span>;<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span class="css-number-value">400</span><span class="css-unit"><b>px</b></span>;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                            <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;100%</b></span>&nbsp;{<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span class="css-number-value">0</span>;<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span class="css-number-value">0</span>;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                            }<br><span class="css-selector"><b>@keyframes</b></span>&nbsp;<span class="css-selector"><b>move-from-left-to-right-and-back</b></span>&nbsp;{<br>
-                            <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;0%</b></span>&nbsp;{<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span class="css-number-value">0</span>;<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span class="css-number-value">0</span>;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                            <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;50%</b></span>&nbsp;{<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span class="css-number-value">0</span>;<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span class="css-number-value">400</span><span class="css-unit"><b>px</b></span>;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                            <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;100%</b></span>&nbsp;{<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span class="css-number-value">0</span>;<br>
-                            <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span class="css-number-value">0</span>;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                            }
-                        </p>
-                    </code>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <h3><a class="heading-link" id="sizing" href="#sizing">#</a>Sizing</h3>
-                <div class="text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <h3><a class="heading-link" id="rotation" href="#rotation">#</a>Rotation</h3>
-                <div class="text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <h3><a class="heading-link" id="comparison-with-js" href="#comparison-with-js">#</a>Comparison with JS</h3>
-                <div class="text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <h6>©2017 Created by VendaskyCZ</h6>
-        </footer>
-    </body>
+            <code>
+                <p>
+                    &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
+                        class="tag-attribute-value"><b>"square"</b></span>&gt;
+                    &lt;/<span class="tag-name"><b>div</b></span>&gt;
+                </p>
+            </code>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <code>
+                <p>
+                    <span class="css-selector"><b>.square</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
+                        class="css-text-value"><b>red</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;position</b></span>: <span
+                        class="css-text-value"><b>relative</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                        class="css-number-value">0</span><span class="css-unit"><b>px</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                        class="css-number-value">0</span><span class="css-unit"><b>px</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
+                        class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
+                        class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation</b></span>: <span
+                        class="css-text-value"><b>move-from-left-to-right-and-back</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation-duration</b></span>: <span
+                        class="css-number-value">3</span><span class="css-unit"><b>s</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation-iteration-count</b></span>:
+                    <span class="css-unit"><b>infinite</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;animation</b></span>: <span
+                        class="css-text-value"><b>move-from-left-to-right-and-back</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;animation-duration</b></span>: <span
+                        class="css-number-value">3</span><span class="css-unit"><b>s</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;animation-iteration-count</b></span>: <span
+                        class="css-unit"><b>infinite</b></span>;<br>
+                    }<br>
+                    <span class="css-selector"><b>@-webkit-keyframes</b></span>&nbsp;<span class="css-selector"><b>move-from-left-to-right-and-back</b></span>&nbsp;{<br>
+                    <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;0%</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                        class="css-number-value">0</span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                        class="css-number-value">0</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;50%</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                        class="css-number-value">0</span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                        class="css-number-value">400</span><span class="css-unit"><b>px</b></span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;100%</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                        class="css-number-value">0</span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                        class="css-number-value">0</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    }<br><span class="css-selector"><b>@keyframes</b></span>&nbsp;<span class="css-selector"><b>move-from-left-to-right-and-back</b></span>&nbsp;{<br>
+                    <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;0%</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                        class="css-number-value">0</span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                        class="css-number-value">0</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;50%</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                        class="css-number-value">0</span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                        class="css-number-value">400</span><span class="css-unit"><b>px</b></span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;100%</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                        class="css-number-value">0</span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                        class="css-number-value">0</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                    }
+                </p>
+            </code>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <h3><a class="heading-link" id="sizing" href="#sizing">#</a>Sizing</h3>
+        <div class="text">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <h3><a class="heading-link" id="rotation" href="#rotation">#</a>Rotation</h3>
+        <div class="text">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <h3><a class="heading-link" id="comparison-with-js" href="#comparison-with-js">#</a>Comparison with JS</h3>
+        <div class="text">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+</section>
+<footer>
+    <h6>©2017 Created by VendaskyCZ</h6>
+</footer>
+<script>
+    var contentTable = document.getElementById("js-animations-content-table");
+    var content = document.getElementById("js-animations-content");
+    var contentTableWidth = contentTable.clientWidth;
+    var stuck = false;
+    var stickPoint = contentTable.offsetTop;
+
+    window.onscroll = function (e) {
+        var distance = contentTable.offsetTop - window.pageYOffset;
+        var offset = window.pageYOffset;
+        if ((distance <= 0) && !stuck) {
+            contentTable.style.position = 'fixed';
+            contentTable.style.top = '0px';
+            contentTable.style.width = contentTableWidth + 'px';
+            content.style.marginLeft = '20%';
+            stuck = true;
+        } else if (stuck && (offset <= stickPoint)) {
+            contentTable.style.position = 'static';
+            content.style.marginLeft = '0%';
+            stuck = false;
+        }
+    }
+</script>
+</body>
 </html>
