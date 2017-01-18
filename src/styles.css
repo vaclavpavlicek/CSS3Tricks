@@ -87,6 +87,17 @@ nav {
     transition: background 0.75s;
 }
 
+.about-me {
+    display: flex;
+    flex-direction: row;
+}
+
+.face {
+    border-radius: 100%;
+    height: 15em;
+    margin-right: 2%;
+}
+
 .actual-page {
     background-color: #0d57a7;
 }
