@@ -1,56 +1,15 @@
-@font-face {
-    font-family: "Alegreya SC";
-    font-style: normal;
-    font-weight: 900;
-    src: local("Alegreya SC Black"), local("AlegreyaSC-Black"), url("fonts/AlegreyaSC-Black.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Sumana";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Sumana"), local("Sumana-Regular"), url("fonts/Sumana.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Sumana Bold";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Sumana Bold"), local("Sumana-Bold"), url("fonts/Sumana-Bold.woff2") format("woff2");
-}
-
-body {
-    background-color: #ebebeb;
-    margin: 0;
-}
-
-a {
-    outline: none;
-    text-decoration: none;
-}
-
 header {
-    background-color: #409ad6;
     padding: 3em;
 }
 
-header div {
-    align-content: center;
-    display: flex;
-    justify-content: center;
-}
-
-header div img {
+.css3-logo {
     height: 10em;
     margin-right: 4em;
 }
 
-header div h1 {
-    color: white;
-    font-family: "Sumana", serif;
+.logo-text {
     font-size: 6em;
     line-height: 1.5em;
-    margin: 0;
 }
 
 nav {
@@ -206,7 +165,7 @@ section div {
 }
 
 .arrow-up {
-    background: url("images/arrow_up.png");
+    background: url("../images/arrow_up.png");
     background-size: 4em 4em;
     bottom: 10%;
     cursor: pointer;
@@ -218,7 +177,7 @@ section div {
 }
 
 .arrow-up:hover {
-    background: url("images/arrow_up_hover.png");
+    background: url("../images/arrow_up_hover.png");
     background-size: 4em 4em;
 }
 

@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Alegreya SC";
+    font-style: normal;
+    font-weight: 900;
+    src: local("Alegreya SC Black"), local("AlegreyaSC-Black"), url("../fonts/AlegreyaSC-Black.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Sumana";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Sumana"), local("Sumana-Regular"), url("../fonts/Sumana.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Sumana Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Sumana Bold"), local("Sumana-Bold"), url("../fonts/Sumana-Bold.woff2") format("woff2");
+}
+
+body {
+    background-color: #ebebeb;
+    margin: 0;
+    min-width: 320px;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+header {
+    background-color: #409ad6;
+}
+
+.logo {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-text {
+    color: white;
+    font-family: "Sumana", serif;
+    margin: 0;
+}
