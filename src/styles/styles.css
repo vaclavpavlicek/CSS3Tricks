@@ -74,3 +74,55 @@ nav {
 .menu-item:hover {
     background-color: #0d57a7;
 }
+
+section {
+    background-color: white;
+    border-radius: 15px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: 2%;
+    padding: 2%;
+    width: 92%;
+}
+
+section p {
+    font-family: "Sumana", serif;
+    font-size: 1.2em;
+    line-height: 1em;
+    margin: 0 0 1em 0;
+    text-align: justify;
+}
+
+section h2 {
+    color: #0d57a7;
+    font-family: "Alegreya SC", serif;
+    line-height: 1em;
+    margin: 0;
+}
+
+section h3 {
+    color: #409ad6;
+    font-family: "Alegreya SC", serif;
+    margin: 0;
+}
+
+.face {
+    border-radius: 100%;
+}
+
+
+footer {
+    background-color: #409ad6;
+    padding: 1.5em 0 0.75em 0;
+}
+
+footer h6 {
+    color: white;
+    font-family: "Sumana", serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0 0 0 2%;
+}

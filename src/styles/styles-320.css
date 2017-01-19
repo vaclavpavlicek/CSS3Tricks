@@ -20,7 +20,7 @@ header {
     display: block;
     float: right;
     height: 2.5em;
-    margin: auto 1em auto auto;
+    margin: auto 2% auto auto;
     outline-style: none;
     padding: 0.5em;
     width: 2.5em;
@@ -42,8 +42,8 @@ header {
     color: white;
     display: block;
     font-size: 1em;
-    margin: 0;
-    padding: 0.5em 1em;
+    margin: 0 0 0 6%;
+    padding: 0.5em 0;
     position: relative;
     text-decoration: none;
 }
@@ -61,9 +61,34 @@ header {
 }
 
 .menu-item {
-    padding: 0.75em 1em;
+    padding: 0.75em 6%;
 }
 
 .actual-page {
     background-color: #0d57a7;
+}
+
+.contacts img {
+    height: 2em;
+}
+
+section {
+    padding: 4%;
+    width: 88%;
+}
+
+.home-info p {
+    margin-top: 0.75em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 2em;
+}
+
+.face {
+    width: 100%;
 }

@@ -44,8 +44,8 @@ nav {
 }
 
 .face {
-    border-radius: 100%;
-    height: 15em;
+    height: 20em;
+    width: 20em;
     margin-right: 2%;
 }
 
@@ -88,7 +88,6 @@ section h2 {
     color: #0d57a7;
     font-family: "Alegreya SC", serif;
     font-size: 4em;
-    line-height: 1em;
     margin: 0;
 }
 
@@ -166,19 +165,6 @@ section div {
 .arrow-up:hover {
     background: url("../images/arrow_up_hover.png");
     background-size: 4em 4em;
-}
-
-footer {
-    background-color: #409ad6;
-    padding: 1.5em 0 0.75em 0;
-}
-
-footer h6 {
-    color: white;
-    font-family: "Sumana", serif;
-    font-size: 1em;
-    line-height: 1.5em;
-    margin: 0 0 0 2%;
 }
 
 code {
