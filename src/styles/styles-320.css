@@ -12,3 +12,58 @@ header {
     font-size: 2em;
     line-height: 1.75em;
 }
+
+.menu-button {
+    background: #0d57a7 url("../images/menu-icon.png") no-repeat center;
+    background-size: 1.5em 1.5em;
+    border-radius: 0.3em;
+    display: block;
+    float: right;
+    height: 2.5em;
+    margin: auto 1em auto auto;
+    outline-style: none;
+    padding: 0.5em;
+    width: 2.5em;
+}
+
+.menu-icon {
+    height: 1em;
+}
+
+.selected-menu-item {
+    display: flex;
+    flex-direction: row;
+    font-family: "Arial Black", serif;
+    width: 100%;
+}
+
+.selected-menu-item p {
+    background-color: #409ad6;
+    color: white;
+    display: block;
+    font-size: 1em;
+    margin: 0;
+    padding: 0.5em 1em;
+    position: relative;
+    text-decoration: none;
+}
+
+.menu {
+    display: none;
+}
+
+.menu li {
+    font-family: "Arial Black", serif;
+    font-size: 1em;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.menu-item {
+    padding: 0.75em 1em;
+}
+
+.actual-page {
+    background-color: #0d57a7;
+}

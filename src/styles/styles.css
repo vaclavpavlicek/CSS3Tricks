@@ -34,6 +34,10 @@ header {
     background-color: #409ad6;
 }
 
+button {
+    border: none;
+}
+
 .logo {
     align-content: center;
     display: flex;
@@ -44,4 +48,29 @@ header {
     color: white;
     font-family: "Sumana", serif;
     margin: 0;
+}
+
+
+nav {
+    background-color: #409ad6;
+}
+
+.menu {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+}
+
+.menu-item {
+    background-color: #409ad6;
+    color: white;
+    display: block;
+    padding: 0.75em;
+    text-decoration: none;
+    transition: background 0.75s;
+}
+
+.menu-item:hover {
+    background-color: #0d57a7;
 }

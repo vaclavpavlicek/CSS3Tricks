@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
     <title>CSS3 Tricks</title>
@@ -23,7 +23,8 @@
         </div>
     </a>
 </header>
-<nav id="js-navigation-index">
+<nav>
+    <div class="selected-menu-item"><p>Menu</p><button class="menu-button" onclick="dropdown()"></button></div>
     <ul class="menu">
         <li><a class="actual-page menu-item" href="#">Home</a>
         <li><a class="menu-item" href="animations.html">Animations</a>
@@ -97,6 +98,8 @@
     var arrowUp = document.getElementById("js-arrow-up-index");
     var navigation = document.getElementById("js-navigation-index");
     arrowUp.style.visibility = 'hidden';
+    var menu = document.getElementsByClassName("menu")[0];
+    var menuShowed = false;
 
     window.onscroll = function (e) {
         if (window.pageYOffset > navigation.offsetTop + navigation.clientHeight) {
@@ -105,6 +108,16 @@
             arrowUp.style.visibility = 'hidden';
         }
     };
+
+    function dropdown() {
+        if (!menuShowed) {
+            menu.style.display = "block";
+            menuShowed = true;
+        } else {
+            menu.style.display = "none";
+            menuShowed = false;
+        }
+    }
 
     function scrollUp() {
         var scrollStep = -window.scrollY / (window.pageYOffset / 40);
