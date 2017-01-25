@@ -2,21 +2,21 @@
     font-family: "Alegreya SC";
     font-style: normal;
     font-weight: 900;
-    src: local("Alegreya SC Black"), local("AlegreyaSC-Black"), url("../fonts/AlegreyaSC-Black.woff") format("woff");
+    src: local("Alegreya SC Black"), local("AlegreyaSC-Black"), url("../fonts/AlegreyaSC-Black.ttf");
 }
 
 @font-face {
     font-family: "Sumana";
     font-style: normal;
     font-weight: 400;
-    src: local("Sumana"), local("Sumana-Regular"), url("../fonts/Sumana.woff") format("woff");
+    src: local("Sumana"), local("Sumana-Regular"), url("../fonts/Sumana.ttf");
 }
 
 @font-face {
     font-family: "Sumana Bold";
     font-style: normal;
     font-weight: 700;
-    src: local("Sumana Bold"), local("Sumana-Bold"), url("../fonts/Sumana-Bold.woff2") format("woff2");
+    src: local("Sumana Bold"), local("Sumana-Bold"), url("../fonts/Sumana-Bold.ttf");
 }
 
 body {
@@ -116,7 +116,7 @@ section h3 {
 
 footer {
     background-color: #409ad6;
-    padding: 1.5em 0 0.75em 0;
+        padding: 1.5em 0 0.75em 0;
 }
 
 footer h6 {
