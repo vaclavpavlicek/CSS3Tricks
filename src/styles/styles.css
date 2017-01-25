@@ -126,3 +126,20 @@ footer h6 {
     line-height: 1.5em;
     margin: 0 0 0 2%;
 }
+
+.arrow-up {
+    background: url("../images/arrow_up.png");
+    background-size: 4em 4em;
+    bottom: 10%;
+    cursor: pointer;
+    height: 4em;
+    position: fixed;
+    right: 2%;
+    visibility: hidden;
+    width: 4em;
+}
+
+.arrow-up:hover {
+    background: url("../images/arrow_up_hover.png");
+    background-size: 4em 4em;
+}
