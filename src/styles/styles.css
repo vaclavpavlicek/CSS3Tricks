@@ -50,7 +50,6 @@ button {
     margin: 0;
 }
 
-
 nav {
     background-color: #409ad6;
 }
@@ -113,10 +112,9 @@ section h3 {
     border-radius: 100%;
 }
 
-
 footer {
     background-color: #409ad6;
-        padding: 1.5em 0 0.75em 0;
+    padding: 1.5em 0 0.75em 0;
 }
 
 footer h6 {
@@ -142,4 +140,8 @@ footer h6 {
 .arrow-up:hover {
     background: url("../images/arrow_up_hover.png");
     background-size: 4em 4em;
+}
+
+button {
+    cursor: pointer;
 }

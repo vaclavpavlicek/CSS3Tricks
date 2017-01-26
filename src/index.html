@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/styles-320.css" media="only screen and (min-width: 320px)">
+    <link rel="stylesheet" href="styles/styles-320.css" media="only screen and (max-width: 768px)">
+    <link rel="stylesheet" href="styles/styles-320.css" media="only screen and (max-width: 768px)">
     <link rel="stylesheet" href="styles/styles-1920.css" media="only screen and (min-width: 1920px)">
     <link rel="icon" type="image/png" href="images/favicon-16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32">
@@ -24,9 +25,9 @@
     </a>
 </header>
 <nav id="js-navigation-index">
-    <div class="selected-menu-item"><p>Menu</p><button class="menu-button" onclick="dropdown()"></button></div>
+    <div class="selected-menu-item"><p>Home</p><button class="menu-button" onclick="dropdown()"></button></div>
     <ul class="menu">
-        <li><a class="actual-page menu-item" href="#">Home</a>
+        <li><a class="menu-item actual-page" href="#">Home</a>
         <li><a class="menu-item" href="animations.html">Animations</a>
         <li><a class="menu-item" href="#">Gradients</a>
         <li><a class="menu-item" href="#">Media Queries</a>
@@ -99,6 +100,7 @@
     var navigation = document.getElementById("js-navigation-index");
     arrowUp.style.visibility = 'hidden';
     var menu = document.getElementsByClassName("menu")[0];
+
     var menuShowed = false;
 
     window.onscroll = function (e) {
@@ -111,6 +113,8 @@
     };
 
     function dropdown() {
+        var actualMenuPage = document.getElementsByClassName("actual-page")[0];
+        actualMenuPage.parentNode.style.display = 'none';
         if (!menuShowed) {
             menu.style.display = "block";
             menuShowed = true;
