@@ -2,6 +2,10 @@ header {
     padding: 1em;
 }
 
+nav {
+    padding: 0;
+}
+
 section {
     padding: 4%;
     width: 88%;
@@ -57,7 +61,7 @@ section h3 {
     display: block;
     float: right;
     height: 2.5em;
-    margin: auto 0 auto auto;
+    margin: auto 2% auto auto;
     outline-style: none;
     padding: 0.5em;
     width: 2.5em;

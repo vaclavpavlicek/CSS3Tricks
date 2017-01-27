@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html lang="zxx">
 <head>
     <title>CSS3 Tricks</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/styles-320.css" media="only screen and (max-width: 768px)">
-    <link rel="stylesheet" href="styles/styles-768.css" media="only screen and (min-width: 768px) and (max-width: 1280px)">
-    <link rel="stylesheet" href="styles/styles-1280.css" media="only screen and (min-width: 1280px) and (max-width: 1920px)">
+    <link rel="stylesheet" href="styles/styles-768.css"
+          media="only screen and (min-width: 768px) and (max-width: 1280px)">
+    <link rel="stylesheet" href="styles/styles-1280.css"
+          media="only screen and (min-width: 1280px) and (max-width: 1920px)">
     <link rel="stylesheet" href="styles/styles-1920.css" media="only screen and (min-width: 1920px)">
     <link rel="stylesheet" href="styles/examples.css">
     <link rel="icon" type="image/png" href="images/favicon-16.png" sizes="16x16">
@@ -27,7 +29,9 @@
     </a>
 </header>
 <nav id="js-navigation-animations">
-    <div class="selected-menu-item"><p>Animations</p><button class="menu-button" onclick="dropdown()"></button></div>
+    <div class="selected-menu-item"><p>Animations</p>
+        <button class="menu-button" onclick="dropdown()"></button>
+    </div>
     <ul class="menu">
         <li><a class="menu-item" href="index.html">Home</a>
         <li><a class="actual-page menu-item" href="animations.html">Animations</a>
@@ -109,12 +113,10 @@
             <div class="example">
                 <div class="square movement-square"></div>
             </div>
-            <code>
-                <p>
-                    &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
-                        class="tag-attribute-value"><b>"square"</b></span>&gt;
-                    &lt;/<span class="tag-name"><b>div</b></span>&gt;
-                </p>
+            <code class="code-snippet">
+                &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
+                    class="tag-attribute-value"><b>"square"</b></span>&gt;
+                &lt;/<span class="tag-name"><b>div</b></span>&gt;
             </code>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -123,74 +125,72 @@
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.
             </p>
-            <code>
-                <p>
-                    <span class="css-selector"><b>.square</b></span>&nbsp;{<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
-                        class="css-text-value"><b>red</b></span>;<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;position</b></span>: <span
-                        class="css-text-value"><b>relative</b></span>;<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
-                        class="css-number-value">0</span><span class="css-unit"><b>px</b></span>;<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
-                        class="css-number-value">0</span><span class="css-unit"><b>px</b></span>;<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
-                        class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
-                        class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation</b></span>: <span
-                        class="css-text-value"><b>move-from-left-to-right-and-back</b></span>;<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation-duration</b></span>: <span
-                        class="css-number-value">3</span><span class="css-unit"><b>s</b></span>;<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation-iteration-count</b></span>:
-                    <span class="css-unit"><b>infinite</b></span>;<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;animation</b></span>: <span
-                        class="css-text-value"><b>move-from-left-to-right-and-back</b></span>;<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;animation-duration</b></span>: <span
-                        class="css-number-value">3</span><span class="css-unit"><b>s</b></span>;<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;animation-iteration-count</b></span>: <span
-                        class="css-unit"><b>infinite</b></span>;<br>
-                    }<br>
-                    <span class="css-selector"><b>@-webkit-keyframes</b></span>&nbsp;<span class="css-selector"><b>move-from-left-to-right-and-back</b></span>&nbsp;{<br>
-                    <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;0%</b></span>&nbsp;{<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
-                        class="css-number-value">0</span>;<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
-                        class="css-number-value">0</span>;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                    <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;50%</b></span>&nbsp;{<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
-                        class="css-number-value">0</span>;<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
-                        class="css-number-value">400</span><span class="css-unit"><b>px</b></span>;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                    <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;100%</b></span>&nbsp;{<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
-                        class="css-number-value">0</span>;<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
-                        class="css-number-value">0</span>;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                    }<br><span class="css-selector"><b>@keyframes</b></span>&nbsp;<span class="css-selector"><b>move-from-left-to-right-and-back</b></span>&nbsp;{<br>
-                    <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;0%</b></span>&nbsp;{<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
-                        class="css-number-value">0</span>;<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
-                        class="css-number-value">0</span>;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                    <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;50%</b></span>&nbsp;{<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
-                        class="css-number-value">0</span>;<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
-                        class="css-number-value">400</span><span class="css-unit"><b>px</b></span>;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                    <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;100%</b></span>&nbsp;{<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
-                        class="css-number-value">0</span>;<br>
-                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
-                        class="css-number-value">0</span>;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                    }
-                </p>
+            <code class="code-snippet">
+                <span class="css-selector"><b>.square</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
+                    class="css-text-value"><b>red</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;position</b></span>: <span
+                    class="css-text-value"><b>relative</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                    class="css-number-value">0</span><span class="css-unit"><b>px</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                    class="css-number-value">0</span><span class="css-unit"><b>px</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
+                    class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
+                    class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation</b></span>: <span
+                    class="css-text-value"><b>move-from-left-to-right-and-back</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation-duration</b></span>: <span
+                    class="css-number-value">3</span><span class="css-unit"><b>s</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation-iteration-count</b></span>:
+                <span class="css-unit"><b>infinite</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;animation</b></span>: <span
+                    class="css-text-value"><b>move-from-left-to-right-and-back</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;animation-duration</b></span>: <span
+                    class="css-number-value">3</span><span class="css-unit"><b>s</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;animation-iteration-count</b></span>: <span
+                    class="css-unit"><b>infinite</b></span>;<br>
+                }<br>
+                <span class="css-selector"><b>@-webkit-keyframes</b></span>&nbsp;<span class="css-selector"><b>move-from-left-to-right-and-back</b></span>&nbsp;{<br>
+                <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;0%</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                    class="css-number-value">0</span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                    class="css-number-value">0</span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;50%</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                    class="css-number-value">0</span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                    class="css-number-value">400</span><span class="css-unit"><b>px</b></span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;100%</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                    class="css-number-value">0</span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                    class="css-number-value">0</span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                }<br><span class="css-selector"><b>@keyframes</b></span>&nbsp;<span class="css-selector"><b>move-from-left-to-right-and-back</b></span>&nbsp;{<br>
+                <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;0%</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                    class="css-number-value">0</span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                    class="css-number-value">0</span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;50%</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                    class="css-number-value">0</span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                    class="css-number-value">400</span><span class="css-unit"><b>px</b></span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;100%</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                    class="css-number-value">0</span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                    class="css-number-value">0</span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                }
             </code>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et

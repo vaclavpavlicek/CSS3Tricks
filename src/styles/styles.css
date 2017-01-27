@@ -42,12 +42,6 @@ code {
     padding: 1em 1.5em;
 }
 
-code p {
-    color: black;
-    font-family: "Arial", serif;
-    margin: 0;
-}
-
 footer {
     background-color: #409ad6;
     padding: 1.5em 0 0.75em 0;
@@ -119,6 +113,11 @@ section h3 {
 .arrow-up:hover {
     background: url("../images/arrow_up_hover.png");
     background-size: 4em 4em;
+}
+
+.code-snippet {
+    color: black;
+    font-size: 1.5em;
 }
 
 .css-property {
