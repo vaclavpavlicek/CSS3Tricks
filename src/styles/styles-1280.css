@@ -46,3 +46,17 @@ nav {
 .content-table ul li a:hover {
     color: #0d57a7;
 }
+
+.css3-logo-text {
+    font-size: 3em;
+    line-height: 1.5em;
+}
+
+.css3-logo-image {
+    height: 5em;
+    margin-right: 2em;
+}
+
+header {
+    padding: 2em;
+}

@@ -43,9 +43,10 @@ button {
     justify-content: center;
 }
 
-.logo-text {
+.css3-logo-text {
     color: white;
     font-family: "Sumana", serif;
+    line-height: 1em;
     margin: 0;
 }
 
