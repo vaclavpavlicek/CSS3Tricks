@@ -2,6 +2,27 @@ header {
     padding: 1em;
 }
 
+section {
+    padding: 4%;
+    width: 88%;
+}
+
+.home-info p {
+    margin-top: 0.75em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 2em;
+}
+
+.contacts img {
+    height: 2em;
+}
+
 .css3-logo-image {
     height: 4em;
     margin-right: 1em;
@@ -13,6 +34,22 @@ header {
     line-height: 1.75em;
 }
 
+.face {
+    width: 100%;
+}
+
+.menu {
+    display: none;
+}
+
+.menu li {
+    font-family: "Arial Black", serif;
+    font-size: 1em;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
 .menu-button {
     background: #0d57a7 url("../images/menu-icon.png") no-repeat center;
     background-size: 1.5em 1.5em;
@@ -20,7 +57,7 @@ header {
     display: block;
     float: right;
     height: 2.5em;
-    margin: auto 2% auto auto;
+    margin: auto 0 auto auto;
     outline-style: none;
     padding: 0.5em;
     width: 2.5em;
@@ -28,6 +65,10 @@ header {
 
 .menu-icon {
     height: 1em;
+}
+
+.menu-item {
+    padding: 0.75em 6%;
 }
 
 .selected-menu-item {
@@ -46,49 +87,4 @@ header {
     padding: 0.5em 0;
     position: relative;
     text-decoration: none;
-}
-
-.menu {
-    display: none;
-}
-
-.menu li {
-    font-family: "Arial Black", serif;
-    font-size: 1em;
-    margin: 0;
-    text-align: left;
-    width: 100%;
-}
-
-.menu-item {
-    padding: 0.75em 6%;
-}
-
-.actual-page {
-    background-color: #0d57a7;
-}
-
-.contacts img {
-    height: 2em;
-}
-
-section {
-    padding: 4%;
-    width: 88%;
-}
-
-.home-info p {
-    margin-top: 0.75em;
-}
-
-section h2 {
-    font-size: 2.5em;
-}
-
-section h3 {
-    font-size: 2em;
-}
-
-.face {
-    width: 100%;
 }

@@ -2,70 +2,6 @@ header {
     padding: 3em;
 }
 
-.css3-logo-image {
-    height: 10em;
-    margin-right: 4em;
-}
-
-.css3-logo-text {
-    font-size: 6em;
-    line-height: 1.5em;
-}
-
-nav {
-    padding: 0 2%;
-}
-
-.selected-menu-item {
-    display: none;
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-}
-
-.menu li {
-    display: flex;
-    flex-direction: column;
-    font-family: "Arial Black", serif;
-    font-size: 1.75em;
-    height: auto;
-    margin: 0;
-    text-align: center;
-    width: 16.666666667%;
-}
-
-.actual-page {
-    background-color: #0d57a7;
-}
-
-.about-me {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1em;
-}
-
-.face {
-    height: 20em;
-    margin-right: 2%;
-    width: 20em;
-}
-
-.contacts {
-    display: flex;
-    flex-direction: row;
-}
-
-.contacts img {
-    height: 3em;
-    margin: 0 0.25em;
-}
-
-.contacts img:first-child {
-    margin: 0 0.25em 0 0;
-}
-
 section {
     background-color: white;
     border-radius: 15px;
@@ -79,12 +15,8 @@ section {
     width: 92%;
 }
 
-section p {
-    font-family: "Sumana", serif;
-    font-size: 1.75em;
-    line-height: 1.75em;
-    margin: 0 0 1em 0;
-    text-align: justify;
+section div {
+    display: inline-block;
 }
 
 section h2 {
@@ -101,8 +33,41 @@ section h3 {
     margin: 0.75em 0 0 0;
 }
 
-section div {
-    display: inline-block;
+section p {
+    font-family: "Sumana", serif;
+    font-size: 1.75em;
+    line-height: 1.75em;
+    margin: 0 0 1em 0;
+    text-align: justify;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.actual-page {
+    background-color: #0d57a7;
+}
+
+.article-content {
+    padding-left: 2%;
+    width: 78%;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts img {
+    height: 3em;
+    margin: 0 0.25em;
+}
+
+.contacts img:first-child {
+    margin: 0 0.25em 0 0;
 }
 
 .content-table {
@@ -131,7 +96,38 @@ section div {
     color: #0d57a7;
 }
 
-.article-content {
-    padding-left: 2%;
-    width: 78%;
+.css3-logo-image {
+    height: 10em;
+    margin-right: 4em;
+}
+
+.css3-logo-text {
+    font-size: 6em;
+    line-height: 1.5em;
+}
+
+.face {
+    height: 20em;
+    margin-right: 2%;
+    width: 20em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li {
+    display: flex;
+    flex-direction: column;
+    font-family: "Arial Black", serif;
+    font-size: 1.75em;
+    height: auto;
+    margin: 0;
+    text-align: center;
+    width: 16.666666667%;
+}
+
+.selected-menu-item {
+    display: none;
 }
