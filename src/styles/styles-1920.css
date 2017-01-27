@@ -21,13 +21,16 @@ nav {
 }
 
 .menu {
-    display: block;
+    display: flex;
+    flex-direction: row;
 }
 
 .menu li {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     font-family: "Arial Black", serif;
     font-size: 1.75em;
+    height: auto;
     margin: 0;
     text-align: center;
     width: 16.666666667%;
@@ -45,8 +48,8 @@ nav {
 
 .face {
     height: 20em;
-    width: 20em;
     margin-right: 2%;
+    width: 20em;
 }
 
 .contacts {

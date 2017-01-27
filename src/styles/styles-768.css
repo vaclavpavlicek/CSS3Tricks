@@ -1,0 +1,23 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li {
+    display: flex;
+    flex-direction: column;
+    font-family: "Arial Black", serif;
+    font-size: 0.8em;
+    height: auto;
+    margin: 0;
+    text-align: center;
+    width: 16.666666667%;
+}
+
+.selected-menu-item {
+    display: none;
+}
+
+nav {
+    padding: 0 2%;
+}

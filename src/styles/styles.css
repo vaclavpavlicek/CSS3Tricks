@@ -22,7 +22,6 @@
 body {
     background-color: #ebebeb;
     margin: 0;
-    min-width: 320px;
 }
 
 a {
@@ -64,8 +63,12 @@ nav {
 .menu-item {
     background-color: #409ad6;
     color: white;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
     padding: 0.75em;
+    text-align: center;
     text-decoration: none;
     transition: background 0.75s;
 }
