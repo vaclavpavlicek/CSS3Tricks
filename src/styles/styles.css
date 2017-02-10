@@ -181,6 +181,10 @@ section h3 {
     justify-content: center;
 }
 
+.logo a {
+    display: inline-flex;
+}
+
 .menu {
     list-style: none;
     margin: auto;
