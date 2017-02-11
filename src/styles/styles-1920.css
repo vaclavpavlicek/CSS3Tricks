@@ -19,32 +19,9 @@ section div {
     display: inline-block;
 }
 
-section h2 {
-    color: #0d57a7;
-    font-family: "Alegreya SC", serif;
-    font-size: 4em;
-    margin: 0;
-}
-
-section h3 {
-    color: #409ad6;
-    font-family: "Alegreya SC", serif;
-    font-size: 3em;
-    margin: 0.75em 0 0 0;
-}
-
 section p {
-    font-family: "Sumana", serif;
     font-size: 1.75em;
     line-height: 1.75em;
-    margin: 0 0 1em 0;
-    text-align: justify;
-}
-
-.about-me {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1em;
 }
 
 .actual-page {
@@ -54,20 +31,6 @@ section p {
 .article-content {
     padding-left: 2%;
     width: 78%;
-}
-
-.contacts {
-    display: flex;
-    flex-direction: row;
-}
-
-.contacts img {
-    height: 3em;
-    margin: 0 0.25em;
-}
-
-.contacts img:first-child {
-    margin: 0 0.25em 0 0;
 }
 
 .content-table {
@@ -108,7 +71,6 @@ section p {
 
 .face {
     height: 20em;
-    margin-right: 2%;
     width: 20em;
 }
 

@@ -11,10 +11,6 @@ section {
     width: 88%;
 }
 
-.home-info p {
-    margin-top: 0.75em;
-}
-
 section h2 {
     font-size: 2.5em;
 }
@@ -23,10 +19,21 @@ section h3 {
     font-size: 2em;
 }
 
-.contacts img {
-    height: 2em;
+section p {
+    font-size: 1.2em;
+    line-height: 1.2em;
 }
 
+.about-me {
+    display: block;
+}
+
+.contacts li {
+    font-size: 30px;
+    height: 48px;
+    line-height: 48px;
+    width: 48px;
+}
 .css3-logo-image {
     height: 4em;
     margin-right: 1em;
@@ -40,6 +47,10 @@ section h3 {
 
 .face {
     width: 100%;
+}
+
+.home-info p {
+    margin-top: 0.75em;
 }
 
 .menu {
