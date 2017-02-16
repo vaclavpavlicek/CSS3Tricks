@@ -33,30 +33,12 @@ section p {
     width: 78%;
 }
 
+.article-content-left-margin {
+    margin-left: 20%;
+}
+
 .content-table {
-    background-color: #ebebeb;
-    height: fit-content;
     width: 20%;
-}
-
-.content-table h3 {
-    color: #0d57a7;
-    margin: 0;
-    text-align: center;
-}
-
-.content-table ul {
-    list-style: none;
-}
-
-.content-table ul li a {
-    color: #409ad6;
-    font-family: "Alegreya SC", serif;
-    font-size: 1.75em;
-}
-
-.content-table ul li a:hover {
-    color: #0d57a7;
 }
 
 .css3-logo-image {

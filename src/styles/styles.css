@@ -152,6 +152,36 @@ section h3 {
     color: #fff;
 }
 
+.content-table {
+    background-color: #ebebeb;
+    height: fit-content;
+}
+
+.content-table h3 {
+    color: #0d57a7;
+    margin: 0;
+    text-align: center;
+}
+
+.content-table ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.content-table ul li a {
+    color: #409ad6;
+    font-family: "Alegreya SC", serif;
+    font-size: 1.75em;
+    margin-left: 10%;
+}
+
+.content-table ul li a:hover {
+    color: #0d57a7;
+}
+
 .css-property {
     color: #0000FF;
 }

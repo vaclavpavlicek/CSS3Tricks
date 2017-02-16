@@ -1,0 +1,24 @@
+section p {
+    font-family: "Sumana", serif;
+    font-size: 1em;
+    margin: 0 0 1em 0;
+    text-align: justify;
+}
+
+.article-content {
+    padding-left: 2%;
+    width: 73%;
+}
+
+.article-content-left-margin {
+    margin-left: 22.5%;
+}
+
+.content-table {
+    width: 22.5%;
+}
+
+.content-table ul li a {
+    font-size: 1.25em;
+    margin-left: 10%;
+}
