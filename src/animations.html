@@ -72,45 +72,37 @@
         <h3><a class="heading-link" id="css-animation" href="#css-animation">#</a>CSS animation</h3>
         <div class="text">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+                To animate some element use <code class="keyword">animation</code> property or its sub-properties (duration, timing, interation count, ...). Remember <code class="keyword">animation</code> does not configure animation appearance. To do this use <code class="keyword">@keyframes</code>.
+                <br><br>
+                Here are some sub-properties:
+                <br>
+                <ul class="list-in-content">
+                    <li><code class="keyword">animation-name</code> - Declares the name of the <code class="keyword">@keyframes</code> which will be applied.</li>
+                    <li><code class="keyword">animation-duration</code> - Duration of one animation cycle.</li>
+                    <li><code class="keyword">animation-delay</code> - Time between the element being loaded and the start of the animation.</li>
+                    <li><code class="keyword">animation-iteration-count</code> - The number of times animations will be performed.</li>
+                    <li><code class="keyword">animation-play-state</code> - Plays or pauses the animation.</li>
+                </ul>
             </p>
         </div>
         <h3><a class="heading-link" id="css-@keyframes" href="#css-@keyframes">#</a>CSS @keyframes</h3>
         <div class="text">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+                The <code class="keyword">@keyframes</code> lets you control each step of animation by creating keyframes
+                (or waypoints) along the animation sequence that must be reached by certain points during the animation.
+                To use keyframes, you create a <code class="keyword">@keyframes</code> rule with a name that is then
+                used by the animation-name property to match an animation to its keyframe list. Each
+                <code class="keyword">@keyframes</code> rule contains a style list of keyframe selectors,
+                each of which comprises a percentage along the animation at which the keyframe occurs as well as a block
+                containing the style information for that keyframe.
             </p>
         </div>
         <h3><a class="heading-link" id="movement" href="#movement">#</a>Movement</h3>
         <div class="text">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+                This is an easy example of animation which moves with some element. Create <code class="keyword">div</code>
+                with class called square. In this class set background color to red, position to relative, place to upper left hand corner and set
+                its height and width to 200px. Now we have static red square. Lets create moving animation.
             </p>
             <div class="example">
                 <div class="square movement-square"></div>
@@ -121,11 +113,10 @@
                 &lt;/<span class="tag-name"><b>div</b></span>&gt;
             </code>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+                Create animation using <code class="keyword">@keyframes</code> and call it move-from-left-to-right-and-back.
+                At the beginning set top to 0 and left to 0. At 50% set top to 0px and left to 400px. At the end of animation
+                set top and left back to 0. Back in square class set <code class="keyword">animation</code> to move-from-left-to-right-and-back
+                and <code class="keyword">animation-duration</code> to 3s. Finally you can set <code class="keyword">animation-iteration-count</code> to infinite and this animation will never stop.
             </p>
             <code class="code-snippet">
                 <span class="css-selector"><b>.square</b></span>&nbsp;{<br>
@@ -194,13 +185,6 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;}<br>
                 }
             </code>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
         </div>
         <h3><a class="heading-link" id="sizing" href="#sizing">#</a>Sizing</h3>
         <div class="text">
@@ -228,6 +212,14 @@
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.
             </p>
+            <div class="example">
+                <div class="square rotating-square"></div>
+            </div>
+            <code class="code-snippet">
+                &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
+                    class="tag-attribute-value"><b>"square"</b></span>&gt;
+                &lt;/<span class="tag-name"><b>div</b></span>&gt;
+            </code>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -235,6 +227,45 @@
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.
             </p>
+            <code class="code-snippet">
+                <span class="css-selector"><b>.square</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
+                    class="css-text-value"><b>red</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                    class="css-number-value">0</span><span class="css-unit"><b>px</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                    class="css-number-value">0</span><span class="css-unit"><b>px</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
+                    class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
+                    class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;margin</b></span>: <span
+                    class="css-number-value">100</span><span class="css-unit"><b>px</b></span>;<br>
+                }<br>
+                <span class="css-selector"><b>.square</b></span>:<span class="css-selector"><b>hover</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation</b></span>: <span
+                    class="css-text-value"><b>rotate</b></span> <span
+                    class="css-number-value">2</span><span class="css-unit"><b>s</b></span> <span
+                    class="css-unit"><b>linear</b></span> <span
+                    class="css-unit"><b>infinite</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;animation</b></span>: <span
+                    class="css-text-value"><b>rotate</b></span> <span
+                    class="css-number-value">2</span><span class="css-unit"><b>s</b></span> <span
+                    class="css-unit"><b>linear</b></span> <span
+                    class="css-unit"><b>infinite</b></span>;<br>
+                }<br>
+                <span class="css-selector"><b>@-webkit-keyframes</b></span>&nbsp;<span class="css-selector"><b>rotate</b></span>&nbsp;{<br>
+                <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;100%</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-webkit-transform</b></span>: <span
+                    class="css-text-value"><b>rotate</b></span>(<span class="css-number-value">360</span><span class="css-unit"><b>deg</b></span>);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                }<br><span class="css-selector"><b>@keyframes</b></span>&nbsp;<span class="css-selector"><b>rotate</b></span>&nbsp;{<br>
+                <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;100%</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transform</b></span>: <span
+                    class="css-text-value"><b>rotate</b></span>(<span class="css-number-value">360</span><span class="css-unit"><b>deg</b></span>);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                }
+            </code>
         </div>
         <h3><a class="heading-link" id="comparison-with-js" href="#comparison-with-js">#</a>Comparison with JS</h3>
         <div class="text">

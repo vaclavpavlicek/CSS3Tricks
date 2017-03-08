@@ -24,6 +24,15 @@
     top: 0;
 }
 
+.example .rotating-square {
+    margin: 100px;
+}
+
+.example .rotating-square:hover {
+    animation: rotate 2s linear infinite;
+    -webkit-animation: rotate 2s linear infinite;
+}
+
 @-webkit-keyframes red-to-yellow {
     from {
         background-color: red;
@@ -69,5 +78,11 @@
     100% {
         top: 0;
         left: 0;
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
     }
 }
