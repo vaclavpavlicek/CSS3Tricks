@@ -24,6 +24,11 @@
     top: 0;
 }
 
+.example .sizing-square {
+    animation: resize 2s linear infinite;
+    -webkit-animation: resize 2s linear infinite;
+}
+
 .example .rotating-square {
     margin: 100px;
 }
@@ -81,8 +86,42 @@
     }
 }
 
+
+@-webkit-keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes rotate {
     100% {
         transform: rotate(360deg);
+    }
+}
+
+
+@-webkit-keyframes resize {
+    50% {
+        height: 10px;
+        width: 10px;
+        margin: 95px;
+    }
+    100% {
+        height: 200px;
+        width: 200px;
+        margin: 0;
+    }
+}
+
+@keyframes resize {
+    50% {
+        height: 10px;
+        width: 10px;
+        margin: 95px;
+    }
+    100% {
+        height: 200px;
+        width: 200px;
+        margin: 0;
     }
 }
