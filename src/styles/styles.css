@@ -96,6 +96,14 @@ section h3 {
     margin: 0;
 }
 
+
+section h4 {
+    color: #0d57a7;
+    font-family: "Alegreya SC", serif;
+    font-size: 2em;
+    margin: 0;
+}
+
 .about-me {
     display: inline-flex;
     margin-top: 1em;
