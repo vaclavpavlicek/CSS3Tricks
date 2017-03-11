@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>CSS3 Tricks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-320.css" media="only screen and (max-width: 768px)">
+    <link rel="stylesheet" href="styles/styles-768.css"
+          media="only screen and (min-width: 768px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="styles/styles-1024.css"
+          media="only screen and (min-width: 1024px) and (max-width: 1280px)">
+    <link rel="stylesheet" href="styles/styles-1280.css"
+          media="only screen and (min-width: 1280px) and (max-width: 1920px)">
+    <link rel="stylesheet" href="styles/styles-1920.css" media="only screen and (min-width: 1920px)">
+    <link rel="stylesheet" href="styles/examples.css">
+    <link rel="icon" type="image/png" href="images/favicon-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon-64.png" sizes="64x64">
+    <link rel="icon" type="image/png" href="images/favicon-96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/favicon-128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="images/favicon-256.png" sizes="256x256">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img class="css3-logo-image" src="images/css3.png" alt="logo of CSS3"/>
+            <h1 class="css3-logo-text">CSS3 Tricks</h1>
+        </a>
+    </div>
+</header>
+<nav id="js-navigation-animations">
+    <div class="selected-menu-item"><p>Colors</p>
+        <button class="menu-button" onclick="dropdown()"></button>
+    </div>
+    <ul class="menu">
+        <li><a class="menu-item" href="index.html">Home</a>
+        <li><a class="menu-item" href="animations.html">Animations</a>
+        <li><a class="menu-item" href="#">Gradients</a>
+        <li><a class="menu-item" href="#">Media Queries</a>
+        <li><a class="menu-item" href="#">Shadows</a>
+        <li><a class="actual-page menu-item" href="colors.html">Colors</a>
+    </ul>
+</nav>
+<section>
+    <div id="js-animations-content-table" class="content-table">
+        <h3>Content</h3>
+        <ul>
+            <li><a href="#rgba-colors">RGBA colors</a></li>
+            <li><a href="#hsl-colors">HSL colors</a></li>
+            <li><a href="#hsla-colors">HSLA colors</a></li>
+            <li><a href="#opacity">Opacity</a></li>
+        </ul>
+    </div>
+    <div id="js-animations-content" class="article-content">
+        <div class="opening-text">
+            <h2>Colors</h2>
+            <p>
+                CSS supports color names, hexadecimal and RGB colors.
+                <br><br>
+                In addition, CSS3 also introduces:
+                <br>
+            </p>
+            <ul class="list-in-content">
+                <li>RGBA colors</li>
+                <li>HSL colors</li>
+                <li>HSLA colors</li>
+                <li>opacity</li>
+            </ul>
+        </div>
+        <h3><a class="heading-link" id="rgba-colors" href="#rgba-colors">#</a>RGBA colors</h3>
+        <div class="text">
+            <p>
+                RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.
+                An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+                <br><br>
+                The following example defines different RGBA colors:
+            </p>
+        </div>
+        <h3><a class="heading-link" id="hsl-colors" href="#hsl-colors">#</a>HSL colors</h3>
+        <div class="text">
+            <p>
+                HSL stands for Hue, Saturation and Lightness.
+                An HSL color value is specified with: hsl(hue, saturation, lightness).
+            </p>
+            <br><br>
+            <ol class="list-in-content">
+                <li>Hue is a degree on the color wheel (from 0 to 360):</li>
+                <ul>
+                    <li>0 (or 360) is red</li>
+                    <li>120 is green</li>
+                    <li>240 is blue</li>
+                </ul>
+                <li>Saturation is a percentage value: 100% is the full color.</li>
+                <li>Lightness is also a percentage; 0% is dark (black) and 100% is white.</li>
+            </ol>
+        </div>
+        <h3><a class="heading-link" id="hsla-colors" href="#hsla-colors">#</a>HSLA colors</h3>
+        <div class="text">
+            <p>
+
+                HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.
+                An HSLA color value is specified with: hsla(hue, saturation, lightness, alpha), where the alpha parameter defines the opacity. The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+                <br><br>
+                The following example defines different HSLA colors:
+            </p>
+
+        </div>
+        <h3><a class="heading-link" id="opacity" href="#opacity">#</a>Opacity</h3>
+        <div class="text">
+            <p>
+                The CSS3 <code class="keyword">opacity</code> property sets the opacity for the whole element (both background color and text will be opaque/transparent).
+                The <code class="keyword">opacity</code> property value must be a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+                Notice that the text above will also be transparent/opaque!
+                <br><br>
+                The following example shows different elements with opacity:
+            </p>
+        </div>
+    </div>
+</section>
+<div id="js-arrow-up-animations" class="arrow-up" onclick="scrollUp()"></div>
+<footer>
+    <h6>©2017 Created by VendaskyCZ</h6>
+</footer>
+<script>
+    var contentTable = document.getElementById("js-animations-content-table");
+    var content = document.getElementById("js-animations-content");
+    var arrowUp = document.getElementById("js-arrow-up-animations");
+    var navigation = document.getElementById("js-navigation-animations");
+    arrowUp.style.visibility = 'hidden';
+    var contentTableWidth = contentTable.clientWidth;
+    var stuck = false;
+    var stickPoint = contentTable.offsetTop;
+    var menu = document.getElementsByClassName("menu")[0];
+    var menuShowed = false;
+
+    window.onscroll = function (e) {
+        if (window.pageYOffset > navigation.offsetTop + navigation.clientHeight) {
+            arrowUp.style.visibility = 'visible';
+        } else {
+            arrowUp.style.visibility = 'hidden';
+        }
+        var distance = contentTable.offsetTop - window.pageYOffset;
+        var offset = window.pageYOffset;
+        if ((distance <= 0) && !stuck) {
+            contentTable.style.position = 'fixed';
+            contentTable.style.top = '0px';
+            contentTable.style.width = contentTableWidth + 'px';
+            content.className += " article-content-left-margin";
+            stuck = true;
+        } else if (stuck && (offset <= stickPoint)) {
+            contentTable.style.position = 'static';
+            content.className = "article-content";
+            stuck = false;
+        }
+    };
+
+    function dropdown() {
+        var actualMenuPage = document.getElementsByClassName("actual-page")[0];
+        actualMenuPage.parentNode.style.display = 'none';
+        if (!menuShowed) {
+            menu.style.display = "block";
+            menuShowed = true;
+        } else {
+            menu.style.display = "none";
+            menuShowed = false;
+        }
+    }
+
+    function scrollUp() {
+        var scrollStep = -100;
+        var scrollInterval = setInterval(function () {
+            if (window.scrollY != 0) {
+                window.scrollBy(0, scrollStep);
+            } else {
+                clearInterval(scrollInterval);
+            }
+        }, 15);
+    }
+</script>
+</body>
+</html>
