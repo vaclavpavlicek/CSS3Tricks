@@ -1,3 +1,6 @@
+.example {
+    width: 100%;
+}
 .example .square {
     background-color: red;
     height: 200px;
@@ -27,6 +30,31 @@
 .example .sizing-square {
     animation: resize 2s linear infinite;
     -webkit-animation: resize 2s linear infinite;
+}
+
+.example .rgba p {
+    margin: 0;
+}
+
+.example .rgba {
+    padding: 1em;
+    width: 100%;
+}
+
+.example #rgba-1 {
+    background-color: rgba(13, 87, 167, 0.2);
+}
+
+.example #rgba-2 {
+    background-color: rgba(13, 87, 167, 0.4);
+}
+
+.example #rgba-3 {
+    background-color: rgba(13, 87, 167, 0.6);
+}
+
+.example #rgba-4 {
+    background-color: rgba(13, 87, 167, 0.8);
 }
 
 .example .rotating-square {
