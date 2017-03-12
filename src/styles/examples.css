@@ -15,6 +15,35 @@
     background-color: yellow;
 }
 
+.example .gradient {
+    height: 6em;
+    width: 100%;
+}
+
+.example .gradient-top-to-bottom {
+    background: #0d57a7;
+    background: -webkit-linear-gradient(#0d57a7, #409ad6);
+    background: -o-linear-gradient(#0d57a7, #409ad6);
+    background: -moz-linear-gradient(#0d57a7, #409ad6);
+    background: linear-gradient(#0d57a7, #409ad6);
+}
+
+.example .gradient-left-to-right {
+    background-color: #0d57a7;
+    background: -webkit-linear-gradient(left, #0d57a7, #409ad6);
+    background: -o-linear-gradient(right, #0d57a7, #409ad6);
+    background: -moz-linear-gradient(right, #0d57a7, #409ad6);
+    background: linear-gradient(to right, #0d57a7, #409ad6);
+}
+
+.example .gradient-diagonal {
+    background-color: #0d57a7;
+    background: -webkit-linear-gradient(left top, #0d57a7, #409ad6);
+    background: -o-linear-gradient(bottom right, #0d57a7, #409ad6);
+    background: -moz-linear-gradient(bottom right, #0d57a7, #409ad6);
+    background: linear-gradient(to bottom right, #0d57a7, #409ad6);
+}
+
 .example .movement-square {
     animation: move-from-left-to-right-and-back;
     -webkit-animation: move-from-left-to-right-and-back;
