@@ -1,10 +1,23 @@
 .example {
     width: 100%;
 }
-.example .square {
-    background-color: red;
-    height: 200px;
-    width: 200px;
+
+.example .box-shadow {
+    border: solid grey 1px;
+    box-shadow: 1em 1em grey;
+    padding: 1.5em;
+    width: 90%;
+}
+
+.example .box-shadow-blur {
+    border: solid grey 1px;
+    box-shadow: 1em 1em 0.5em grey;
+    padding: 1.5em;
+    width: 90%;
+}
+
+.example .box-shadow p {
+    margin: 0;
 }
 
 .example .color-transition-square:hover {
@@ -29,19 +42,19 @@
 }
 
 .example .gradient-left-to-right {
-    background-color: #0d57a7;
     background: -webkit-linear-gradient(left, #0d57a7, #409ad6);
     background: -o-linear-gradient(right, #0d57a7, #409ad6);
     background: -moz-linear-gradient(right, #0d57a7, #409ad6);
     background: linear-gradient(to right, #0d57a7, #409ad6);
+    background-color: #0d57a7;
 }
 
 .example .gradient-diagonal {
-    background-color: #0d57a7;
     background: -webkit-linear-gradient(left top, #0d57a7, #409ad6);
     background: -o-linear-gradient(bottom right, #0d57a7, #409ad6);
     background: -moz-linear-gradient(bottom right, #0d57a7, #409ad6);
     background: linear-gradient(to bottom right, #0d57a7, #409ad6);
+    background-color: #0d57a7;
 }
 
 .example .gradient-radial {
@@ -61,7 +74,6 @@
     height: 8em;
     width: 100%;
 }
-
 
 .example .gradient-radial-circle {
     background: #0d57a7;
@@ -83,11 +95,6 @@
     top: 0;
 }
 
-.example .sizing-square {
-    animation: resize 2s linear infinite;
-    -webkit-animation: resize 2s linear infinite;
-}
-
 .example .rgba p {
     margin: 0;
 }
@@ -95,6 +102,17 @@
 .example .rgba {
     padding: 1em;
     width: 100%;
+}
+
+.example .sizing-square {
+    animation: resize 2s linear infinite;
+    -webkit-animation: resize 2s linear infinite;
+}
+
+.example .square {
+    background-color: red;
+    height: 200px;
+    width: 200px;
 }
 
 .example #rgba-1 {
@@ -170,7 +188,6 @@
     }
 }
 
-
 @-webkit-keyframes rotate {
     100% {
         transform: rotate(360deg);
@@ -182,7 +199,6 @@
         transform: rotate(360deg);
     }
 }
-
 
 @-webkit-keyframes resize {
     50% {
