@@ -72,6 +72,10 @@ section p {
     width: 16.666666667%;
 }
 
+.list-in-content {
+    font-size: 1.75em;
+}
+
 .selected-menu-item {
     display: none;
 }

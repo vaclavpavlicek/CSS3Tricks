@@ -16,7 +16,7 @@
 }
 
 .example .gradient {
-    height: 6em;
+    height: 8em;
     width: 100%;
 }
 
@@ -42,6 +42,33 @@
     background: -o-linear-gradient(bottom right, #0d57a7, #409ad6);
     background: -moz-linear-gradient(bottom right, #0d57a7, #409ad6);
     background: linear-gradient(to bottom right, #0d57a7, #409ad6);
+}
+
+.example .gradient-radial {
+    background: #0d57a7;
+    background: -webkit-radial-gradient(#409ad6, #0d57a7);
+    background: -o-radial-gradient(#409ad6, #0d57a7);
+    background: -moz-radial-gradient(#409ad6, #0d57a7);
+    background: radial-gradient(#409ad6, #0d57a7);
+}
+
+.gradient-radial-colors-percentage {
+    background: #0d57a7;
+    background: -webkit-radial-gradient(#409ad6 30%, #0d57a7 50%);
+    background: -o-radial-gradient(#409ad6 30%, #0d57a7 50%);
+    background: -moz-radial-gradient(#409ad6 30%, #0d57a7 50%);
+    background: radial-gradient(#409ad6 30%, #0d57a7 50%);
+    height: 8em;
+    width: 100%;
+}
+
+
+.example .gradient-radial-circle {
+    background: #0d57a7;
+    background: -webkit-radial-gradient(circle, #409ad6, #0d57a7);
+    background: -o-radial-gradient(circle, #409ad6, #0d57a7);
+    background: -moz-radial-gradient(circle, #409ad6, #0d57a7);
+    background: radial-gradient(circle, #409ad6, #0d57a7);
 }
 
 .example .movement-square {
