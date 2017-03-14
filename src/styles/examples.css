@@ -136,6 +136,12 @@
     top: 0;
 }
 
+.example .multiple-text-shadow {
+    font-size: 4em;
+    margin: 0.5em 0;
+    text-shadow: 1px 1px 6px red, 0 0 12px blue;
+}
+
 .example #opacity-1 {
     background-color: rgb(13, 87, 167);
     opacity: 0.2;
@@ -190,6 +196,16 @@
     background-color: red;
     height: 200px;
     width: 200px;
+}
+
+.example .text-shadow {
+    font-size: 4em;
+    margin: 0.5em 0;
+    text-shadow: 3px 3px red;
+}
+
+.example .text-shadow-blur {
+    text-shadow: 3px 3px 6px red;
 }
 
 @-webkit-keyframes red-to-yellow {
