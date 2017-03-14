@@ -28,6 +28,15 @@
     background-color: yellow;
 }
 
+.example .colors p {
+    margin: 0;
+}
+
+.example .colors {
+    padding: 1em;
+    width: 100%;
+}
+
 .example .gradient {
     height: 8em;
     width: 100%;
@@ -65,7 +74,7 @@
     background: radial-gradient(#409ad6, #0d57a7);
 }
 
-.gradient-radial-colors-percentage {
+.example .gradient-radial-colors-percentage {
     background: #0d57a7;
     background: -webkit-radial-gradient(#409ad6 30%, #0d57a7 50%);
     background: -o-radial-gradient(#409ad6 30%, #0d57a7 50%);
@@ -80,7 +89,39 @@
     background: -webkit-radial-gradient(circle, #409ad6, #0d57a7);
     background: -o-radial-gradient(circle, #409ad6, #0d57a7);
     background: -moz-radial-gradient(circle, #409ad6, #0d57a7);
-    background: radial-gradient(circle, #409ad6, #0d57a7);
+    background: radial-gradient(circle, #409ad6, #0d57a6);
+}
+
+.example #hsl-1 {
+    background-color: hsl(211, 86%, 30%);
+}
+
+.example #hsl-2 {
+    background-color: hsl(211, 86%, 50%);
+}
+
+.example #hsl-3 {
+    background-color: hsl(211, 86%, 70%);
+}
+
+.example #hsl-4 {
+    background-color: hsl(211, 86%, 90%);
+}
+
+.example #hsla-1 {
+    background-color: hsla(211, 86%, 30%, 0.3);
+}
+
+.example #hsla-2 {
+    background-color: hsla(211, 86%, 50%, 0.3);
+}
+
+.example #hsla-3 {
+    background-color: hsla(211, 86%, 70%, 0.3);
+}
+
+.example #hsla-4 {
+    background-color: hsla(211, 86%, 90%, 0.3);
 }
 
 .example .movement-square {
@@ -95,24 +136,24 @@
     top: 0;
 }
 
-.example .rgba p {
-    margin: 0;
+.example #opacity-1 {
+    background-color: rgb(13, 87, 167);
+    opacity: 0.2;
 }
 
-.example .rgba {
-    padding: 1em;
-    width: 100%;
+.example #opacity-2 {
+    background-color: rgb(13, 87, 167);
+    opacity: 0.4;
 }
 
-.example .sizing-square {
-    animation: resize 2s linear infinite;
-    -webkit-animation: resize 2s linear infinite;
+.example #opacity-3 {
+    background-color: rgb(13, 87, 167);
+    opacity: 0.6;
 }
 
-.example .square {
-    background-color: red;
-    height: 200px;
-    width: 200px;
+.example #opacity-4 {
+    background-color: rgb(13, 87, 167);
+    opacity: 0.8;
 }
 
 .example #rgba-1 {
@@ -138,6 +179,17 @@
 .example .rotating-square:hover {
     animation: rotate 2s linear infinite;
     -webkit-animation: rotate 2s linear infinite;
+}
+
+.example .sizing-square {
+    animation: resize 2s linear infinite;
+    -webkit-animation: resize 2s linear infinite;
+}
+
+.example .square {
+    background-color: red;
+    height: 200px;
+    width: 200px;
 }
 
 @-webkit-keyframes red-to-yellow {
