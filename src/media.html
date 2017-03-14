@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="zxx">
 <head>
     <title>CSS3 Tricks</title>
@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/styles-320.css" media="only screen and (max-width: 768px)">
-    <link rel="stylesheet" href="styles/styles-768.css" media="only screen and (min-width: 768px) and (max-width: 1280px)">
-    <link rel="stylesheet" href="styles/styles-1280.css" media="only screen and (min-width: 1280px) and (max-width: 1920px)">
+    <link rel="stylesheet" href="styles/styles-768.css"
+          media="only screen and (min-width: 768px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="styles/styles-1024.css"
+          media="only screen and (min-width: 1024px) and (max-width: 1280px)">
+    <link rel="stylesheet" href="styles/styles-1280.css"
+          media="only screen and (min-width: 1280px) and (max-width: 1920px)">
     <link rel="stylesheet" href="styles/styles-1920.css" media="only screen and (min-width: 1920px)">
-    <link rel="stylesheet" href="styles/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/examples.css">
     <link rel="icon" type="image/png" href="images/favicon-16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="images/favicon-64.png" sizes="64x64">
@@ -26,21 +30,31 @@
         </a>
     </div>
 </header>
-<nav id="js-navigation-index">
-    <div class="selected-menu-item"><p>Home</p><button class="menu-button" onclick="dropdown()"></button></div>
+<nav id="js-navigation-animations">
+    <div class="selected-menu-item"><p>Colors</p>
+        <button class="menu-button" onclick="dropdown()"></button>
+    </div>
     <ul class="menu">
-        <li><a class="actual-page menu-item" href="#">Home</a>
+        <li><a class="menu-item" href="index.html">Home</a>
         <li><a class="menu-item" href="animations.html">Animations</a>
         <li><a class="menu-item" href="gradients.html">Gradients</a>
-        <li><a class="menu-item" href="media.html">Media Queries</a>
+        <li><a class="actual-page menu-item" href="#">Media Queries</a>
         <li><a class="menu-item" href="shadows.html">Shadows</a>
         <li><a class="menu-item" href="colors.html">Colors</a>
     </ul>
 </nav>
 <section>
-    <div class="index-content">
-        <div class="home-info">
-            <h2>Home</h2>
+    <div id="js-animations-content-table" class="content-table">
+        <h3>Content</h3>
+        <ul>
+            <li><a href="#types">Types</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#usage">Usage</a></li>
+        </ul>
+    </div>
+    <div id="js-animations-content" class="article-content">
+        <div class="opening-text">
+            <h2>Media queries</h2>
             <p>
                 Lorem ipsum dol
                 or sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -49,56 +63,76 @@
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.
             </p>
+        </div>
+        <h3><a class="heading-link" id="types" href="#types">#</a>Types</h3>
+        <div class="text">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                Lorem ipsum dol
+                or sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.
             </p>
         </div>
-        <h3>About me</h3>
-        <div class="about-me">
-            <img class="face" src="images/me.jpg" alt="Photo of Václav Pavlíček">
-            <div>
-                <p>
-                    My name is Václav Pavlíček. I am student interested in computer science. I have experiences with
-                    Java, Python, HTML, JS and CSS. One of my interesting projects is demo app for Vuzix M100 Smart
-                    Glasses and now I am working with my friends from GDG Garage Ždár nad Sázavou on laser harp. Of course CSS3 Tricks is my project too. I do some competitions focused on programming, mathematics and physics. And that's me!
-                </p>
-                <ul class="contacts">
-                    <li class="facebook"><a target="_blank" href="https://www.facebook.com/vaclav.pavlicek.71"><i class="fa fa-facebook"></i></a></li>
-                    <li class="linkedin "><a target="_blank" href="https://www.linkedin.com/in/v%C3%A1clav-pavl%C3%AD%C4%8Dek-871ab8124?trk=hp-identity-name"><i class="fa fa-linkedin"></i></a></li>
-                    <li class="twitter"><a target="_blank" href="https://twitter.com/VendaskyCZ"><i class="fa fa-twitter"></i></a></li>
-                    <li class="google-plus"><a target="_blank" href="https://plus.google.com/+V%C3%A1clavPavl%C3%AD%C4%8Dek"><i class="fa fa-google-plus"></i></a></li>
-                    <li class="mail"><a target="_blank" href="mailto:vaclav@pavlicek.cz"><i class="fa fa-envelope"></i></a></li>
-                </ul>
-            </div>
+        <h3><a class="heading-link" id="features" href="#features">#</a>Features</h3>
+        <div class="text">
+            <p>
+                Lorem ipsum dol
+                or sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <h3><a class="heading-link" id="usage" href="#usage">#</a>Usage</h3>
+        <div class="text">
+            <p>
+                Lorem ipsum dol
+                or sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
         </div>
     </div>
 </section>
-<div id="js-arrow-up-index" class="arrow-up" onclick="scrollUp()"></div>
+<div id="js-arrow-up-animations" class="arrow-up" onclick="scrollUp()"></div>
+<footer>
+    <h6>©2017 Created by VendaskyCZ</h6>
+</footer>
 <script>
-    var arrowUp = document.getElementById("js-arrow-up-index");
-    var navigation = document.getElementById("js-navigation-index");
+    var contentTable = document.getElementById("js-animations-content-table");
+    var content = document.getElementById("js-animations-content");
+    var arrowUp = document.getElementById("js-arrow-up-animations");
+    var navigation = document.getElementById("js-navigation-animations");
     arrowUp.style.visibility = 'hidden';
+    var contentTableWidth = contentTable.clientWidth;
+    var stuck = false;
+    var stickPoint = contentTable.offsetTop;
     var menu = document.getElementsByClassName("menu")[0];
-
     var menuShowed = false;
 
     window.onscroll = function (e) {
         if (window.pageYOffset > navigation.offsetTop + navigation.clientHeight) {
             arrowUp.style.visibility = 'visible';
-            arrowUp.style.backgroundImage = "url('images/arrow_up.png')";
         } else {
             arrowUp.style.visibility = 'hidden';
+        }
+        var distance = contentTable.offsetTop - window.pageYOffset;
+        var offset = window.pageYOffset;
+        if ((distance <= 0) && !stuck) {
+            contentTable.style.position = 'fixed';
+            contentTable.style.top = '0px';
+            contentTable.style.width = contentTableWidth + 'px';
+            content.className += " article-content-left-margin";
+            stuck = true;
+        } else if (stuck && (offset <= stickPoint)) {
+            contentTable.style.position = 'static';
+            content.className = "article-content";
+            stuck = false;
         }
     };
 
@@ -115,7 +149,7 @@
     }
 
     function scrollUp() {
-        var scrollStep = -window.scrollY / (window.pageYOffset / 40);
+        var scrollStep = -100;
         var scrollInterval = setInterval(function () {
             if (window.scrollY != 0) {
                 window.scrollBy(0, scrollStep);
@@ -125,9 +159,5 @@
         }, 15);
     }
 </script>
-
-<footer>
-    <h6>©2017 Created by VendaskyCZ</h6>
-</footer>
 </body>
 </html>
