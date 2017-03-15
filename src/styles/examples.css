@@ -124,6 +124,11 @@
     background-color: hsla(211, 86%, 90%, 0.3);
 }
 
+.example .media-queries {
+    height: 6em;
+    width: 100%;
+}
+
 .example .movement-square {
     animation: move-from-left-to-right-and-back;
     -webkit-animation: move-from-left-to-right-and-back;
@@ -291,5 +296,42 @@
         height: 200px;
         width: 200px;
         margin: 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .example .media-queries {
+        background-color: red;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .example .media-queries {
+        background-color: orange;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .example .media-queries {
+        background-color: yellow;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    .example .media-queries {
+        background-color: green;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1920px) {
+    .example .media-queries {
+        background-color: purple;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .example .media-queries {
+        background-color: blue;
     }
 }

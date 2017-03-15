@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 <head>
     <title>CSS3 Tricks</title>
     <meta charset="UTF-8">
@@ -56,46 +56,129 @@
         <div class="opening-text">
             <h2>Media queries</h2>
             <p>
-                Lorem ipsum dol
-                or sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+                The @media rule is used to define different style rules for different media types/devices.
+
+                In CSS2 this was called media types, while in CSS3 it is called media queries.
+            </p><br>
+            <p>
+                Media queries look at the capability of the device, and can be used to check many things, such as:
             </p>
+            <ul class="list-in-content">
+                <li>width and height of the viewport</li>
+                <li>width and height of the device</li>
+                <li>orientation (is the tablet/phone in landscape or portrait mode?)</li>
+                <li>resolution</li>
+            </ul>
         </div>
         <h3><a class="heading-link" id="types" href="#types">#</a>Types</h3>
         <div class="text">
-            <p>
-                Lorem ipsum dol
-                or sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
+            <ul class="list-in-content">
+                <li><code class="keyword">all</code> - Used for all media type devices</li>
+                <li><code class="keyword">print</code> - Used for printers</li>
+                <li><code class="keyword">screen</code>	- Used for computer screens, tablets, smart-phones etc.</li>
+                <li><code class="keyword">speech</code>	- Used for screenreaders that "reads" the page out loud</li>
+            </ul>
         </div>
         <h3><a class="heading-link" id="features" href="#features">#</a>Features</h3>
         <div class="text">
-            <p>
-                Lorem ipsum dol
-                or sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
+            <ul class="list-in-content">
+                <li><code class="keyword">any-hover</code> - Does any available input mechanism allow the user to hover over elements? (added in Media Queries Level 4)</li>
+                <li><code class="keyword">any-pointer</code> - Is any available input mechanism a pointing device, and if so, how accurate is it? (added in Media Queries Level 4)</li>
+                <li><code class="keyword">aspect-ratio</code> - The ratio between the width and the height of the viewport</li>
+                <li><code class="keyword">color</code> - The number of bits per color component for the output device</li>
+                <li><code class="keyword">color-index</code> - The number of colors the device can display</li>
+                <li><code class="keyword">grid</code> - Whether the device is a grid or bitmap</li>
+                <li><code class="keyword">height</code> - The viewport height</li>
+                <li><code class="keyword">hover</code> - Does the primary input mechanism allow the user to hover over elements? (added in Media Queries Level 4)</li>
+                <li><code class="keyword">inverted-colors</code> - Is the browser or underlying OS inverting colors? (added in Media Queries Level 4)</li>
+                <li><code class="keyword">light-level</code> - Current ambient light level (added in Media Queries Level 4)</li>
+                <li><code class="keyword">max-aspect-ratio</code> - The maximum ratio between the width and the height of the display area</li>
+                <li><code class="keyword">max-color</code> - The maximum number of bits per color component for the output device</li>
+                <li><code class="keyword">max-color-index</code> - The maximum number of colors the device can display</li>
+                <li><code class="keyword">max-device-aspect-ratio</code> - The maximum ratio between the width and the height of the device</li>
+                <li><code class="keyword">max-device-height</code> - The maximum height of the device, such as a computer screen</li>
+                <li><code class="keyword">max-device-width</code> - The maximum width of the device, such as a computer screen</li>
+                <li><code class="keyword">max-height</code> - The maximum height of the display area, such as a browser window</li>
+                <li><code class="keyword">max-monochrome</code> - The maximum number of bits per "color" on a monochrome (greyscale) device</li>
+                <li><code class="keyword">max-resolution</code> - The maximum resolution of the device, using dpi or dpcm</li>
+                <li><code class="keyword">max-width</code> - The maximum width of the display area, such as a browser window</li>
+                <li><code class="keyword">min-aspect-ratio</code> - The minimum ratio between the width and the height of the display area</li>
+                <li><code class="keyword">min-color</code> - The minimum number of bits per color component for the output device</li>
+                <li><code class="keyword">min-color-index</code> - The minimum number of colors the device can display</li>
+                <li><code class="keyword">min-device-aspect-ratio</code> - The minimum ratio between the width and the height of the device</li>
+                <li><code class="keyword">min-device-width</code> - The minimum width of the device, such as a computer screen</li>
+                <li><code class="keyword">min-device-height</code> - The minimum height of the device, such as a computer screen</li>
+                <li><code class="keyword">min-height</code> - The minimum height of the display area, such as a browser window</li>
+                <li><code class="keyword">min-monochrome</code> - The minimum number of bits per "color" on a monochrome (greyscale) device</li>
+                <li><code class="keyword">min-resolution</code> - The minimum resolution of the device, using dpi or dpcm</li>
+                <li><code class="keyword">min-width</code> - The minimum width of the display area, such as a browser window</li>
+                <li><code class="keyword">monochrome</code> - The number of bits per "color" on a monochrome (greyscale) device</li>
+                <li><code class="keyword">orientation</code> - The orientation of the viewport (landscape or portrait mode)</li>
+                <li><code class="keyword">overflow-block</code> - How does the output device handle content that overflows the viewport along the block axis (added in Media Queries Level 4)</li>
+                <li><code class="keyword">overflow-inline</code> - Can content that overflows the viewport along the inline axis be scrolled (added in Media Queries Level 4)</li>
+                <li><code class="keyword">pointer</code> - Is the primary input mechanism a pointing device, and if so, how accurate is it? (added in Media Queries Level 4)</li>
+                <li><code class="keyword">resolution</code> - The resolution of the output device, using dpi or dpcm</li>
+                <li><code class="keyword">scan</code> - The scanning process of the output device</li>
+                <li><code class="keyword">scripting</code> - Is scripting (e.g. JavaScript) available? (added in Media Queries Level 4)</li>
+                <li><code class="keyword">update-frequency</code> - How quickly can the output device modify the appearance of the content (added in Media Queries Level 4)</li>
+                <li><code class="keyword">width</code> - The viewport width</li>
+            </ul>
         </div>
         <h3><a class="heading-link" id="usage" href="#usage">#</a>Usage</h3>
         <div class="text">
-            <p>
-                Lorem ipsum dol
-                or sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-            </p>
+            <p>In the following example you can see usage of <code class="keyword">min-width</code> and <code class="keyword">max-width</code>. If you resize the window color will change.</p>
+            <div class="example">
+                <div class="media-queries"></div>
+            </div>
+            <code class="code-snippet">
+                &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
+                    class="tag-attribute-value"><b>"media-queries"</b></span>&gt;
+                &lt;/<span class="tag-name"><b>div</b></span>&gt;
+            </code>
+            <code class="code-snippet">
+                <span class="css-selector"><b>.media-queries</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
+                    class="css-number-value">6</span><span class="css-unit"><b>em</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
+                    class="css-number-value">100</span>%;<br>
+                }<br>
+                <span class="css-selector"><b>@media only</b></span>&nbsp;<span class="css-unit"><b>screen</b></span>&nbsp;<span class="css-selector"><b>and</b></span>&nbsp;(<span class="css-property"><b>max-width</b></span>:&nbsp;<span class="css-number-value">320</span><span class="css-unit"><b>px</b></span>)&nbsp;{<br>
+                <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;.media-queries</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
+                    class="css-unit"><b>red</b></span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                }<br>
+                <span class="css-selector"><b>@media only</b></span>&nbsp;<span class="css-unit"><b>screen</b></span>&nbsp;<span class="css-selector"><b>and</b></span>&nbsp;(<span class="css-property"><b>min-width</b></span>:&nbsp;<span class="css-number-value">320</span><span class="css-unit"><b>px</b></span>)&nbsp;<span class="css-selector"><b>and</b></span>&nbsp;(<span class="css-property"><b>max-width</b></span>:&nbsp;<span class="css-number-value">768</span><span class="css-unit"><b>px</b></span>)&nbsp;{<br>
+                <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;.media-queries</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
+                    class="css-unit"><b>orange</b></span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                }<br>
+                <span class="css-selector"><b>@media only</b></span>&nbsp;<span class="css-unit"><b>screen</b></span>&nbsp;<span class="css-selector"><b>and</b></span>&nbsp;(<span class="css-property"><b>min-width</b></span>:&nbsp;<span class="css-number-value">768</span><span class="css-unit"><b>px</b></span>)&nbsp;<span class="css-selector"><b>and</b></span>&nbsp;(<span class="css-property"><b>max-width</b></span>:&nbsp;<span class="css-number-value">1024</span><span class="css-unit"><b>px</b></span>)&nbsp;{<br>
+                <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;.media-queries</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
+                    class="css-unit"><b>yellow</b></span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                }<br>
+                <span class="css-selector"><b>@media only</b></span>&nbsp;<span class="css-unit"><b>screen</b></span>&nbsp;<span class="css-selector"><b>and</b></span>&nbsp;(<span class="css-property"><b>min-width</b></span>:&nbsp;<span class="css-number-value">1024</span><span class="css-unit"><b>px</b></span>)&nbsp;<span class="css-selector"><b>and</b></span>&nbsp;(<span class="css-property"><b>max-width</b></span>:&nbsp;<span class="css-number-value">1280</span><span class="css-unit"><b>px</b></span>)&nbsp;{<br>
+                <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;.media-queries</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
+                    class="css-unit"><b>green</b></span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                }<br>
+                <span class="css-selector"><b>@media only</b></span>&nbsp;<span class="css-unit"><b>screen</b></span>&nbsp;<span class="css-selector"><b>and</b></span>&nbsp;(<span class="css-property"><b>min-width</b></span>:&nbsp;<span class="css-number-value">1280</span><span class="css-unit"><b>px</b></span>)&nbsp;<span class="css-selector"><b>and</b></span>&nbsp;(<span class="css-property"><b>max-width</b></span>:&nbsp;<span class="css-number-value">1920</span><span class="css-unit"><b>px</b></span>)&nbsp;{<br>
+                <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;.media-queries</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
+                    class="css-unit"><b>purple</b></span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                }<br>
+                <span class="css-selector"><b>@media only</b></span>&nbsp;<span class="css-unit"><b>screen</b></span>&nbsp;<span class="css-selector"><b>and</b></span>&nbsp;(<span class="css-property"><b>min-width</b></span>:&nbsp;<span class="css-number-value">1920</span><span class="css-unit"><b>px</b></span>)&nbsp;{<br>
+                <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;.media-queries</b></span>&nbsp;{<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
+                    class="css-unit"><b>blue</b></span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                }
+            </code>
         </div>
     </div>
 </section>
