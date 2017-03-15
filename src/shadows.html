@@ -137,11 +137,11 @@
                 In following example, you specify the horizontal and vertical shadows with color:
             </p>
             <div class="example">
-                <h1 class="text-shadow">CSS3 Tricks</h1>
+                <h2 class="text-shadow">CSS3 Tricks</h2>
             </div>
             <code class="code-snippet">
-                &lt;<span class="tag-name"><b>h1</b></span> <span class="tag-attribute"><b>class=</b></span><span
-                    class="tag-attribute-value"><b>"text-shadow"</b></span>&gt;CSS3 Tricks&lt;/<span class="tag-name"><b>h1</b></span>&gt;
+                &lt;<span class="tag-name"><b>h2</b></span> <span class="tag-attribute"><b>class=</b></span><span
+                    class="tag-attribute-value"><b>"text-shadow"</b></span>&gt;CSS3 Tricks&lt;/<span class="tag-name"><b>h2</b></span>&gt;
             </code>
             <code class="code-snippet">
                 <span class="css-selector"><b>.text-shadow</b></span>&nbsp;{<br>
@@ -155,11 +155,11 @@
             </code>
             <p>Next, add a blur effect to the shadow:</p>
             <div class="example">
-                <h1 class="text-shadow text-shadow-blur">CSS3 Tricks</h1>
+                <h2 class="text-shadow text-shadow-blur">CSS3 Tricks</h2>
             </div>
             <code class="code-snippet">
-                &lt;<span class="tag-name"><b>h1</b></span> <span class="tag-attribute"><b>class=</b></span><span
-                    class="tag-attribute-value"><b>"text-shadow-blur"</b></span>&gt;CSS3 Tricks&lt;/<span class="tag-name"><b>h1</b></span>&gt;
+                &lt;<span class="tag-name"><b>h2</b></span> <span class="tag-attribute"><b>class=</b></span><span
+                    class="tag-attribute-value"><b>"text-shadow-blur"</b></span>&gt;CSS3 Tricks&lt;/<span class="tag-name"><b>h2</b></span>&gt;
             </code>
             <code class="code-snippet">
                 <span class="css-selector"><b>.text-shadow-blur</b></span>&nbsp;{<br>
@@ -178,11 +178,11 @@
                The following example shows a red and blue neon glow shadow:
             </p>
             <div class="example">
-                <h1 class="multiple-text-shadow">CSS3 Tricks</h1>
+                <h2 class="multiple-text-shadow">CSS3 Tricks</h2>
             </div>
             <code class="code-snippet">
-                &lt;<span class="tag-name"><b>h1</b></span> <span class="tag-attribute"><b>class=</b></span><span
-                    class="tag-attribute-value"><b>"multiple-text-shadow"</b></span>&gt;CSS3 Tricks&lt;/<span class="tag-name"><b>h1</b></span>&gt;
+                &lt;<span class="tag-name"><b>h2</b></span> <span class="tag-attribute"><b>class=</b></span><span
+                    class="tag-attribute-value"><b>"multiple-text-shadow"</b></span>&gt;CSS3 Tricks&lt;/<span class="tag-name"><b>h2</b></span>&gt;
             </code>
             <code class="code-snippet">
                 <span class="css-selector"><b>.multiple-text-shadow</b></span>&nbsp;{<br>
@@ -217,6 +217,11 @@
     var stickPoint = contentTable.offsetTop;
     var menu = document.getElementsByClassName("menu")[0];
     var menuShowed = false;
+
+    window.onresize = function(event) {
+        contentTableWidth = contentTable.clientWidth;
+        stickPoint = contentTable.offsetTop;
+    };
 
     window.onscroll = function (e) {
         if (window.pageYOffset > navigation.offsetTop + navigation.clientHeight) {

@@ -342,6 +342,11 @@
     var menu = document.getElementsByClassName("menu")[0];
     var menuShowed = false;
 
+    window.onresize = function(event) {
+        contentTableWidth = contentTable.clientWidth;
+        stickPoint = contentTable.offsetTop;
+    };
+
     window.onscroll = function (e) {
         if (window.pageYOffset > navigation.offsetTop + navigation.clientHeight) {
             arrowUp.style.visibility = 'visible';

@@ -143,7 +143,7 @@
                     class="css-text-value"><b>#0d57a7</b></span>;<br>
                 <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
                     class="css-text-value"><b>-webkit-linear-gradient</b></span>(<span class="css-unit"><b>left top</b></span>, <span class="css-text-value"><b>#0d57a7</b></span>, <span class="css-text-value"><b>#409ad6</b></span>);<br>
-                <sqpan class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></sqpan>: <span
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
                     class="css-text-value"><b>-o-linear-gradient</b></span>(<span class="css-unit"><b>bottom right</b></span>, <span class="css-text-value"><b>#0d57a7</b></span>, <span class="css-text-value"><b>#409ad6</b></span>);<br>
                 <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
                     class="css-text-value"><b>-moz-linear-gradient</b></span>(<span class="css-unit"><b>bottom right</b></span>, <span class="css-text-value"><b>#0d57a7</b></span>, <span class="css-text-value"><b>#409ad6</b></span>);<br>
@@ -273,6 +273,11 @@
     var stickPoint = contentTable.offsetTop;
     var menu = document.getElementsByClassName("menu")[0];
     var menuShowed = false;
+
+    window.onresize = function(event) {
+        contentTableWidth = contentTable.clientWidth;
+        stickPoint = contentTable.offsetTop;
+    };
 
     window.onscroll = function (e) {
         if (window.pageYOffset > navigation.offsetTop + navigation.clientHeight) {
