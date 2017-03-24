@@ -14,6 +14,7 @@
           media="only screen and (min-width: 1280px) and (max-width: 1920px)">
     <link rel="stylesheet" href="styles/styles-1920.css" media="only screen and (min-width: 1920px)">
     <link rel="stylesheet" href="styles/examples.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
     <link rel="icon" type="image/png" href="images/favicon-16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="images/favicon-64.png" sizes="64x64">
@@ -45,8 +46,10 @@
 </nav>
 <section>
     <div id="js-animations-content-table" class="content-table">
-        <h3>Content</h3>
-        <ul>
+        <div class="content-table-heading-container">
+            <h3 class="content-table-heading">Content</h3><i class="fa fa-angle-down dropdown-arrow" aria-hidden="true"></i>
+        </div>
+        <ul class="content-table-items">
             <li><a href="#css-animation">CSS animation</a></li>
             <li><a href="#css-@keyframes">CSS @keyframes</a></li>
             <li><a href="#movement">Movement</a></li>
@@ -332,17 +335,52 @@
 </footer>
 <script>
     var contentTable = document.getElementById("js-animations-content-table");
+    var contentTableItems = document.getElementsByClassName("content-table-items")[0];
     var content = document.getElementById("js-animations-content");
     var arrowUp = document.getElementById("js-arrow-up-animations");
+    var dropdownUpArrow = document.getElementsByClassName("dropdown-arrow")[0];
     var navigation = document.getElementById("js-navigation-animations");
     arrowUp.style.visibility = 'hidden';
-    var contentTableWidth = contentTable.clientWidth;
+    var contentTableWidth = contentTable.clientWidth
+        - parseFloat(window.getComputedStyle(contentTable, null).getPropertyValue('padding-left').replace("px", ""))
+        - parseFloat(window.getComputedStyle(contentTable, null).getPropertyValue('padding-right').replace("px", ""));
     var stuck = false;
     var stickPoint = contentTable.offsetTop;
     var menu = document.getElementsByClassName("menu")[0];
     var menuShowed = false;
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    if (width <= 768) {
+        contentTableItems.style.display = "none";
+    } else {
+        dropdownUpArrow.style.display = "none";
+    }
 
-    window.onresize = function(event) {
+    contentTable.addEventListener("click", function () {
+        if (width <= 768) {
+            if (contentTableItems.style.display == "block") {
+                contentTableItems.style.display = "none";
+                dropdownUpArrow.className = dropdownUpArrow.className.replace("fa-angle-up", "fa-angle-down");
+            } else {
+                contentTableItems.style.display = "block";
+                dropdownUpArrow.className = dropdownUpArrow.className.replace("fa-angle-down", "fa-angle-up");
+            }
+        }
+    });
+
+    window.onresize = function (event) {
+        contentTableWidth = contentTable.clientWidth
+            - parseFloat(window.getComputedStyle(contentTable, null).getPropertyValue('padding-left').replace("px", ""))
+            - parseFloat(window.getComputedStyle(contentTable, null).getPropertyValue('padding-right').replace("px", ""));
+        width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        if (width <= 768) {
+            dropdownUpArrow.style.display = "inline";
+            contentTableItems.style.display = "none";
+        } else {
+            dropdownUpArrow.style.display = "none";
+            if (width > 768 && contentTableItems.style.display == "none") {
+                contentTableItems.style.display = "block";
+            }
+        }
         contentTableWidth = contentTable.clientWidth;
         stickPoint = contentTable.offsetTop;
     };
@@ -359,11 +397,15 @@
             contentTable.style.position = 'fixed';
             contentTable.style.top = '0px';
             contentTable.style.width = contentTableWidth + 'px';
-            content.className += " article-content-left-margin";
+            if (width > 768) {
+                content.className += " article-content-left-margin";
+            }
             stuck = true;
         } else if (stuck && (offset <= stickPoint)) {
             contentTable.style.position = 'static';
-            content.className = "article-content";
+            if (width > 768) {
+                content.className = "article-content";
+            }
             stuck = false;
         }
     };

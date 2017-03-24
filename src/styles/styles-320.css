@@ -7,6 +7,8 @@ nav {
 }
 
 section {
+    display: flex;
+    flex-direction: column;
     padding: 4%;
     width: 88%;
 }
@@ -34,6 +36,21 @@ section p {
     line-height: 48px;
     width: 48px;
 }
+
+.content-table {
+    padding: 0 0.5em;
+    text-align: left;
+}
+
+.content-table-heading-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-table-items a {
+    margin-left: 0;
+}
+
 .css3-logo-image {
     height: 4em;
     margin-right: 1em;
@@ -43,6 +60,11 @@ section p {
     font-family: "Sumana", serif;
     font-size: 2em;
     line-height: 1.75em;
+}
+
+.dropdown-arrow {
+    margin: auto 0 auto auto;
+    color: #0d57a7;
 }
 
 .face {
@@ -84,6 +106,10 @@ section p {
 
 .menu-item {
     padding: 0.75em 6%;
+}
+
+.opening-text {
+    padding: 0;
 }
 
 .selected-menu-item {

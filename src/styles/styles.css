@@ -165,29 +165,33 @@ section h4 {
     height: fit-content;
 }
 
-.content-table h3 {
+.content-table-heading {
     color: #0d57a7;
     margin: 0;
+}
+
+.content-table-heading-container {
     text-align: center;
+    width: 100%;
 }
 
-.content-table ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-}
-
-.content-table ul li a {
+.content-table-items a {
     color: #409ad6;
     font-family: "Alegreya SC", serif;
     font-size: 1.75em;
     margin-left: 10%;
 }
 
-.content-table ul li a:hover {
+.content-table-items a:hover {
     color: #0d57a7;
+}
+
+.content-table-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
 }
 
 .css-property {
