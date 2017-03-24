@@ -233,6 +233,10 @@
             contentTableItems.style.display = "none";
         } else {
             dropdownUpArrow.style.display = "none";
+            var actualMenuPage = document.getElementsByClassName("actual-page")[0];
+            actualMenuPage.parentNode.style.display = 'inline-flex';
+            menu.style.display = "block";
+            menuShowed = true;
             if (width > 768 && contentTableItems.style.display == "none") {
                 contentTableItems.style.display = "block";
             }
@@ -276,6 +280,7 @@
             menu.style.display = "none";
             menuShowed = false;
         }
+        stickPoint = contentTable.offsetTop;
     }
 
     function scrollUp() {

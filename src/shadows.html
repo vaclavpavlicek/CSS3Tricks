@@ -279,6 +279,10 @@
             stuck = true;
         } else if (stuck && (offset <= stickPoint)) {
             contentTable.style.position = 'static';
+            var actualMenuPage = document.getElementsByClassName("actual-page")[0];
+            actualMenuPage.parentNode.style.display = 'inline-flex';
+            menu.style.display = "block";
+            menuShowed = true;
             if (width > 768) {
                 content.className = "article-content";
             }
@@ -296,6 +300,7 @@
             menu.style.display = "none";
             menuShowed = false;
         }
+        stickPoint = contentTable.offsetTop;
     }
 
     function scrollUp() {
