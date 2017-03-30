@@ -192,10 +192,10 @@
         <div class="text">
             <p>
                 In this example we'll resize square with animations. Create <code class="keyword">div</code> with class
-                square as you did in example above. Set background color to red, height and width to 200px. Now we have
-                our square and lets do some animation.
+                square as you did in example above. Set background color to red, height and width to 200px, position to
+                relative, top and left to 0. Now we have our square and lets do some animation.
             </p>
-            <div class="example">
+            <div class="example fixed-height">
                 <div class="square sizing-square"></div>
             </div>
             <code class="code-snippet">
@@ -204,24 +204,14 @@
                 &lt;/<span class="tag-name"><b>div</b></span>&gt;
             </code>
             <p>
-                First of all create animation called resize. At 50% square will be shrinked to 10px. Don't forget to add
-                margin 95px otherwise content will go with square. At the end of the animation cycle set margin too 0 and
+                First of all create animation called resize. At 50% square will be shrinked to 10px. Don't forget to move
+                square about 95px from top and left. At the end of the animation cycle set top and  left to 0 and
                 height and width to 200px. Now we have animation lets assign it to square. You can use only
                 <code class="keyword">animation</code> property with more params instead of <code class="keyword">animation</code> sub-properties.
                 Simply assign to square animation name, duration, timing function and count of repetitions.
             </p>
             <code class="code-snippet">
                 <span class="css-selector"><b>.square</b></span>&nbsp;{<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
-                    class="css-text-value"><b>red</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
-                    class="css-number-value">0</span><span class="css-unit"><b>px</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
-                    class="css-number-value">0</span><span class="css-unit"><b>px</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
-                    class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
-                    class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
                 <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation</b></span>: <span
                     class="css-text-value"><b>resize</b></span> <span
                     class="css-number-value">2</span><span class="css-unit"><b>s</b></span> <span
@@ -232,6 +222,18 @@
                     class="css-number-value">2</span><span class="css-unit"><b>s</b></span> <span
                     class="css-unit"><b>linear</b></span> <span
                     class="css-unit"><b>infinite</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
+                    class="css-text-value"><b>red</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;position</b></span>: <span
+                    class="css-unit"><b>relative</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                    class="css-number-value">0</span><span class="css-unit"><b>px</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                    class="css-number-value">0</span><span class="css-unit"><b>px</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
+                    class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
+                    class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
                 }<br>
                 <br><span class="css-selector"><b>@-webkit-keyframes</b></span>&nbsp;<span class="css-selector"><b>resize</b></span>&nbsp;{<br>
                 <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;50%</b></span>&nbsp;{<br>
@@ -239,7 +241,9 @@
                     class="css-number-value">10</span><span class="css-unit"><b>px</b></span>;<br>
                 <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
                     class="css-number-value">10</span><span class="css-unit"><b>px</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin</b></span>: <span
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                    class="css-number-value">95</span><span class="css-unit"><b>px</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
                     class="css-number-value">95</span><span class="css-unit"><b>px</b></span>;<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;}<br>
                 <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;100%</b></span>&nbsp;{<br>
@@ -247,13 +251,19 @@
                     class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
                 <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
                     class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                    class="css-number-value">0</span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                    class="css-number-value">0</span>;<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;}<br><br><span class="css-selector"><b>@keyframes</b></span>&nbsp;<span class="css-selector"><b>resize</b></span>&nbsp;{<br>
                 <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;50%</b></span>&nbsp;{<br>
                 <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
                     class="css-number-value">10</span><span class="css-unit"><b>px</b></span>;<br>
                 <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
                     class="css-number-value">10</span><span class="css-unit"><b>px</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin</b></span>: <span
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                    class="css-number-value">95</span><span class="css-unit"><b>px</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
                     class="css-number-value">95</span><span class="css-unit"><b>px</b></span>;<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;}<br>
                 <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;100%</b></span>&nbsp;{<br>
@@ -261,6 +271,10 @@
                     class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
                 <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
                     class="css-number-value">200</span><span class="css-unit"><b>px</b></span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left</b></span>: <span
+                    class="css-number-value">0</span>;<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
+                    class="css-number-value">0</span>;<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;}<br>
                 }
             </code>

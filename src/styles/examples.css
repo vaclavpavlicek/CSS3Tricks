@@ -197,6 +197,9 @@
 .example .sizing-square {
     animation: resize 2s linear infinite;
     -webkit-animation: resize 2s linear infinite;
+    position: relative;
+    left: 0;
+    top: 0;
 }
 
 .example .square {
@@ -215,6 +218,10 @@
 
 .example .text-shadow-blur {
     text-shadow: 3px 3px 6px red;
+}
+
+.fixed-height {
+    height: 220px;
 }
 
 @-webkit-keyframes red-to-yellow {
@@ -294,12 +301,15 @@
     50% {
         height: 10px;
         width: 10px;
-        margin: 95px;
+        left: 95px;
+        top: 95px;
     }
     100% {
         height: 200px;
         width: 200px;
-        margin: 0;
+        margin-left: 0;
+        left: 0;
+        top: 0;
     }
 }
 
