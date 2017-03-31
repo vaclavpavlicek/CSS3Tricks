@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="cssTricksApp" lang="en">
 <head>
     <title>CSS3 Tricks</title>
     <meta charset="UTF-8">
@@ -21,6 +21,7 @@
     <link rel="icon" type="image/png" href="images/favicon-96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="images/favicon-128.png" sizes="128x128">
     <link rel="icon" type="image/png" href="images/favicon-256.png" sizes="256x256">
+    <script src="js/angular.min.js"></script>
 </head>
 <body>
 <header>
@@ -80,14 +81,36 @@
             <h4>Top to Bottom</h4>
             <p>The following example shows a linear gradient that starts at the top. It starts dark blue, transitioning
                 to light blue:</p>
-            <div class="example">
-                <div class="gradient gradient-top-to-bottom"></div>
+            <div class="controller" ng-controller="TopToBottomCtrl as ctrl">
+                <div class="example">
+                    <div class="gradient" ng-style="ctrl.gradient"></div>
+                </div>
+                <form>
+                    <div class="color-picker first-color">
+                        <h5>First color</h5>
+                        <label>Red</label>
+                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstRed" type="text" value="255">
+                        <label>Green</label>
+                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstGreen" type="text">
+                        <label>Blue</label>
+                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstBlue" type="text">
+                    </div>
+                    <div class="color-picker second-color">
+                        <h5>Second color</h5>
+                        <label>Red</label>
+                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondRed" type="text">
+                        <label>Green</label>
+                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondGreen" type="text">
+                        <label>Blue</label>
+                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondBlue" type="text">
+                    </div>
+                </form>
+                <code class="code-snippet">
+                    &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
+                        class="tag-attribute-value"><b>"gradient-top-to-bottom"</b></span>&gt;
+                    &lt;/<span class="tag-name"><b>div</b></span>&gt;
+                </code>
             </div>
-            <code class="code-snippet">
-                &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
-                    class="tag-attribute-value"><b>"gradient-top-to-bottom"</b></span>&gt;
-                &lt;/<span class="tag-name"><b>div</b></span>&gt;
-            </code>
             <code class="code-snippet">
                 <span class="css-selector"><b>.gradient-top-to-bottom</b></span>&nbsp;{<br>
                 <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
@@ -417,5 +440,6 @@
         }, 15);
     }
 </script>
+<script src="js/gradients.js"></script>
 </body>
 </html>

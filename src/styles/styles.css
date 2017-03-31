@@ -96,11 +96,16 @@ section h3 {
     margin: 0;
 }
 
-
 section h4 {
     color: #0d57a7;
     font-family: "Alegreya SC", serif;
     font-size: 2em;
+    margin: 0;
+}
+
+section h5 {
+    font-family: "Alegreya SC", serif;
+    font-size: 1.5em;
     margin: 0;
 }
 
@@ -192,6 +197,10 @@ section h4 {
     flex-wrap: wrap;
     padding: 0;
     list-style: none;
+}
+
+.controller {
+    width: 100%;
 }
 
 .css-property {
