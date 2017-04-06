@@ -24,6 +24,7 @@
     <script src="js/angular.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/services/linearGradients.service.js"></script>
+    <script src="js/controllers/diagonalGradient.controller.js"></script>
     <script src="js/controllers/leftToRightGradient.controller.js"></script>
     <script src="js/controllers/topToBottomGradient.controller.js"></script>
 </head>
@@ -52,7 +53,8 @@
 <section>
     <div id="js-gradients-content-table" class="content-table">
         <div class="content-table-heading-container">
-            <h3 class="content-table-heading">Content</h3><i class="fa fa-angle-down dropdown-arrow" aria-hidden="true"></i>
+            <h3 class="content-table-heading">Content</h3><i class="fa fa-angle-down dropdown-arrow"
+                                                             aria-hidden="true"></i>
         </div>
         <ul class="content-table-items">
             <li><a href="#linear-gradients">Linear gradients</a></li>
@@ -124,7 +126,8 @@
                     class="css-text-value"><b>red</b></span>, <span
                     class="css-text-value"><b>yellow</b></span>);<br>
                 <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-o-linear-gradient</b></span>(<span class="css-text-value"><b>red</b></span>,
+                    class="css-text-value"><b>-o-linear-gradient</b></span>(<span
+                    class="css-text-value"><b>red</b></span>,
                 <span class="css-text-value"><b>yellow</b></span>);<br>
                 <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
                     class="css-text-value"><b>-moz-linear-gradient</b></span>(<span
@@ -200,8 +203,30 @@
             <p>You can make a gradient diagonally by specifying both the horizontal and vertical starting positions.
                 The following example shows a linear gradient that starts at top left (and goes to bottom right). It
                 starts dark blue, transitioning to light blue:</p>
-            <div class="example">
-                <div class="gradient gradient-diagonal"></div>
+            <div class="controller" ng-controller="DiagonalGradientCtrl as ctrl">
+                <div class="example">
+                    <div class="gradient gradient-diagonal" ng-style="ctrl.gradient"></div>
+                </div>
+                <form>
+                    <div class="color-picker first-color">
+                        <h5>First color</h5>
+                        <label>Red</label>
+                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstColorRed" type="text" value="255">
+                        <label>Green</label>
+                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstColorGreen" type="text">
+                        <label>Blue</label>
+                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstColorBlue" type="text">
+                    </div>
+                    <div class="color-picker second-color">
+                        <h5>Second color</h5>
+                        <label>Red</label>
+                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondColorRed" type="text">
+                        <label>Green</label>
+                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondColorGreen" type="text">
+                        <label>Blue</label>
+                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondColorBlue" type="text">
+                    </div>
+                </form>
             </div>
             <code class="code-snippet">
                 &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
