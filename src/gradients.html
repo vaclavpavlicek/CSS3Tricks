@@ -89,28 +89,28 @@
             <h4>Top to Bottom</h4>
             <p>The following example shows a linear gradient that starts at the top. It starts dark blue, transitioning
                 to light blue:</p>
-            <div class="controller" ng-controller="TopToBottomGradientCtrl as ctrl">
+            <div class="controller" data-ng-controller="TopToBottomGradientCtrl as ctrl">
                 <div class="example">
-                    <div class="gradient gradient-top-to-bottom" ng-style="ctrl.gradient"></div>
+                    <div class="gradient gradient-top-to-bottom" data-ng-style="ctrl.gradient"></div>
                 </div>
                 <form>
                     <div class="color-picker first-color">
                         <h5>First color</h5>
                         <label>Red</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstColorRed" type="text" value="255">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorRed" type="text" value="255">
                         <label>Green</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstColorGreen" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorGreen" type="text">
                         <label>Blue</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstColorBlue" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorBlue" type="text">
                     </div>
                     <div class="color-picker second-color">
                         <h5>Second color</h5>
                         <label>Red</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondColorRed" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorRed" type="text">
                         <label>Green</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondColorGreen" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorGreen" type="text">
                         <label>Blue</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondColorBlue" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorBlue" type="text">
                     </div>
                 </form>
                 <code class="code-snippet">
@@ -150,26 +150,26 @@
                 transitioning to light blue:</p>
             <div class="controller" data-ng-controller="LeftToRightGradientCtrl as ctrl">
                 <div class="example">
-                    <div class="gradient gradient-left-to-right" ng-style="ctrl.gradient"></div>
+                    <div class="gradient gradient-left-to-right" data-ng-style="ctrl.gradient"></div>
                 </div>
                 <form>
                     <div class="color-picker first-color">
                         <h5>First color</h5>
                         <label>Red</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstColorRed" type="text" value="255">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorRed" type="text" value="255">
                         <label>Green</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstColorGreen" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorGreen" type="text">
                         <label>Blue</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstColorBlue" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorBlue" type="text">
                     </div>
                     <div class="color-picker second-color">
                         <h5>Second color</h5>
                         <label>Red</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondColorRed" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorRed" type="text">
                         <label>Green</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondColorGreen" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorGreen" type="text">
                         <label>Blue</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondColorBlue" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorBlue" type="text">
                     </div>
                 </form>
             </div>
@@ -205,28 +205,28 @@
             <p>You can make a gradient diagonally by specifying both the horizontal and vertical starting positions.
                 The following example shows a linear gradient that starts at top left (and goes to bottom right). It
                 starts dark blue, transitioning to light blue:</p>
-            <div class="controller" ng-controller="DiagonalGradientCtrl as ctrl">
+            <div class="controller" data-ng-controller="DiagonalGradientCtrl as ctrl">
                 <div class="example">
-                    <div class="gradient gradient-diagonal" ng-style="ctrl.gradient"></div>
+                    <div class="gradient gradient-diagonal" data-ng-style="ctrl.gradient"></div>
                 </div>
                 <form>
                     <div class="color-picker first-color">
                         <h5>First color</h5>
                         <label>Red</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstColorRed" type="text" value="255">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorRed" type="text" value="255">
                         <label>Green</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstColorGreen" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorGreen" type="text">
                         <label>Blue</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstColorBlue" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorBlue" type="text">
                     </div>
                     <div class="color-picker second-color">
                         <h5>Second color</h5>
                         <label>Red</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondColorRed" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorRed" type="text">
                         <label>Green</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondColorGreen" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorGreen" type="text">
                         <label>Blue</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondColorBlue" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorBlue" type="text">
                     </div>
                 </form>
             </div>
@@ -269,28 +269,28 @@
             </p>
             <h4>Evenly Spaced Color Stops</h4>
             <p>The following example shows a radial gradient with evenly spaced color stops:</p>
-            <div class="controller" ng-controller="RadialGradientCtrl as ctrl">
+            <div class="controller" data-ng-controller="RadialGradientCtrl as ctrl">
                 <div class="example">
-                    <div class="gradient gradient-radial" ng-style="ctrl.gradient"></div>
+                    <div class="gradient gradient-radial" data-ng-style="ctrl.gradient"></div>
                 </div>
                 <form>
                     <div class="color-picker first-color">
                         <h5>First color</h5>
                         <label>Red</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstColorRed" type="text" value="255">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorRed" type="text" value="255">
                         <label>Green</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstColorGreen" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorGreen" type="text">
                         <label>Blue</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.firstColorBlue" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorBlue" type="text">
                     </div>
                     <div class="color-picker second-color">
                         <h5>Second color</h5>
                         <label>Red</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondColorRed" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorRed" type="text">
                         <label>Green</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondColorGreen" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorGreen" type="text">
                         <label>Blue</label>
-                        <input ng-change="ctrl.changeGradient()" ng-model="ctrl.secondColorBlue" type="text">
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorBlue" type="text">
                     </div>
                 </form>
             </div>
