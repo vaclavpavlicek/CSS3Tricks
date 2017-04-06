@@ -1,7 +1,7 @@
 (function () {
     const app = angular.module("cssTricksApp");
 
-    app.controller("TopToBottomCtrl", function (GradientsService) {
+    app.controller("TopToBottomGradientCtrl", function (LinearGradientsService) {
         const $ctrl = this;
         this.firstColorRed = 255;
         this.firstColorGreen = 0;
@@ -20,7 +20,7 @@
                 "green": this.secondColorGreen,
                 "blue": this.secondColorBlue
             };
-            $ctrl.gradient = GradientsService.createTopToBottomGradient(firstColorRGB, secondColorRGB);
+            $ctrl.gradient = LinearGradientsService.createTopToBottomGradient(firstColorRGB, secondColorRGB);
         };
         this.changeGradient();
     });
