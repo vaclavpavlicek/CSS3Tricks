@@ -31,7 +31,7 @@
         </a>
     </div>
 </header>
-<nav id="js-navigation-animations">
+<nav class="js-navigation">
     <div class="selected-menu-item"><p>Animations</p>
         <button class="menu-button" onclick="dropdown()"></button>
     </div>
@@ -45,11 +45,12 @@
     </ul>
 </nav>
 <section>
-    <div id="js-animations-content-table" class="content-table">
+    <div class="content-table js-content-table">
         <div class="content-table-heading-container">
-            <h3 class="content-table-heading">Content</h3><i class="fa fa-angle-down dropdown-arrow" aria-hidden="true"></i>
+            <h3 class="content-table-heading">Content</h3>
+            <i class="fa fa-angle-down dropdown-arrow js-dropdown-arrow" aria-hidden="true"></i>
         </div>
-        <ul class="content-table-items">
+        <ul class="content-table-items js-content-table-items">
             <li><a href="#css-animation">CSS animation</a></li>
             <li><a href="#css-@keyframes">CSS @keyframes</a></li>
             <li><a href="#movement">Movement</a></li>
@@ -57,7 +58,7 @@
             <li><a href="#rotation">Rotation</a></li>
         </ul>
     </div>
-    <div id="js-animations-content" class="article-content">
+    <div class="article-content js-article-content">
         <div class="opening-text">
             <h2>Animations</h2>
             <p>
@@ -74,23 +75,32 @@
         <h3><a class="heading-link" id="css-animation" href="#css-animation">#</a>CSS animation</h3>
         <div class="text">
             <p>
-                To animate some element use <code class="keyword">animation</code> property or its sub-properties (duration, timing, interation count, ...). Remember <code class="keyword">animation</code> does not configure animation appearance. To do this use <code class="keyword">@keyframes</code>.
+                To animate some element use <code class="keyword">animation</code> property or its sub-properties
+                (duration, timing, interation count, ...). Remember <code class="keyword">animation</code> does not
+                configure animation appearance. To do this use <code class="keyword">@keyframes</code>.
                 <br><br>
                 Here are some sub-properties:
                 <br>
             </p>
             <ul class="list-in-content">
-                <li><code class="keyword">animation-name</code> - Declares the name of the <code class="keyword">@keyframes</code> which will be applied.</li>
+                <li><code class="keyword">animation-name</code> - Declares the name of the <code class="keyword">@keyframes</code>
+                    which will be applied.
+                </li>
                 <li><code class="keyword">animation-duration</code> - Duration of one animation cycle.</li>
-                <li><code class="keyword">animation-delay</code> - Time between the element being loaded and the start of the animation.</li>
-                <li><code class="keyword">animation-iteration-count</code> - The number of times animations will be performed.</li>
+                <li><code class="keyword">animation-delay</code> - Time between the element being loaded and the start
+                    of the animation.
+                </li>
+                <li><code class="keyword">animation-iteration-count</code> - The number of times animations will be
+                    performed.
+                </li>
                 <li><code class="keyword">animation-play-state</code> - Plays or pauses the animation.</li>
             </ul>
         </div>
         <h3><a class="heading-link" id="css-@keyframes" href="#css-@keyframes">#</a>CSS @keyframes</h3>
         <div class="text">
             <p>
-                The <code class="keyword">@keyframes</code> lets you control each step of animation by creating keyframes
+                The <code class="keyword">@keyframes</code> lets you control each step of animation by creating
+                keyframes
                 (or waypoints) along the animation sequence that must be reached by certain points during the animation.
                 To use keyframes, you create a <code class="keyword">@keyframes</code> rule with a name that is then
                 used by the animation-name property to match an animation to its keyframe list. Each
@@ -102,8 +112,10 @@
         <h3><a class="heading-link" id="movement" href="#movement">#</a>Movement</h3>
         <div class="text">
             <p>
-                This is an easy example of animation which moves with some element. Create <code class="keyword">div</code>
-                with class called square. In this class set background color to red, position to relative, place to upper left hand corner and set
+                This is an easy example of animation which moves with some element. Create <code
+                    class="keyword">div</code>
+                with class called square. In this class set background color to red, position to relative, place to
+                upper left hand corner and set
                 its height and width to 200px. Now we have static red square. Lets create moving animation.
             </p>
             <div class="example">
@@ -115,10 +127,14 @@
                 &lt;/<span class="tag-name"><b>div</b></span>&gt;
             </code>
             <p>
-                Create animation using <code class="keyword">@keyframes</code> and call it move-from-left-to-right-and-back.
-                At the beginning set top to 0 and left to 0. At 50% set top to 0px and left to 400px. At the end of animation
-                set top and left back to 0. Back in square class set <code class="keyword">animation</code> to move-from-left-to-right-and-back
-                and <code class="keyword">animation-duration</code> to 3s. Finally you can set <code class="keyword">animation-iteration-count</code> to infinite and this animation will never stop.
+                Create animation using <code class="keyword">@keyframes</code> and call it
+                move-from-left-to-right-and-back.
+                At the beginning set top to 0 and left to 0. At 50% set top to 0px and left to 400px. At the end of
+                animation
+                set top and left back to 0. Back in square class set <code class="keyword">animation</code> to
+                move-from-left-to-right-and-back
+                and <code class="keyword">animation-duration</code> to 3s. Finally you can set <code class="keyword">animation-iteration-count</code>
+                to infinite and this animation will never stop.
             </p>
             <code class="code-snippet">
                 <span class="css-selector"><b>.square</b></span>&nbsp;{<br>
@@ -204,10 +220,12 @@
                 &lt;/<span class="tag-name"><b>div</b></span>&gt;
             </code>
             <p>
-                First of all create animation called resize. At 50% square will be shrinked to 10px. Don't forget to move
-                square about 95px from top and left. At the end of the animation cycle set top and  left to 0 and
+                First of all create animation called resize. At 50% square will be shrinked to 10px. Don't forget to
+                move
+                square about 95px from top and left. At the end of the animation cycle set top and left to 0 and
                 height and width to 200px. Now we have animation lets assign it to square. You can use only
-                <code class="keyword">animation</code> property with more params instead of <code class="keyword">animation</code> sub-properties.
+                <code class="keyword">animation</code> property with more params instead of <code class="keyword">animation</code>
+                sub-properties.
                 Simply assign to square animation name, duration, timing function and count of repetitions.
             </p>
             <code class="code-snippet">
@@ -255,7 +273,8 @@
                     class="css-number-value">0</span>;<br>
                 <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top</b></span>: <span
                     class="css-number-value">0</span>;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;}<br><br><span class="css-selector"><b>@keyframes</b></span>&nbsp;<span class="css-selector"><b>resize</b></span>&nbsp;{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br><br><span class="css-selector"><b>@keyframes</b></span>&nbsp;<span
+                    class="css-selector"><b>resize</b></span>&nbsp;{<br>
                 <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;50%</b></span>&nbsp;{<br>
                 <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
                     class="css-number-value">10</span><span class="css-unit"><b>px</b></span>;<br>
@@ -282,8 +301,10 @@
         <h3><a class="heading-link" id="rotation" href="#rotation">#</a>Rotation</h3>
         <div class="text">
             <p>
-                In the last example we'll rotate with our square. Create <code class="keyword">div</code> with class square and set its background color
-                to red, height and width to 200px, and margin to 100px. We have our square ready so lets create animation.
+                In the last example we'll rotate with our square. Create <code class="keyword">div</code> with class
+                square and set its background color
+                to red, height and width to 200px, and margin to 100px. We have our square ready so lets create
+                animation.
             </p>
             <div class="example">
                 <div class="square rotating-square"></div>
@@ -295,7 +316,8 @@
             </code>
             <p>
                 We can create animation on square hover. First create animation rotate using <code class="keyword">@keyframes</code>
-                and at the end of animation set transform to rotate 360 degrees. At last assign it to square on hover using
+                and at the end of animation set transform to rotate 360 degrees. At last assign it to square on hover
+                using
                 <code class="keyword">animation</code> property.
             </p>
             <code class="code-snippet">
@@ -313,7 +335,8 @@
                 <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;margin</b></span>: <span
                     class="css-number-value">100</span><span class="css-unit"><b>px</b></span>;<br>
                 }<br>
-                <span class="css-selector"><b>.square</b></span>:<span class="css-selector"><b>hover</b></span>&nbsp;{<br>
+                <span class="css-selector"><b>.square</b></span>:<span
+                    class="css-selector"><b>hover</b></span>&nbsp;{<br>
                 <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;-webkit-animation</b></span>: <span
                     class="css-text-value"><b>rotate</b></span> <span
                     class="css-number-value">2</span><span class="css-unit"><b>s</b></span> <span
@@ -325,15 +348,20 @@
                     class="css-unit"><b>linear</b></span> <span
                     class="css-unit"><b>infinite</b></span>;<br>
                 }<br>
-                <span class="css-selector"><b>@-webkit-keyframes</b></span>&nbsp;<span class="css-selector"><b>rotate</b></span>&nbsp;{<br>
+                <span class="css-selector"><b>@-webkit-keyframes</b></span>&nbsp;<span
+                    class="css-selector"><b>rotate</b></span>&nbsp;{<br>
                 <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;100%</b></span>&nbsp;{<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-webkit-transform</b></span>: <span
-                    class="css-text-value"><b>rotate</b></span>(<span class="css-number-value">360</span><span class="css-unit"><b>deg</b></span>);<br>
+                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-webkit-transform</b></span>:
+                <span
+                        class="css-text-value"><b>rotate</b></span>(<span class="css-number-value">360</span><span
+                    class="css-unit"><b>deg</b></span>);<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                }<br><span class="css-selector"><b>@keyframes</b></span>&nbsp;<span class="css-selector"><b>rotate</b></span>&nbsp;{<br>
+                }<br><span class="css-selector"><b>@keyframes</b></span>&nbsp;<span
+                    class="css-selector"><b>rotate</b></span>&nbsp;{<br>
                 <span class="css-selector"><b>&nbsp;&nbsp;&nbsp;&nbsp;100%</b></span>&nbsp;{<br>
                 <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transform</b></span>: <span
-                    class="css-text-value"><b>rotate</b></span>(<span class="css-number-value">360</span><span class="css-unit"><b>deg</b></span>);<br>
+                    class="css-text-value"><b>rotate</b></span>(<span class="css-number-value">360</span><span
+                    class="css-unit"><b>deg</b></span>);<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;}<br>
                 }
             </code>
@@ -343,114 +371,10 @@
         </div>
     </div>
 </section>
-<div id="js-arrow-up-animations" class="arrow-up" onclick="scrollUp()"></div>
+<div class="arrow-up js-arrow-up" onclick="scrollUp()"></div>
 <footer>
     <h6>©2017 Created by VendaskyCZ</h6>
 </footer>
-<script>
-    var contentTable = document.getElementById("js-animations-content-table");
-    var contentTableItems = document.getElementsByClassName("content-table-items")[0];
-    var content = document.getElementById("js-animations-content");
-    var arrowUp = document.getElementById("js-arrow-up-animations");
-    var dropdownUpArrow = document.getElementsByClassName("dropdown-arrow")[0];
-    var navigation = document.getElementById("js-navigation-animations");
-    arrowUp.style.visibility = 'hidden';
-    var contentTableWidth = contentTable.clientWidth
-        - parseFloat(window.getComputedStyle(contentTable, null).getPropertyValue('padding-left').replace("px", ""))
-        - parseFloat(window.getComputedStyle(contentTable, null).getPropertyValue('padding-right').replace("px", ""));
-    var stuck = false;
-    var stickPoint = contentTable.offsetTop;
-    var menu = document.getElementsByClassName("menu")[0];
-    var menuShowed = false;
-    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    if (width <= 768) {
-        contentTableItems.style.display = "none";
-    } else {
-        dropdownUpArrow.style.display = "none";
-    }
-
-    contentTable.addEventListener("click", function () {
-        if (width <= 768) {
-            if (contentTableItems.style.display == "block") {
-                contentTableItems.style.display = "none";
-                dropdownUpArrow.className = dropdownUpArrow.className.replace("fa-angle-up", "fa-angle-down");
-            } else {
-                contentTableItems.style.display = "block";
-                dropdownUpArrow.className = dropdownUpArrow.className.replace("fa-angle-down", "fa-angle-up");
-            }
-        }
-    });
-
-    window.onresize = function (event) {
-        contentTableWidth = contentTable.clientWidth
-            - parseFloat(window.getComputedStyle(contentTable, null).getPropertyValue('padding-left').replace("px", ""))
-            - parseFloat(window.getComputedStyle(contentTable, null).getPropertyValue('padding-right').replace("px", ""));
-        width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-        if (width <= 768) {
-            dropdownUpArrow.style.display = "inline";
-            contentTableItems.style.display = "none";
-        } else {
-            dropdownUpArrow.style.display = "none";
-            var actualMenuPage = document.getElementsByClassName("actual-page")[0];
-            actualMenuPage.parentNode.style.display = 'inline-flex';
-            menu.style.display = "block";
-            menuShowed = true;
-            if (width > 768 && contentTableItems.style.display == "none") {
-                contentTableItems.style.display = "block";
-            }
-        }
-        contentTableWidth = contentTable.clientWidth;
-        stickPoint = contentTable.offsetTop;
-    };
-
-    window.onscroll = function (e) {
-        if (window.pageYOffset > navigation.offsetTop + navigation.clientHeight) {
-            arrowUp.style.visibility = 'visible';
-        } else {
-            arrowUp.style.visibility = 'hidden';
-        }
-        var distance = contentTable.offsetTop - window.pageYOffset;
-        var offset = window.pageYOffset;
-        if ((distance <= 0) && !stuck) {
-            contentTable.style.position = 'fixed';
-            contentTable.style.top = '0px';
-            contentTable.style.width = contentTableWidth + 'px';
-            if (width > 768) {
-                content.className += " article-content-left-margin";
-            }
-            stuck = true;
-        } else if (stuck && (offset <= stickPoint)) {
-            contentTable.style.position = 'static';
-            if (width > 768) {
-                content.className = "article-content";
-            }
-            stuck = false;
-        }
-    };
-
-    function dropdown() {
-        var actualMenuPage = document.getElementsByClassName("actual-page")[0];
-        actualMenuPage.parentNode.style.display = 'none';
-        if (!menuShowed) {
-            menu.style.display = "block";
-            menuShowed = true;
-        } else {
-            menu.style.display = "none";
-            menuShowed = false;
-        }
-        stickPoint = contentTable.offsetTop;
-    }
-
-    function scrollUp() {
-        var scrollStep = -100;
-        var scrollInterval = setInterval(function () {
-            if (window.scrollY != 0) {
-                window.scrollBy(0, scrollStep);
-            } else {
-                clearInterval(scrollInterval);
-            }
-        }, 15);
-    }
-</script>
+<script src="js/articles.js" type="text/javascript"></script>
 </body>
 </html>
