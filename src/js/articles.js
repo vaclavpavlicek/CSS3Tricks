@@ -21,7 +21,7 @@ if (width <= 768) {
 
 contentTable.addEventListener("click", function () {
     if (width <= 768) {
-        if (contentTableItems.style.display == "block") {
+        if (contentTableItems.style.display === "block") {
             contentTableItems.style.display = "none";
             dropdownUpArrow.className = dropdownUpArrow.className.replace("fa-angle-up", "fa-angle-down");
         } else {
@@ -42,7 +42,7 @@ window.onresize = function (event) {
         var actualMenuPage = document.getElementsByClassName("actual-page")[0];
         actualMenuPage.parentNode.style.display = 'inline-flex';
         menuShowed = true;
-        if (width > 768 && contentTableItems.style.display == "none") {
+        if (width > 768 && contentTableItems.style.display === "none") {
             contentTableItems.style.display = "block";
         }
     }
@@ -89,7 +89,7 @@ function dropdown() {
 function scrollUp() {
     var scrollStep = -100;
     var scrollInterval = setInterval(function () {
-        if (window.scrollY != 0) {
+        if (window.scrollY !== 0) {
             window.scrollBy(0, scrollStep);
         } else {
             clearInterval(scrollInterval);

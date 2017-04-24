@@ -27,8 +27,10 @@
     <script src="js/services/linearGradients.service.js"></script>
     <script src="js/services/radialGradients.service.js"></script>
     <script src="js/controllers/diagonalGradient.controller.js"></script>
+    <script src="js/controllers/differentlySpacedColor.controller.js"></script>
     <script src="js/controllers/leftToRightGradient.controller.js"></script>
     <script src="js/controllers/radialGradient.controller.js"></script>
+    <script src="js/controllers/shapes.controller.js"></script>
     <script src="js/controllers/topToBottomGradient.controller.js"></script>
 </head>
 <body>
@@ -94,25 +96,32 @@
                 <div class="example">
                     <div class="gradient gradient-top-to-bottom" data-ng-style="ctrl.gradient"></div>
                 </div>
-                <form>
+                <form class="colors-form">
                     <div class="color-picker first-color">
                         <h5>First color</h5>
-                        <label>Red</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorRed" type="text"
-                               value="255">
-                        <label>Green</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorGreen" type="text">
-                        <label>Blue</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorBlue" type="text">
+                        <label>Red
+                            <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorRed" type="text"
+                                   value="255">
+                        </label><label>Green
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorGreen"
+                               type="text">
+                    </label><label>Blue
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorBlue"
+                               type="text">
+                    </label>
                     </div>
                     <div class="color-picker second-color">
                         <h5>Second color</h5>
-                        <label>Red</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorRed" type="text">
-                        <label>Green</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorGreen" type="text">
-                        <label>Blue</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorBlue" type="text">
+                        <label>Red
+                            <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorRed"
+                                   type="text">
+                        </label><label>Green
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorGreen"
+                               type="text">
+                    </label><label>Blue
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorBlue"
+                               type="text">
+                    </label>
                     </div>
                 </form>
                 <code class="code-snippet">
@@ -154,25 +163,32 @@
                 <div class="example">
                     <div class="gradient gradient-left-to-right" data-ng-style="ctrl.gradient"></div>
                 </div>
-                <form>
+                <form class="colors-form">
                     <div class="color-picker first-color">
                         <h5>First color</h5>
-                        <label>Red</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorRed" type="text"
-                               value="255">
-                        <label>Green</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorGreen" type="text">
-                        <label>Blue</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorBlue" type="text">
+                        <label>Red
+                            <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorRed" type="text"
+                                   value="255">
+                        </label><label>Green
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorGreen"
+                               type="text">
+                    </label><label>Blue
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorBlue"
+                               type="text">
+                    </label>
                     </div>
                     <div class="color-picker second-color">
                         <h5>Second color</h5>
-                        <label>Red</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorRed" type="text">
-                        <label>Green</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorGreen" type="text">
-                        <label>Blue</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorBlue" type="text">
+                        <label>Red
+                            <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorRed"
+                                   type="text">
+                        </label><label>Green
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorGreen"
+                               type="text">
+                    </label><label>Blue
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorBlue"
+                               type="text">
+                    </label>
                     </div>
                 </form>
                 <code class="code-snippet">
@@ -186,7 +202,8 @@
                         class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>;<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
                         class="css-text-value"><b>-webkit-linear-gradient</b></span>(<span
-                        class="css-unit"><b>left</b></span>, <span class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>, <span
+                        class="css-unit"><b>left</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>, <span
                         class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
                         class="css-text-value"><b>-o-linear-gradient</b></span>(<span
@@ -218,25 +235,32 @@
                 <div class="example">
                     <div class="gradient gradient-diagonal" data-ng-style="ctrl.gradient"></div>
                 </div>
-                <form>
+                <form class="colors-form">
                     <div class="color-picker first-color">
                         <h5>First color</h5>
-                        <label>Red</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorRed" type="text"
-                               value="255">
-                        <label>Green</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorGreen" type="text">
-                        <label>Blue</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorBlue" type="text">
+                        <label>Red
+                            <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorRed" type="text"
+                                   value="255">
+                        </label><label>Green
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorGreen"
+                               type="text">
+                    </label><label>Blue
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorBlue"
+                               type="text">
+                    </label>
                     </div>
                     <div class="color-picker second-color">
                         <h5>Second color</h5>
-                        <label>Red</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorRed" type="text">
-                        <label>Green</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorGreen" type="text">
-                        <label>Blue</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorBlue" type="text">
+                        <label>Red
+                            <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorRed"
+                                   type="text">
+                        </label><label>Green
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorGreen"
+                               type="text">
+                    </label><label>Blue
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorBlue"
+                               type="text">
+                    </label>
                     </div>
                 </form>
                 <code class="code-snippet">
@@ -288,25 +312,31 @@
                 <div class="example">
                     <div class="gradient gradient-radial" data-ng-style="ctrl.gradient"></div>
                 </div>
-                <form>
+                <form class="colors-form">
                     <div class="color-picker first-color">
                         <h5>First color</h5>
-                        <label>Red</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorRed" type="text"
-                               value="255">
-                        <label>Green</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorGreen" type="text">
-                        <label>Blue</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorBlue" type="text">
-                    </div>
-                    <div class="color-picker second-color">
+                        <label>Red
+                            <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorRed" type="text"
+                                   value="255">
+                        </label><label>Green
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorGreen"
+                               type="text">
+                    </label><label>Blue
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorBlue"
+                               type="text">
+                    </label>
+                    </div><div class="color-picker second-color">
                         <h5>Second color</h5>
-                        <label>Red</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorRed" type="text">
-                        <label>Green</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorGreen" type="text">
-                        <label>Blue</label>
-                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorBlue" type="text">
+                        <label>Red
+                            <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorRed"
+                                   type="text">
+                        </label><label>Green
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorGreen"
+                               type="text">
+                    </label><label>Blue
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorBlue"
+                               type="text">
+                    </label>
                     </div>
                 </form>
                 <code class="code-snippet">
@@ -317,23 +347,23 @@
                 <code class="code-snippet">
                     <span class="css-selector"><b>.gradient-radial</b></span>&nbsp;{<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>;<br>
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>;<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
                         class="css-text-value"><b>-webkit-radial-gradient</b></span>(<span
-                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>, <span
-                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>);<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
                         class="css-text-value"><b>-o-radial-gradient</b></span>(<span
-                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>,
-                    <span class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>,
+                    <span class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>);<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
                         class="css-text-value"><b>-moz-radial-gradient</b></span>(<span
-                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>, <span
-                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>);<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
                         class="css-text-value"><b>radial-gradient</b></span>(<span
-                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>, <span
-                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>);<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
                         class="css-number-value">8</span><span class="css-unit"><b>em</b></span>;<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
@@ -343,44 +373,75 @@
             </div>
             <h4>Differently Spaced Color Stops</h4>
             <p>The following example shows a radial gradient with differently spaced color stops:</p>
-            <div class="example">
-                <div class="gradient gradient-radial-colors-percentage"></div>
+            <div class="controller" data-ng-controller="DifferentlySpacedColorCtrl as ctrl">
+                <div class="example">
+                    <div class="gradient gradient-radial-colors-percentage" data-ng-style="ctrl.gradient"></div>
+                </div>
+                <form class="colors-form">
+                    <div class="color-picker first-color">
+                        <h5>First color</h5>
+                        <label>Red
+                            <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorRed" type="text"
+                                   value="255">
+                        </label><label>Green
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorGreen"
+                               type="text">
+                    </label><label>Blue
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorBlue"
+                               type="text">
+                    </label>
+                    </div><div class="color-picker second-color">
+                        <h5>Second color</h5>
+                        <label>Red
+                            <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorRed"
+                                   type="text">
+                        </label><label>Green
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorGreen"
+                               type="text">
+                    </label><label>Blue
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorBlue"
+                               type="text">
+                    </label>
+                    </div>
+                </form>
+                <code class="code-snippet">
+                    &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
+                        class="tag-attribute-value"><b>"gradient-radial-colors-percentage"</b></span>&gt;
+                    &lt;/<span class="tag-name"><b>div</b></span>&gt;
+                </code>
+                <code class="code-snippet">
+                    <span class="css-selector"><b>.gradient-radial-colors-percentage</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-webkit-radial-gradient</b></span>(<span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span> <span
+                        class="css-number-value">30</span>%, <span class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span> <span
+                        class="css-number-value">50</span>%);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-o-radial-gradient</b></span>(<span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>
+                    <span
+                            class="css-number-value">30</span>%, <span class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>
+                    <span
+                            class="css-number-value">50</span>%);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-moz-radial-gradient</b></span>(<span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span> <span
+                        class="css-number-value">30</span>%, <span class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span> <span
+                        class="css-number-value">50</span>%);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>radial-gradient</b></span>(<span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span> <span
+                        class="css-number-value">30</span>%, <span class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span> <span
+                        class="css-number-value">50</span>%);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
+                        class="css-number-value">8</span><span class="css-unit"><b>em</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
+                        class="css-number-value">100</span>%;<br>
+                    }
+                </code>
             </div>
-            <code class="code-snippet">
-                &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
-                    class="tag-attribute-value"><b>"gradient-radial-colors-percentage"</b></span>&gt;
-                &lt;/<span class="tag-name"><b>div</b></span>&gt;
-            </code>
-            <code class="code-snippet">
-                <span class="css-selector"><b>.gradient-radial-colors-percentage</b></span>&nbsp;{<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>#0d57a7</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-webkit-radial-gradient</b></span>(<span
-                    class="css-text-value"><b>#409ad6</b></span> <span
-                    class="css-number-value">30</span>%, <span class="css-text-value"><b>#0d57a7</b></span> <span
-                    class="css-number-value">50</span>%);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-o-radial-gradient</b></span>(<span class="css-text-value"><b>#409ad6</b></span>
-                <span
-                        class="css-number-value">30</span>%, <span class="css-text-value"><b>#0d57a7</b></span> <span
-                    class="css-number-value">50</span>%);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-moz-radial-gradient</b></span>(<span
-                    class="css-text-value"><b>#409ad6</b></span> <span
-                    class="css-number-value">30</span>%, <span class="css-text-value"><b>#0d57a7</b></span> <span
-                    class="css-number-value">50</span>%);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>radial-gradient</b></span>(<span
-                    class="css-text-value"><b>#409ad6</b></span> <span
-                    class="css-number-value">30</span>%, <span class="css-text-value"><b>#0d57a7</b></span> <span
-                    class="css-number-value">50</span>%);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
-                    class="css-number-value">8</span><span class="css-unit"><b>em</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
-                    class="css-number-value">100</span>%;<br>
-                }
-            </code>
             <h4>Shapes</h4>
             <p>
                 The shape parameter defines the shape. It can take the value circle or ellipse. The default value is
@@ -388,38 +449,70 @@
                 <br><br>
                 The following example shows a radial gradient with the shape of a circle:
             </p>
-            <div class="example">
-                <div class="gradient gradient-radial-circle"></div>
+            <div class="controller" data-ng-controller="ShapesCtrl as ctrl">
+                <div class="example">
+                    <div class="gradient gradient-radial-circle" data-ng-style="ctrl.gradient"></div>
+                </div>
+                <form class="colors-form">
+                    <div class="color-picker first-color">
+                        <h5>First color</h5>
+                        <label>Red
+                            <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorRed" type="text"
+                                   value="255">
+                        </label><label>Green
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorGreen"
+                               type="text">
+                    </label><label>Blue
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.firstColorBlue"
+                               type="text">
+                    </label>
+                    </div><div class="color-picker second-color">
+                        <h5>Second color</h5>
+                        <label>Red
+                            <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorRed"
+                                   type="text">
+                        </label><label>Green
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorGreen"
+                               type="text">
+                    </label><label>Blue
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorBlue"
+                               type="text">
+                    </label>
+                    </div>
+                </form>
+                <code class="code-snippet">
+                    &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
+                        class="tag-attribute-value"><b>"gradient-radial-colors-percentage"</b></span>&gt;
+                    &lt;/<span class="tag-name"><b>div</b></span>&gt;
+                </code>
+                <code class="code-snippet">
+                    <span class="css-selector"><b>.gradient-radial-circle</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-webkit-radial-gradient</b></span>(<span
+                        class="css-unit"><b>circle</b></span>, <span class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-o-radial-gradient</b></span>(<span
+                        class="css-unit"><b>circle</b></span>,
+                    <span class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-moz-radial-gradient</b></span>(<span
+                        class="css-unit"><b>circle</b></span>, <span class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>radial-gradient</b></span>(<span class="css-unit"><b>circle</b></span>,
+                    <span class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
+                        class="css-number-value">8</span><span class="css-unit"><b>em</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
+                        class="css-number-value">100</span>%;<br>
+                    }
+                </code>
             </div>
-            <code class="code-snippet">
-                &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
-                    class="tag-attribute-value"><b>"gradient-radial-colors-percentage"</b></span>&gt;
-                &lt;/<span class="tag-name"><b>div</b></span>&gt;
-            </code>
-            <code class="code-snippet">
-                <span class="css-selector"><b>.gradient-radial-circle</b></span>&nbsp;{<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>#0d57a7</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-webkit-radial-gradient</b></span>(<span
-                    class="css-unit"><b>circle</b></span>, <span class="css-text-value"><b>#409ad6</b></span>, <span
-                    class="css-text-value"><b>#0d57a7</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-o-radial-gradient</b></span>(<span class="css-unit"><b>circle</b></span>,
-                <span class="css-text-value"><b>#409ad6</b></span>, <span class="css-text-value"><b>#0d57a7</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-moz-radial-gradient</b></span>(<span
-                    class="css-unit"><b>circle</b></span>, <span class="css-text-value"><b>#409ad6</b></span>, <span
-                    class="css-text-value"><b>#0d57a7</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>radial-gradient</b></span>(<span class="css-unit"><b>circle</b></span>,
-                <span class="css-text-value"><b>#409ad6</b></span>, <span class="css-text-value"><b>#0d57a7</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
-                    class="css-number-value">8</span><span class="css-unit"><b>em</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
-                    class="css-number-value">100</span>%;<br>
-                }
-            </code>
         </div>
     </div>
 </section>

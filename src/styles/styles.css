@@ -140,6 +140,20 @@ section h5 {
     font-size: 1.5em;
 }
 
+.colors-form {
+    width: 100%;
+}
+
+.color-picker {
+    display: inline-block;
+    width: 50%;
+}
+
+.color-picker label {
+    display: inline-block;
+    width: 33.3%;
+}
+
 .contacts {
     list-style: none;
     display: inline-flex;
