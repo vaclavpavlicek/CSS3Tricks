@@ -23,6 +23,7 @@
     <link rel="icon" type="image/png" href="images/favicon-256.png" sizes="256x256">
     <script src="js/angular.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/services/colors.service.js"></script>
     <script src="js/services/linearGradients.service.js"></script>
     <script src="js/services/radialGradients.service.js"></script>
     <script src="js/controllers/diagonalGradient.controller.js"></script>
@@ -119,33 +120,33 @@
                         class="tag-attribute-value"><b>"gradient-top-to-bottom"</b></span>&gt;
                     &lt;/<span class="tag-name"><b>div</b></span>&gt;
                 </code>
+                <code class="code-snippet">
+                    <span class="css-selector"><b>.gradient-top-to-bottom</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-webkit-linear-gradient</b></span>(<span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-o-linear-gradient</b></span>(<span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>,
+                    <span class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-moz-linear-gradient</b></span>(<span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>linear-gradient</b></span>(<span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
+                        class="css-number-value">8</span><span class="css-unit"><b>em</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
+                        class="css-number-value">100</span>%;<br>
+                    }
+                </code>
             </div>
-            <code class="code-snippet">
-                <span class="css-selector"><b>.gradient-top-to-bottom</b></span>&nbsp;{<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>#0d57a7</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-webkit-linear-gradient</b></span>(<span
-                    class="css-text-value"><b>red</b></span>, <span
-                    class="css-text-value"><b>yellow</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-o-linear-gradient</b></span>(<span
-                    class="css-text-value"><b>red</b></span>,
-                <span class="css-text-value"><b>yellow</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-moz-linear-gradient</b></span>(<span
-                    class="css-text-value"><b>red</b></span>, <span
-                    class="css-text-value"><b>yellow</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>linear-gradient</b></span>(<span
-                    class="css-text-value"><b>red</b></span>, <span
-                    class="css-text-value"><b>yellow</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
-                    class="css-number-value">8</span><span class="css-unit"><b>em</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
-                    class="css-number-value">100</span>%;<br>
-                }
-            </code>
             <h4>Left to Right</h4>
             <p>The following example shows a linear gradient that starts from the left. It starts dark blue,
                 transitioning to light blue:</p>
@@ -174,35 +175,41 @@
                         <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorBlue" type="text">
                     </div>
                 </form>
+                <code class="code-snippet">
+                    &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
+                        class="tag-attribute-value"><b>"gradient-left-to-right"</b></span>&gt;
+                    &lt;/<span class="tag-name"><b>div</b></span>&gt;
+                </code>
+                <code class="code-snippet">
+                    <span class="css-selector"><b>.gradient-left-to-right</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-webkit-linear-gradient</b></span>(<span
+                        class="css-unit"><b>left</b></span>, <span class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-o-linear-gradient</b></span>(<span
+                        class="css-unit"><b>right</b></span>,
+                    <span class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-moz-linear-gradient</b></span>(<span
+                        class="css-unit"><b>right</b></span>,
+                    <span class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>linear-gradient</b></span>(<span
+                        class="css-unit"><b>to right</b></span>,
+                    <span class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
+                        class="css-number-value">8</span><span class="css-unit"><b>em</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
+                        class="css-number-value">100</span>%;<br>
+                    }
+                </code>
             </div>
-            <code class="code-snippet">
-                &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
-                    class="tag-attribute-value"><b>"gradient-left-to-right"</b></span>&gt;
-                &lt;/<span class="tag-name"><b>div</b></span>&gt;
-            </code>
-            <code class="code-snippet">
-                <span class="css-selector"><b>.gradient-left-to-right</b></span>&nbsp;{<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>#0d57a7</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-webkit-linear-gradient</b></span>(<span
-                    class="css-unit"><b>left</b></span>, <span class="css-text-value"><b>#0d57a7</b></span>, <span
-                    class="css-text-value"><b>#409ad6</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-o-linear-gradient</b></span>(<span class="css-unit"><b>right</b></span>,
-                <span class="css-text-value"><b>#0d57a7</b></span>, <span class="css-text-value"><b>#409ad6</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-moz-linear-gradient</b></span>(<span class="css-unit"><b>right</b></span>,
-                <span class="css-text-value"><b>#0d57a7</b></span>, <span class="css-text-value"><b>#409ad6</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>linear-gradient</b></span>(<span class="css-unit"><b>to right</b></span>,
-                <span class="css-text-value"><b>#0d57a7</b></span>, <span class="css-text-value"><b>#409ad6</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
-                    class="css-number-value">8</span><span class="css-unit"><b>em</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
-                    class="css-number-value">100</span>%;<br>
-                }
-            </code>
             <h4>Diagonaly</h4>
             <p>You can make a gradient diagonally by specifying both the horizontal and vertical starting positions.
                 The following example shows a linear gradient that starts at top left (and goes to bottom right). It
@@ -232,36 +239,41 @@
                         <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorBlue" type="text">
                     </div>
                 </form>
+                <code class="code-snippet">
+                    &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
+                        class="tag-attribute-value"><b>"gradient-diagonal"</b></span>&gt;
+                    &lt;/<span class="tag-name"><b>div</b></span>&gt;
+                </code>
+                <code class="code-snippet">
+                    <span class="css-selector"><b>.gradient-diagonal</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-webkit-linear-gradient</b></span>(<span
+                        class="css-unit"><b>left top</b></span>,
+                    <span class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-o-linear-gradient</b></span>(<span
+                        class="css-unit"><b>bottom right</b></span>, <span class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>,
+                    <span class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-moz-linear-gradient</b></span>(<span
+                        class="css-unit"><b>bottom right</b></span>,
+                    <span class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>linear-gradient</b></span>(<span
+                        class="css-unit"><b>to bottom right</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>,
+                    <span class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
+                        class="css-number-value">8</span><span class="css-unit"><b>em</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
+                        class="css-number-value">100</span>%;<br>
+                    }
+                </code>
             </div>
-            <code class="code-snippet">
-                &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
-                    class="tag-attribute-value"><b>"gradient-diagonal"</b></span>&gt;
-                &lt;/<span class="tag-name"><b>div</b></span>&gt;
-            </code>
-            <code class="code-snippet">
-                <span class="css-selector"><b>.gradient-diagonal</b></span>&nbsp;{<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>#0d57a7</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-webkit-linear-gradient</b></span>(<span class="css-unit"><b>left top</b></span>,
-                <span class="css-text-value"><b>#0d57a7</b></span>, <span class="css-text-value"><b>#409ad6</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-o-linear-gradient</b></span>(<span
-                    class="css-unit"><b>bottom right</b></span>, <span class="css-text-value"><b>#0d57a7</b></span>,
-                <span class="css-text-value"><b>#409ad6</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-moz-linear-gradient</b></span>(<span class="css-unit"><b>bottom right</b></span>,
-                <span class="css-text-value"><b>#0d57a7</b></span>, <span class="css-text-value"><b>#409ad6</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>linear-gradient</b></span>(<span
-                    class="css-unit"><b>to bottom right</b></span>, <span class="css-text-value"><b>#0d57a7</b></span>,
-                <span class="css-text-value"><b>#409ad6</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
-                    class="css-number-value">8</span><span class="css-unit"><b>em</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
-                    class="css-number-value">100</span>%;<br>
-                }
-            </code>
         </div>
         <h3><a class="heading-link" id="radial-gradients" href="#radial-gradients">#</a>Radial gradients</h3>
         <div class="text">
@@ -297,37 +309,38 @@
                         <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.secondColorBlue" type="text">
                     </div>
                 </form>
+                <code class="code-snippet">
+                    &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
+                        class="tag-attribute-value"><b>"gradient-radial"</b></span>&gt;
+                    &lt;/<span class="tag-name"><b>div</b></span>&gt;
+                </code>
+                <code class="code-snippet">
+                    <span class="css-selector"><b>.gradient-radial</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-webkit-radial-gradient</b></span>(<span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-o-radial-gradient</b></span>(<span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>,
+                    <span class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>-moz-radial-gradient</b></span>(<span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
+                        class="css-text-value"><b>radial-gradient</b></span>(<span
+                        class="css-text-value"><b>{{ctrl.firstColorInHex}}</b></span>, <span
+                        class="css-text-value"><b>{{ctrl.secondColorInHex}}</b></span>);<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
+                        class="css-number-value">8</span><span class="css-unit"><b>em</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
+                        class="css-number-value">100</span>%;<br>
+                    }
+                </code>
             </div>
-            <code class="code-snippet">
-                &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
-                    class="tag-attribute-value"><b>"gradient-radial"</b></span>&gt;
-                &lt;/<span class="tag-name"><b>div</b></span>&gt;
-            </code>
-            <code class="code-snippet">
-                <span class="css-selector"><b>.gradient-radial</b></span>&nbsp;{<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>#0d57a7</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-webkit-radial-gradient</b></span>(<span
-                    class="css-text-value"><b>#409ad6</b></span>, <span
-                    class="css-text-value"><b>#0d57a7</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-o-radial-gradient</b></span>(<span class="css-text-value"><b>#409ad6</b></span>,
-                <span class="css-text-value"><b>#0d57a7</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>-moz-radial-gradient</b></span>(<span
-                    class="css-text-value"><b>#409ad6</b></span>, <span
-                    class="css-text-value"><b>#0d57a7</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background</b></span>: <span
-                    class="css-text-value"><b>radial-gradient</b></span>(<span
-                    class="css-text-value"><b>#409ad6</b></span>, <span
-                    class="css-text-value"><b>#0d57a7</b></span>);<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;height</b></span>: <span
-                    class="css-number-value">8</span><span class="css-unit"><b>em</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
-                    class="css-number-value">100</span>%;<br>
-                }
-            </code>
             <h4>Differently Spaced Color Stops</h4>
             <p>The following example shows a radial gradient with differently spaced color stops:</p>
             <div class="example">

@@ -32,9 +32,6 @@ contentTable.addEventListener("click", function () {
 });
 
 window.onresize = function (event) {
-    contentTableWidth = contentTable.clientWidth
-        - parseFloat(window.getComputedStyle(contentTable, null).getPropertyValue('padding-left').replace("px", ""))
-        - parseFloat(window.getComputedStyle(contentTable, null).getPropertyValue('padding-right').replace("px", ""));
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     if (width <= 768) {
         dropdownUpArrow.style.display = "inline";
@@ -49,8 +46,6 @@ window.onresize = function (event) {
             contentTableItems.style.display = "block";
         }
     }
-    contentTableWidth = contentTable.clientWidth;
-    stickPoint = contentTable.offsetTop;
 };
 
 window.onscroll = function (e) {
