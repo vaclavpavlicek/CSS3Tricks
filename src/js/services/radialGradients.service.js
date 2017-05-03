@@ -4,51 +4,51 @@
     app.service("RadialGradientsService", function () {
         this.createDifferentlySpacedGradient = function (firstColorRGB, secondColorRGB) {
             return {
-                "background": "rgb(" + secondColorRGB.red + ", " + secondColorRGB.green + ", " + secondColorRGB.blue + ")",
+                "background": "rgb(" + secondColorRGB.hue + ", " + secondColorRGB.saturation + ", " + secondColorRGB.lightness + ")",
                 "background": "-webkit-radial-gradient("
-                + "rgb(" + secondColorRGB.red + ", " + secondColorRGB.green + ", " + secondColorRGB.blue + ") 30%,rgb("
-                + firstColorRGB.red + ", " + firstColorRGB.green + ", " + firstColorRGB.blue + ") 50%",
-                "background": "-o-radial-gradient(" + "rgb(" + secondColorRGB.red + ", " + secondColorRGB.green + ", " + secondColorRGB.blue + ") 30%,rgb("
-                + firstColorRGB.red + ", " + firstColorRGB.green + ", " + firstColorRGB.blue + ") 50%",
+                + "rgb(" + secondColorRGB.hue + ", " + secondColorRGB.saturation + ", " + secondColorRGB.lightness + ") 30%,rgb("
+                + firstColorRGB.hue + ", " + firstColorRGB.saturation + ", " + firstColorRGB.lightness + ") 50%",
+                "background": "-o-radial-gradient(" + "rgb(" + secondColorRGB.hue + ", " + secondColorRGB.saturation + ", " + secondColorRGB.lightness + ") 30%,rgb("
+                + firstColorRGB.hue + ", " + firstColorRGB.saturation + ", " + firstColorRGB.lightness + ") 50%",
                 "background": "-moz-radial-gradient("
-                + "rgb(" + secondColorRGB.red + ", " + secondColorRGB.green + ", " + secondColorRGB.blue + ") 30%,rgb("
-                + firstColorRGB.red + ", " + firstColorRGB.green + ", " + firstColorRGB.blue + ") 50%",
-                "background": "radial-gradient(" + "rgb(" + secondColorRGB.red + ", " + secondColorRGB.green + ", " + secondColorRGB.blue + "),rgb("
-                + firstColorRGB.red + ", " + firstColorRGB.green + ", " + firstColorRGB.blue + ")"
+                + "rgb(" + secondColorRGB.hue + ", " + secondColorRGB.saturation + ", " + secondColorRGB.lightness + ") 30%,rgb("
+                + firstColorRGB.hue + ", " + firstColorRGB.saturation + ", " + firstColorRGB.lightness + ") 50%",
+                "background": "radial-gradient(" + "rgb(" + secondColorRGB.hue + ", " + secondColorRGB.saturation + ", " + secondColorRGB.lightness + "),rgb("
+                + firstColorRGB.hue + ", " + firstColorRGB.saturation + ", " + firstColorRGB.lightness + ")"
             };
         };
 
         this.createRadialGradient = function (firstColorRGB, secondColorRGB) {
             return {
-                "background": "rgb(" + firstColorRGB.red + ", " + firstColorRGB.green + ", " + firstColorRGB.blue + ")",
+                "background": "rgb(" + firstColorRGB.hue + ", " + firstColorRGB.saturation + ", " + firstColorRGB.lightness + ")",
                 "background": "-webkit-radial-gradient("
-                + "rgb(" + firstColorRGB.red + ", " + firstColorRGB.green + ", " + firstColorRGB.blue + "),rgb("
-                + secondColorRGB.red + ", " + secondColorRGB.green + ", " + secondColorRGB.blue + ")",
+                + "rgb(" + firstColorRGB.hue + ", " + firstColorRGB.saturation + ", " + firstColorRGB.lightness + "),rgb("
+                + secondColorRGB.hue + ", " + secondColorRGB.saturation + ", " + secondColorRGB.lightness + ")",
                 "background": "-o-radial-gradient("
-                + "rgb(" + firstColorRGB.red + ", " + firstColorRGB.green + ", " + firstColorRGB.blue + "),rgb("
-                + secondColorRGB.red + ", " + secondColorRGB.green + ", " + secondColorRGB.blue + ")",
+                + "rgb(" + firstColorRGB.hue + ", " + firstColorRGB.saturation + ", " + firstColorRGB.lightness + "),rgb("
+                + secondColorRGB.hue + ", " + secondColorRGB.saturation + ", " + secondColorRGB.lightness + ")",
                 "background": "-moz-radial-gradient("
-                + "rgb(" + firstColorRGB.red + ", " + firstColorRGB.green + ", " + firstColorRGB.blue + "),rgb("
-                + secondColorRGB.red + ", " + secondColorRGB.green + ", " + secondColorRGB.blue + ")",
-                "background": "radial-gradient(" + "rgb(" + firstColorRGB.red + ", " + firstColorRGB.green + ", " + firstColorRGB.blue + "),rgb("
-                + secondColorRGB.red + ", " + secondColorRGB.green + ", " + secondColorRGB.blue + ")"
+                + "rgb(" + firstColorRGB.hue + ", " + firstColorRGB.saturation + ", " + firstColorRGB.lightness + "),rgb("
+                + secondColorRGB.hue + ", " + secondColorRGB.saturation + ", " + secondColorRGB.lightness + ")",
+                "background": "radial-gradient(" + "rgb(" + firstColorRGB.hue + ", " + firstColorRGB.saturation + ", " + firstColorRGB.lightness + "),rgb("
+                + secondColorRGB.hue + ", " + secondColorRGB.saturation + ", " + secondColorRGB.lightness + ")"
             };
         };
 
         this.createShapesGradient = function (firstColorRGB, secondColorRGB) {
             return {
-                "background": "rgb(" + secondColorRGB.red + ", " + secondColorRGB.green + ", " + secondColorRGB.blue + ")",
+                "background": "rgb(" + secondColorRGB.hue + ", " + secondColorRGB.saturation + ", " + secondColorRGB.lightness + ")",
                 "background": "-webkit-radial-gradient(circle, "
-                + "rgb(" + secondColorRGB.red + ", " + secondColorRGB.green + ", " + secondColorRGB.blue + "),rgb("
-                + firstColorRGB.red + ", " + firstColorRGB.green + ", " + firstColorRGB.blue + ")",
+                + "rgb(" + secondColorRGB.hue + ", " + secondColorRGB.saturation + ", " + secondColorRGB.lightness + "),rgb("
+                + firstColorRGB.hue + ", " + firstColorRGB.saturation + ", " + firstColorRGB.lightness + ")",
                 "background": "-o-radial-gradient(circle, "
-                + "rgb(" + secondColorRGB.red + ", " + secondColorRGB.green + ", " + secondColorRGB.blue + "),rgb("
-                + firstColorRGB.red + ", " + firstColorRGB.green + ", " + firstColorRGB.blue + ")",
+                + "rgb(" + secondColorRGB.hue + ", " + secondColorRGB.saturation + ", " + secondColorRGB.lightness + "),rgb("
+                + firstColorRGB.hue + ", " + firstColorRGB.saturation + ", " + firstColorRGB.lightness + ")",
                 "background": "-moz-radial-gradient(circle, "
-                + "rgb(" + secondColorRGB.red + ", " + secondColorRGB.green + ", " + secondColorRGB.blue + "),rgb("
-                + firstColorRGB.red + ", " + firstColorRGB.green + ", " + firstColorRGB.blue + ")",
-                "background": "radial-gradient(circle, " + "rgb(" + secondColorRGB.red + ", " + secondColorRGB.green + ", " + secondColorRGB.blue + "),rgb("
-                + firstColorRGB.red + ", " + firstColorRGB.green + ", " + firstColorRGB.blue + ")"
+                + "rgb(" + secondColorRGB.hue + ", " + secondColorRGB.saturation + ", " + secondColorRGB.lightness + "),rgb("
+                + firstColorRGB.hue + ", " + firstColorRGB.saturation + ", " + firstColorRGB.lightness + ")",
+                "background": "radial-gradient(circle, " + "rgb(" + secondColorRGB.hue + ", " + secondColorRGB.saturation + ", " + secondColorRGB.lightness + "),rgb("
+                + firstColorRGB.hue + ", " + firstColorRGB.saturation + ", " + firstColorRGB.lightness + ")"
             };
         };
     });

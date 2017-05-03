@@ -24,6 +24,7 @@
     <script src="js/angular.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers/RGBA.controller.js"></script>
+    <script src="js/controllers/HSL.controller.js"></script>
 </head>
 <body>
 <header>
@@ -88,21 +89,21 @@
             </p>
             <div class="controller" data-ng-controller="RGBACtrl as ctrl">
                 <div class="example">
-                    <div class="colors" data-ng-style="ctrl.rgba1">
-                        <p>rgba({{ctrl.red}}, {{ctrl.green}}, {{ctrl.blue}}, 0.2)</p>
+                    <div class="colors" data-ng-style="ctrl.hsl1">
+                        <p>rgba({{ctrl.hue}}, {{ctrl.saturation}}, {{ctrl.lightness}}, 0.2)</p>
                     </div>
-                    <div class="colors" data-ng-style="ctrl.rgba2">
-                        <p>rgba({{ctrl.red}}, {{ctrl.green}}, {{ctrl.blue}}, 0.4)</p>
+                    <div class="colors" data-ng-style="ctrl.hsl2">
+                        <p>rgba({{ctrl.hue}}, {{ctrl.saturation}}, {{ctrl.lightness}}, 0.4)</p>
                     </div>
-                    <div class="colors" data-ng-style="ctrl.rgba3">
-                        <p>rgba({{ctrl.red}}, {{ctrl.green}}, {{ctrl.blue}}, 0.6)</p>
+                    <div class="colors" data-ng-style="ctrl.hsl3">
+                        <p>rgba({{ctrl.hue}}, {{ctrl.saturation}}, {{ctrl.lightness}}, 0.6)</p>
                     </div>
-                    <div class="colors" data-ng-style="ctrl.rgba4">
-                        <p>rgba({{ctrl.red}}, {{ctrl.green}}, {{ctrl.blue}}, 0.8)</p>
+                    <div class="colors" data-ng-style="ctrl.hsl4">
+                        <p>rgba({{ctrl.hue}}, {{ctrl.saturation}}, {{ctrl.lightness}}, 0.8)</p>
                     </div>
                 </div>
                 <form class="colors-form">
-                    <div class="color-picker first-color">
+                    <div class="color-picker">
                         <h5>Color</h5>
                         <label>Red
                             <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.red" type="text"
@@ -121,7 +122,8 @@
                         class="tag-attribute-value"><b>"rgba"</b></span> <span
                         class="tag-attribute"><b>id=</b></span><span
                         class="tag-attribute-value"><b>"rgba-1"</b></span>&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;rgba({{ctrl.red}}, {{ctrl.green}}, {{ctrl.blue}},
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;rgba({{ctrl.hue}},
+                    {{ctrl.saturation}}, {{ctrl.lightness}},
                     0.2)&lt;/<span
                         class="tag-name"><b>p</b></span>&gt;<br>
                     &lt;/<span class="tag-name"><b>div</b></span>&gt;<br>
@@ -129,7 +131,8 @@
                         class="tag-attribute-value"><b>"rgba"</b></span> <span
                         class="tag-attribute"><b>id=</b></span><span
                         class="tag-attribute-value"><b>"rgba-2"</b></span>&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;rgba({{ctrl.red}}, {{ctrl.green}}, {{ctrl.blue}},
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;rgba({{ctrl.hue}},
+                    {{ctrl.saturation}}, {{ctrl.lightness}},
                     0.4)&lt;/<span
                         class="tag-name"><b>p</b></span>&gt;<br>
                     &lt;/<span class="tag-name"><b>div</b></span>&gt;<br>
@@ -137,7 +140,8 @@
                         class="tag-attribute-value"><b>"rgba"</b></span> <span
                         class="tag-attribute"><b>id=</b></span><span
                         class="tag-attribute-value"><b>"rgba-3"</b></span>&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;rgba({{ctrl.red}}, {{ctrl.green}}, {{ctrl.blue}},
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;rgba({{ctrl.hue}},
+                    {{ctrl.saturation}}, {{ctrl.lightness}},
                     0.6)&lt;/<span
                         class="tag-name"><b>p</b></span>&gt;<br>
                     &lt;/<span class="tag-name"><b>div</b></span>&gt;<br>
@@ -145,7 +149,8 @@
                         class="tag-attribute-value"><b>"rgba"</b></span> <span
                         class="tag-attribute"><b>id=</b></span><span
                         class="tag-attribute-value"><b>"rgba-4"</b></span>&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;rgba({{ctrl.red}}, {{ctrl.green}}, {{ctrl.blue}},
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;rgba({{ctrl.hue}},
+                    {{ctrl.saturation}}, {{ctrl.lightness}},
                     0.8)&lt;/<span
                         class="tag-name"><b>p</b></span>&gt;<br>
                     &lt;/<span class="tag-name"><b>div</b></span>&gt;
@@ -164,27 +169,31 @@
                     }<br>
                     <span class="css-selector"><b>#rgba-1</b></span>&nbsp;{<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
-                        class="css-selector"><b>rgba</b></span>(<span class="css-number-value">{{ctrl.red}}</span>, <span
-                        class="css-number-value">{{ctrl.green}}</span>,
-                    <span class="css-number-value">{{ctrl.blue}}</span>, <span class="css-number-value">0.2</span>);<br>
+                        class="css-selector"><b>rgba</b></span>(<span class="css-number-value">{{ctrl.hue}}</span>,
+                    <span
+                            class="css-number-value">{{ctrl.saturation}}</span>,
+                    <span class="css-number-value">{{ctrl.lightness}}</span>, <span class="css-number-value">0.2</span>);<br>
                     }<br>
                     <span class="css-selector"><b>#rgba-2</b></span>&nbsp;{<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
-                        class="css-selector"><b>rgba</b></span>(<span class="css-number-value">{{ctrl.red}}</span>, <span
-                        class="css-number-value">{{ctrl.green}}</span>,
-                    <span class="css-number-value">{{ctrl.blue}}</span>, <span class="css-number-value">0.4</span>);<br>
+                        class="css-selector"><b>rgba</b></span>(<span class="css-number-value">{{ctrl.hue}}</span>,
+                    <span
+                            class="css-number-value">{{ctrl.saturation}}</span>,
+                    <span class="css-number-value">{{ctrl.lightness}}</span>, <span class="css-number-value">0.4</span>);<br>
                     }<br>
                     <span class="css-selector"><b>#rgba-3</b></span>&nbsp;{<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
-                        class="css-selector"><b>rgba</b></span>(<span class="css-number-value">{{ctrl.red}}</span>, <span
-                        class="css-number-value">{{ctrl.green}}</span>,
-                    <span class="css-number-value">{{ctrl.blue}}</span>, <span class="css-number-value">0.6</span>);<br>
+                        class="css-selector"><b>rgba</b></span>(<span class="css-number-value">{{ctrl.hue}}</span>,
+                    <span
+                            class="css-number-value">{{ctrl.saturation}}</span>,
+                    <span class="css-number-value">{{ctrl.lightness}}</span>, <span class="css-number-value">0.6</span>);<br>
                     }<br>
                     <span class="css-selector"><b>#rgba-4</b></span>&nbsp;{<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
-                        class="css-selector"><b>rgba</b></span>(<span class="css-number-value">{{ctrl.red}}</span>, <span
-                        class="css-number-value">{{ctrl.green}}</span>,
-                    <span class="css-number-value">{{ctrl.blue}}</span>, <span class="css-number-value">0.8</span>);<br>
+                        class="css-selector"><b>rgba</b></span>(<span class="css-number-value">{{ctrl.hue}}</span>,
+                    <span
+                            class="css-number-value">{{ctrl.saturation}}</span>,
+                    <span class="css-number-value">{{ctrl.lightness}}</span>, <span class="css-number-value">0.8</span>);<br>
                     }
                 </code>
             </div>
@@ -208,82 +217,97 @@
                 <li>Saturation is a percentage value: 100% is the full color.</li>
                 <li>Lightness is also a percentage; 0% is dark (black) and 100% is white.</li>
             </ol>
-            <div class="example">
-                <div class="colors" id="hsl-1">
-                    <p>hsl(211, 86%, 30%)</p>
-                </div>
-                <div class="colors" id="hsl-2">
-                    <p>hsl(211, 86%, 50%)</p>
+            <div class="controller" data-ng-controller="HSLCtrl as ctrl">
+                <div class="example">
+                    <div class="colors" data-ng-repeat="hsl in ctrl.hsl" data-ng-style="hsl">
+                        <p>hsl({{ctrl.hue}}, {{ctrl.saturation}}%, {{30 + 20 * $index}}%)</p>
+                    </div>
                 </div>
                 <div class="colors" id="hsl-3">
-                    <p>hsl(211, 86%, 70%)</p>
                 </div>
-                <div class="colors" id="hsl-4">
-                    <p>hsl(211, 86%, 90%)</p>
-                </div>
+                <form class="colors-form">
+                    <div class="color-picker">
+                        <h5>Color</h5>
+                        <label>Hue
+                            <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.hue" type="text"
+                                   value="13">
+                        </label><label>Saturation
+                        <input data-ng-change="ctrl.changeGradient()" data-ng-model="ctrl.saturation"
+                               type="text" value="87">
+                    </label>
+                    </div>
+                </form>
+                <code class="code-snippet">
+                    &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
+                        class="tag-attribute-value"><b>"hsl"</b></span> <span
+                        class="tag-attribute"><b>id=</b></span><span
+                        class="tag-attribute-value"><b>"hsl-1"</b></span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;hsl({{ctrl.hue}},
+                    {{ctrl.saturation}}%, 30%)&lt;/<span
+                        class="tag-name"><b>p</b></span>&gt;<br>
+                    &lt;/<span class="tag-name"><b>div</b></span>&gt;<br>
+                    &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
+                        class="tag-attribute-value"><b>"hsl"</b></span> <span
+                        class="tag-attribute"><b>id=</b></span><span
+                        class="tag-attribute-value"><b>"hsl-2"</b></span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;hsl({{ctrl.hue}},
+                    {{ctrl.saturation}}%, 50%)&lt;/<span
+                        class="tag-name"><b>p</b></span>&gt;<br>
+                    &lt;/<span class="tag-name"><b>div</b></span>&gt;<br>
+                    &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
+                        class="tag-attribute-value"><b>"hsl"</b></span> <span
+                        class="tag-attribute"><b>id=</b></span><span
+                        class="tag-attribute-value"><b>"hsl-3"</b></span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;hsl({{ctrl.hue}},
+                    {{ctrl.saturation}}%, 70%)&lt;/<span
+                        class="tag-name"><b>p</b></span>&gt;<br>
+                    &lt;/<span class="tag-name"><b>div</b></span>&gt;<br>
+                    &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
+                        class="tag-attribute-value"><b>"hsl"</b></span> <span
+                        class="tag-attribute"><b>id=</b></span><span
+                        class="tag-attribute-value"><b>"hsl-4"</b></span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;hsl({{ctrl.hue}},
+                    {{ctrl.saturation}}%, 90%)&lt;/<span
+                        class="tag-name"><b>p</b></span>&gt;<br>
+                    &lt;/<span class="tag-name"><b>div</b></span>&gt;
+                </code>
+                <code class="code-snippet">
+                    <span class="css-selector"><b>.hsl</b></span>&nbsp;<span class="css-selector"><b>p</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;margin</b></span>: <span
+                        class="css-number-value">0</span>;<br>
+                    }<br>
+                    <span class="css-selector"><b>.hsl</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;padding</b></span>: <span
+                        class="css-number-value">1</span><span class="css-unit"><b>em</b></span>;<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
+                        class="css-number-value">100</span>%;<br>
+                    }<br>
+                    <span class="css-selector"><b>#hsl-1</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
+                        class="css-selector"><b>hsl</b></span>(<span class="css-number-value">{{ctrl.hue}}</span>, <span
+                        class="css-number-value">{{ctrl.saturation}}</span>%,
+                    <span class="css-number-value">30</span>%);<br>
+                    }<br>
+                    <span class="css-selector"><b>#hsl-2</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
+                        class="css-selector"><b>hsl</b></span>(<span class="css-number-value">{{ctrl.hue}}</span>, <span
+                        class="css-number-value">{{ctrl.saturation}}</span>%,
+                    <span class="css-number-value">50</span>%);<br>
+                    }<br>
+                    <span class="css-selector"><b>#hsl-3</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
+                        class="css-selector"><b>hsl</b></span>(<span class="css-number-value">{{ctrl.hue}}</span>, <span
+                        class="css-number-value">{{ctrl.saturation}}</span>%,
+                    <span class="css-number-value">70</span>%);<br>
+                    }<br>
+                    <span class="css-selector"><b>#hsl-4</b></span>&nbsp;{<br>
+                    <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
+                        class="css-selector"><b>hsl</b></span>(<span class="css-number-value">{{ctrl.hue}}</span>, <span
+                        class="css-number-value">{{ctrl.saturation}}</span>%,
+                    <span class="css-number-value">90</span>%);<br>
+                    }
+                </code>
             </div>
-            <code class="code-snippet">
-                &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
-                    class="tag-attribute-value"><b>"hsl"</b></span> <span class="tag-attribute"><b>id=</b></span><span
-                    class="tag-attribute-value"><b>"hsl-1"</b></span>&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;hsl(211, 86%, 30%)&lt;/<span
-                    class="tag-name"><b>p</b></span>&gt;<br>
-                &lt;/<span class="tag-name"><b>div</b></span>&gt;<br>
-                &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
-                    class="tag-attribute-value"><b>"hsl"</b></span> <span class="tag-attribute"><b>id=</b></span><span
-                    class="tag-attribute-value"><b>"hsl-2"</b></span>&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;hsl(211, 86%, 50%)&lt;/<span
-                    class="tag-name"><b>p</b></span>&gt;<br>
-                &lt;/<span class="tag-name"><b>div</b></span>&gt;<br>
-                &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
-                    class="tag-attribute-value"><b>"hsl"</b></span> <span class="tag-attribute"><b>id=</b></span><span
-                    class="tag-attribute-value"><b>"hsl-3"</b></span>&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;hsl(211, 86%, 70%)&lt;/<span
-                    class="tag-name"><b>p</b></span>&gt;<br>
-                &lt;/<span class="tag-name"><b>div</b></span>&gt;<br>
-                &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
-                    class="tag-attribute-value"><b>"hsl"</b></span> <span class="tag-attribute"><b>id=</b></span><span
-                    class="tag-attribute-value"><b>"hsl-4"</b></span>&gt;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;hsl(211, 86%, 90%)&lt;/<span
-                    class="tag-name"><b>p</b></span>&gt;<br>
-                &lt;/<span class="tag-name"><b>div</b></span>&gt;
-            </code>
-            <code class="code-snippet">
-                <span class="css-selector"><b>.hsl</b></span>&nbsp;<span class="css-selector"><b>p</b></span>&nbsp;{<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;margin</b></span>: <span
-                    class="css-number-value">0</span>;<br>
-                }<br>
-                <span class="css-selector"><b>.hsl</b></span>&nbsp;{<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;padding</b></span>: <span
-                    class="css-number-value">1</span><span class="css-unit"><b>em</b></span>;<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
-                    class="css-number-value">100</span>%;<br>
-                }<br>
-                <span class="css-selector"><b>#hsl-1</b></span>&nbsp;{<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
-                    class="css-selector"><b>hsl</b></span>(<span class="css-number-value">211</span>, <span
-                    class="css-number-value">86</span>%,
-                <span class="css-number-value">30</span>%);<br>
-                }<br>
-                <span class="css-selector"><b>#hsl-2</b></span>&nbsp;{<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
-                    class="css-selector"><b>hsl</b></span>(<span class="css-number-value">211</span>, <span
-                    class="css-number-value">86</span>%,
-                <span class="css-number-value">50</span>%);<br>
-                }<br>
-                <span class="css-selector"><b>#hsl-3</b></span>&nbsp;{<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
-                    class="css-selector"><b>hsl</b></span>(<span class="css-number-value">211</span>, <span
-                    class="css-number-value">86</span>%,
-                <span class="css-number-value">70</span>%);<br>
-                }<br>
-                <span class="css-selector"><b>#hsl-4</b></span>&nbsp;{<br>
-                <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
-                    class="css-selector"><b>hsl</b></span>(<span class="css-number-value">211</span>, <span
-                    class="css-number-value">86</span>%,
-                <span class="css-number-value">90</span>%);<br>
-                }
-            </code>
         </div>
         <h3><a class="heading-link" id="hsla-colors" href="#hsla-colors">#</a>HSLA colors</h3>
         <div class="text">
@@ -299,16 +323,16 @@
             </p>
             <div class="example">
                 <div class="colors" id="hsla-1">
-                    <p>hsl(211, 86%, 30%, 0.3)</p>
+                    <p>hsla(211, 86%, 30%, 0.3)</p>
                 </div>
                 <div class="colors" id="hsla-2">
-                    <p>hsl(211, 86%, 50%, 0.3)</p>
+                    <p>hsla(211, 86%, 50%, 0.3)</p>
                 </div>
                 <div class="colors" id="hsla-3">
-                    <p>hsl(211, 86%, 70%, 0.3)</p>
+                    <p>hsla(211, 86%, 70%, 0.3)</p>
                 </div>
                 <div class="colors" id="hsla-4">
-                    <p>hsl(211, 86%, 90%, 0.3)</p>
+                    <p>hsla(211, 86%, 90%, 0.3)</p>
                 </div>
             </div>
             <code class="code-snippet">
