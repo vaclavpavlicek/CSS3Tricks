@@ -1,3 +1,15 @@
+header {
+    padding: 2em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 1.75em;
+}
+
 section p {
     font-family: "Sumana", serif;
     font-size: 1em;
@@ -15,10 +27,48 @@ section p {
 }
 
 .content-table {
-    width: 22.5%;
+    width: 22%;
 }
 
 .content-table ul li a {
     font-size: 1.25em;
     margin-left: 10%;
+}
+
+.css3-logo-text {
+    font-size: 3em;
+    line-height: 1.5em;
+}
+
+.css3-logo-image {
+    height: 5em;
+    margin-right: 2em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li {
+    display: flex;
+    flex-direction: column;
+    font-family: "Arial Black", serif;
+    font-size: 1em;
+    height: auto;
+    margin: 0;
+    text-align: center;
+    width: 16.666666667%;
+}
+
+.opening-text {
+    padding: 0 1.45em;
+}
+
+.selected-menu-item {
+    display: none;
+}
+
+.text {
+    padding: 0 1.45em;
 }

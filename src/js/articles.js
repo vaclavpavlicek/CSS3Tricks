@@ -59,16 +59,10 @@ window.onscroll = function (e) {
     if ((distance <= 0) && !stuck) {
         contentTable.style.position = 'fixed';
         contentTable.style.top = '0px';
-        contentTable.style.width = contentTableWidth + 'px';
-        if (width > 768) {
-            content.className += " article-content-left-margin";
-        }
         stuck = true;
     } else if (stuck && (offset <= stickPoint)) {
-        contentTable.style.position = 'static';
-        if (width > 768) {
-            content.className = "article-content";
-        }
+        contentTable.style.position = 'absolute';
+        contentTable.style.top = null;
         stuck = false;
     }
 };

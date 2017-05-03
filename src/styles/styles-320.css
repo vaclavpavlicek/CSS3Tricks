@@ -38,8 +38,10 @@ section p {
 }
 
 .content-table {
+    display: block;
     padding: 0 0.5em;
     text-align: left;
+    width: 84%;
 }
 
 .content-table-heading-container {
@@ -63,8 +65,8 @@ section p {
 }
 
 .dropdown-arrow {
-    margin: auto 0 auto auto;
     color: #0d57a7;
+    margin: auto 0 auto auto;
 }
 
 .face {
