@@ -285,6 +285,10 @@ section h5 {
     background: #007bb6
 }
 
+.list-in-content {
+    padding-left: 1em;
+}
+
 .list-in-content li {
     margin: 0.75em;
 }

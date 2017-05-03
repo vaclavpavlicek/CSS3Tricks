@@ -68,9 +68,10 @@
             <h2>Colors</h2>
             <p>
                 CSS supports color names, hexadecimal and RGB colors.
-                <br>
+            </p>
+            <br>
+            <p>
                 In addition, CSS3 also introduces:
-                <br>
             </p>
             <ul class="list-in-content">
                 <li>RGBA colors</li>
@@ -86,7 +87,9 @@
                 opacity for a color.
                 An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number
                 between 0.0 (fully transparent) and 1.0 (fully opaque).
-                <br>
+            </p>
+            <br>
+            <p>
                 The following example defines different RGBA colors:
             </p>
             <div class="controller" data-ng-controller="RGBACtrl as ctrl">
@@ -165,9 +168,9 @@
                     }<br>
                     <span class="css-selector"><b>.rgba</b></span>&nbsp;{<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;padding</b></span>: <span
-                        class="css-number-value">1</span><span class="css-unit"><b>em</b></span>;<br>
+                        class="css-number-value">2</span>%;<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
-                        class="css-number-value">100</span>%;<br>
+                        class="css-number-value">96</span>%;<br>
                     }<br>
                     <span class="css-selector"><b>#rgba-1</b></span>&nbsp;{<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
@@ -206,7 +209,6 @@
                 HSL stands for Hue, Saturation and Lightness.
                 An HSL color value is specified with: hsl(hue, saturation, lightness).
             </p>
-            <br><br>
             <ol class="list-in-content">
                 <li>
                     Hue is a degree on the color wheel (from 0 to 360):
@@ -278,9 +280,9 @@
                     }<br>
                     <span class="css-selector"><b>.hsl</b></span>&nbsp;{<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;padding</b></span>: <span
-                        class="css-number-value">1</span><span class="css-unit"><b>em</b></span>;<br>
+                        class="css-number-value">2</span>%;<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
-                        class="css-number-value">100</span>%;<br>
+                        class="css-number-value">96</span>%;<br>
                     }<br>
                     <span class="css-selector"><b>#hsl-1</b></span>&nbsp;{<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
@@ -385,9 +387,9 @@
                     }<br>
                     <span class="css-selector"><b>.hsla</b></span>&nbsp;{<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;padding</b></span>: <span
-                        class="css-number-value">1</span><span class="css-unit"><b>em</b></span>;<br>
+                        class="css-number-value">2</span>%;<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
-                        class="css-number-value">100</span>%;<br>
+                        class="css-number-value">96</span>%;<br>
                     }<br>
                     <span class="css-selector"><b>#hsla-1</b></span>&nbsp;{<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span
@@ -434,7 +436,8 @@
             <div class="controller" data-ng-controller="RGBCtrl as ctrl">
                 <div class="example">
                     <div class="colors" data-ng-repeat="rgb in ctrl.rgb" data-ng-style="rgb">
-                        <p>rgb({{ctrl.red}}, {{ctrl.green}}, {{ctrl.blue}}) opacity: {{0.2 +  0.2 * $index | number:1}}</p>
+                        <p>rgb({{ctrl.red}}, {{ctrl.green}}, {{ctrl.blue}}) opacity: {{0.2 + 0.2 * $index |
+                            number:1}}</p>
                     </div>
                 </div>
                 <form class="colors-form">
@@ -457,28 +460,32 @@
                         class="tag-attribute-value"><b>"opacity"</b></span> <span
                         class="tag-attribute"><b>id=</b></span><span
                         class="tag-attribute-value"><b>"opacity-1"</b></span>&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;rgb({{ctrl.red}}, {{ctrl.green}}, {{ctrl.blue}}) opacity: 0.2&lt;/<span
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;rgb({{ctrl.red}},
+                    {{ctrl.green}}, {{ctrl.blue}}) opacity: 0.2&lt;/<span
                         class="tag-name"><b>p</b></span>&gt;<br>
                     &lt;/<span class="tag-name"><b>div</b></span>&gt;<br>
                     &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
                         class="tag-attribute-value"><b>"opacity"</b></span> <span
                         class="tag-attribute"><b>id=</b></span><span
                         class="tag-attribute-value"><b>"opacity-2"</b></span>&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;rgb({{ctrl.red}}, {{ctrl.green}}, {{ctrl.blue}}) opacity: 0.4&lt;/<span
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;rgb({{ctrl.red}},
+                    {{ctrl.green}}, {{ctrl.blue}}) opacity: 0.4&lt;/<span
                         class="tag-name"><b>p</b></span>&gt;<br>
                     &lt;/<span class="tag-name"><b>div</b></span>&gt;<br>
                     &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
                         class="tag-attribute-value"><b>"opacity"</b></span> <span
                         class="tag-attribute"><b>id=</b></span><span
                         class="tag-attribute-value"><b>"opacity-3"</b></span>&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;rgb({{ctrl.red}}, {{ctrl.green}}, {{ctrl.blue}}) opacity: 0.6&lt;/<span
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;rgb({{ctrl.red}},
+                    {{ctrl.green}}, {{ctrl.blue}}) opacity: 0.6&lt;/<span
                         class="tag-name"><b>p</b></span>&gt;<br>
                     &lt;/<span class="tag-name"><b>div</b></span>&gt;<br>
                     &lt;<span class="tag-name"><b>div</b></span> <span class="tag-attribute"><b>class=</b></span><span
                         class="tag-attribute-value"><b>"opacity"</b></span> <span
                         class="tag-attribute"><b>id=</b></span><span
                         class="tag-attribute-value"><b>"opacity-4"</b></span>&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;rgb({{ctrl.red}}, {{ctrl.green}}, {{ctrl.blue}}) opacity: 0.8&lt;/<span
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag-name"><b>p</b></span>&gt;rgb({{ctrl.red}},
+                    {{ctrl.green}}, {{ctrl.blue}}) opacity: 0.8&lt;/<span
                         class="tag-name"><b>p</b></span>&gt;<br>
                     &lt;/<span class="tag-name"><b>div</b></span>&gt;
                 </code>
@@ -489,9 +496,9 @@
                     }<br>
                     <span class="css-selector"><b>.opacity</b></span>&nbsp;{<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;padding</b></span>: <span
-                        class="css-number-value">1</span><span class="css-unit"><b>em</b></span>;<br>
+                        class="css-number-value">2</span>%;<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;width</b></span>: <span
-                        class="css-number-value">100</span>%;<br>
+                        class="css-number-value">96</span>%;<br>
                     }<br>
                     <span class="css-selector"><b>#opacity-1</b></span>&nbsp;{<br>
                     <span class="css-property"><b>&nbsp;&nbsp;&nbsp;&nbsp;background-color</b></span>: <span

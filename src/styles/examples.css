@@ -5,14 +5,14 @@
 .example .box-shadow {
     border: solid grey 1px;
     box-shadow: 1em 1em grey;
-    padding: 1.5em;
+    padding: 5%;
     width: 90%;
 }
 
 .example .box-shadow-blur {
     border: solid grey 1px;
     box-shadow: 1em 1em 0.5em grey;
-    padding: 1.5em;
+    padding: 5%;
     width: 90%;
 }
 
@@ -33,8 +33,8 @@
 }
 
 .example .colors {
-    padding: 1em;
-    width: 100%;
+    padding: 2%;
+    width: 96%;
 }
 
 .example .gradient {

@@ -11,8 +11,8 @@ section h3 {
 }
 
 section p {
-    font-size: 1.5em;
-    line-height: 1.5em;
+    font-size: 1.25em;
+    line-height: 2em;
 }
 
 .actual-page {
@@ -20,11 +20,11 @@ section p {
 }
 
 .article-content-left-margin {
-    margin-left: 25%;
+    margin-left: 26%;
 }
 
 .content-table {
-    width: 24.5%;
+    width: 23.5%;
 }
 
 .content-table ul li a {
@@ -63,6 +63,14 @@ section p {
     width: 16.666666667%;
 }
 
+.opening-text {
+    padding: 0 1.45em;
+}
+
 .selected-menu-item {
     display: none;
+}
+
+.text {
+    padding: 0 1.45em;
 }
