@@ -5,7 +5,7 @@
         const $ctrl = this;
         this.hue = 211;
         this.saturation = 86;
-        this.changeGradient = function () {
+        this.inputChanged = function () {
             $ctrl.hsla = [{
                 "background": "hsla(" + Number($ctrl.hue) + ", " + Number($ctrl.saturation) + "%, 30%, 0.3)"
             }, {
@@ -16,6 +16,6 @@
                 "background": "hsla(" + Number($ctrl.hue) + ", " + Number($ctrl.saturation) + "%, 90%, 0.3)"
             }];
         };
-        this.changeGradient();
+        this.inputChanged();
     });
 })();

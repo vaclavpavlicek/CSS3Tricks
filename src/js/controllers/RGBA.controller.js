@@ -6,7 +6,7 @@
         this.red = 13;
         this.green = 87;
         this.blue = 167;
-        this.changeGradient = function () {
+        this.inputChanged = function () {
             $ctrl.rgba1 = {
                 "background": "rgba(" + Number($ctrl.red) + ", " + Number($ctrl.green) + ", "
                 + Number($ctrl.blue) + ", 0.2)"
@@ -24,6 +24,6 @@
                 + Number($ctrl.blue) + ", 0.8)"
             };
         };
-        this.changeGradient();
+        this.inputChanged();
     });
 })();
