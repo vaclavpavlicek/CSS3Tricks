@@ -206,9 +206,8 @@ section h5 {
 }
 
 .content-table-items {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: block;
+    overflow: auto;
     padding: 0;
     list-style: none;
 }
