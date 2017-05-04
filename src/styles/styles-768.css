@@ -19,6 +19,10 @@ section p {
     background-color: #0d57a7;
 }
 
+.arrow-up {
+    bottom: 4.5em;
+}
+
 .article-content-left-margin {
     margin-left: 26%;
 }

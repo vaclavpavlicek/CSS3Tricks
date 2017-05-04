@@ -30,6 +30,10 @@ section p {
     display: block;
 }
 
+.arrow-up {
+    bottom: 4em;
+}
+
 .code-snippet {
     color: black;
     font-size: 1.25em;

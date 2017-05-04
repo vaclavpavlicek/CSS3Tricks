@@ -19,6 +19,11 @@ section p {
     background-color: #0d57a7;
 }
 
+
+.arrow-up {
+    bottom: 5.5em;
+}
+
 .article-content {
     padding-left: 2%;
     width: 73%;

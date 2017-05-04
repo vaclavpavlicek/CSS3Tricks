@@ -28,6 +28,11 @@ section p {
     background-color: #0d57a7;
 }
 
+
+.arrow-up {
+    bottom: 6em;
+}
+
 .article-content {
     padding-left: 2%;
     width: 78%;

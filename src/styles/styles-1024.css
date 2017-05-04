@@ -15,6 +15,10 @@ section p {
     line-height: 2em;
 }
 
+.arrow-up {
+    bottom: 5em;
+}
+
 .article-content {
     padding-left: 2%;
     width: 73%;

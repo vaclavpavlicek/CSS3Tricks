@@ -122,7 +122,6 @@ section h5 {
 .arrow-up {
     background: url("../images/arrow_up.png");
     background-size: 4em 4em;
-    bottom: 10%;
     cursor: pointer;
     height: 4em;
     position: fixed;
