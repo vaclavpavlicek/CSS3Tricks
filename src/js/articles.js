@@ -19,6 +19,20 @@ if (width <= 768) {
     dropdownUpArrow.style.display = "none";
 }
 
+window.onresize = function (event) {
+    menuOnResize();
+    width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    if (width <= 768) {
+        dropdownUpArrow.style.display = "inline";
+        contentTableItems.style.display = "none";
+    } else {
+        dropdownUpArrow.style.display = "none";
+        if (width > 768 && contentTableItems.style.display === "none") {
+            contentTableItems.style.display = "block";
+        }
+    }
+};
+
 contentTable.addEventListener("click", function () {
     if (width <= 768) {
         if (contentTableItems.style.display === "block") {
@@ -30,23 +44,6 @@ contentTable.addEventListener("click", function () {
         }
     }
 });
-
-window.onresize = function (event) {
-    width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    if (width <= 768) {
-        dropdownUpArrow.style.display = "inline";
-        contentTableItems.style.display = "none";
-    } else {
-        dropdownUpArrow.style.display = "none";
-        menu.style.display = "flex";
-        var actualMenuPage = document.getElementsByClassName("actual-page")[0];
-        actualMenuPage.parentNode.style.display = 'inline-flex';
-        menuShowed = true;
-        if (width > 768 && contentTableItems.style.display === "none") {
-            contentTableItems.style.display = "block";
-        }
-    }
-};
 
 window.onscroll = function (e) {
     if (window.pageYOffset > navigation.offsetTop + navigation.clientHeight) {
@@ -66,27 +63,3 @@ window.onscroll = function (e) {
         stuck = false;
     }
 };
-
-function dropdown() {
-    var actualMenuPage = document.getElementsByClassName("actual-page")[0];
-    actualMenuPage.parentNode.style.display = 'none';
-    if (!menuShowed) {
-        menu.style.display = "block";
-        menuShowed = true;
-    } else {
-        menu.style.display = "none";
-        menuShowed = false;
-    }
-    stickPoint = contentTable.offsetTop;
-}
-
-function scrollUp() {
-    var scrollStep = -100;
-    var scrollInterval = setInterval(function () {
-        if (window.scrollY !== 0) {
-            window.scrollBy(0, scrollStep);
-        } else {
-            clearInterval(scrollInterval);
-        }
-    }, 15);
-}
