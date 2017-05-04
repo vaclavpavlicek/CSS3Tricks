@@ -173,6 +173,7 @@ section h5 {
     background-color: #ebebeb;
     height: fit-content;
     position: absolute;
+    z-index: 10;
 }
 
 .content-table-heading {

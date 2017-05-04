@@ -130,8 +130,8 @@
 }
 
 .example .movement-square {
-    animation: move-from-left-to-right-and-back;
-    -webkit-animation: move-from-left-to-right-and-back;
+    animation: move-from-top-to-bottom-and-back;
+    -webkit-animation: move-from-top-to-bottom-and-back;
     animation-duration: 3s;
     -webkit-animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -186,7 +186,7 @@
 }
 
 .example .rotating-square {
-    margin: 100px;
+    margin: 100px 0 100px 17px;
 }
 
 .example .rotating-square:hover {
@@ -197,8 +197,8 @@
 .example .sizing-square {
     animation: resize 2s linear infinite;
     -webkit-animation: resize 2s linear infinite;
-    position: relative;
     left: 0;
+    position: relative;
     top: 0;
 }
 
@@ -224,6 +224,10 @@
     height: 220px;
 }
 
+.movement-example {
+    height: 600px;
+}
+
 @-webkit-keyframes red-to-yellow {
     from {
         background-color: red;
@@ -242,14 +246,14 @@
     }
 }
 
-@-webkit-keyframes move-from-left-to-right-and-back {
+@-webkit-keyframes move-from-top-to-bottom-and-back {
     0% {
         top: 0;
         left: 0;
     }
     50% {
-        top: 0;
-        left: 400px;
+        top: 400px;
+        left: 0;
     }
     100% {
         top: 0;
@@ -257,14 +261,14 @@
     }
 }
 
-@keyframes move-from-left-to-right-and-back {
+@keyframes move-from-top-to-bottom-and-back {
     0% {
         top: 0;
         left: 0;
     }
     50% {
-        top: 0;
-        left: 400px;
+        top: 400px;
+        left: 0;
     }
     100% {
         top: 0;
