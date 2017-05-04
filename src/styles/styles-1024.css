@@ -35,14 +35,14 @@ section p {
     margin-left: 10%;
 }
 
-.css3-logo-text {
-    font-size: 3em;
-    line-height: 1.5em;
+.css3-logo-image {
+    height: 6em;
+    margin-right: 2em;
 }
 
-.css3-logo-image {
-    height: 5em;
-    margin-right: 2em;
+.css3-logo-text {
+    font-size: 3.5em;
+    line-height: 1.5em;
 }
 
 .menu {
