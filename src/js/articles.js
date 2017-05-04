@@ -10,6 +10,7 @@ var contentTableWidth = contentTable.clientWidth
     - parseFloat(window.getComputedStyle(contentTable, null).getPropertyValue('padding-right').replace("px", ""));
 var stuck = false;
 var stickPoint = contentTable.offsetTop;
+var openingText = document.getElementsByClassName("opening-text")[0];
 var menu = document.getElementsByClassName("menu")[0];
 var menuShowed = false;
 var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
@@ -22,6 +23,7 @@ if (width <= 768) {
 window.onresize = function (event) {
     menuOnResize();
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    stickPoint = openingText.offsetTop;
     if (width <= 768) {
         dropdownUpArrow.style.display = "inline";
         contentTableItems.style.display = "none";

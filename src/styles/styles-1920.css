@@ -19,6 +19,14 @@ section div {
     display: inline-block;
 }
 
+section h2 {
+    font-size: 4em;
+}
+
+section h3 {
+    font-size: 3em;
+}
+
 section p {
     font-size: 1.75em;
     line-height: 1.75em;
@@ -27,7 +35,6 @@ section p {
 .actual-page {
     background-color: #0d57a7;
 }
-
 
 .arrow-up {
     bottom: 6em;
@@ -88,7 +95,6 @@ section p {
 .resources-link {
     font-size: 1.2em;
 }
-
 
 .selected-menu-item {
     display: none;
