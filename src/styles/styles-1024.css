@@ -67,6 +67,14 @@ section p {
     padding: 0 1.45em;
 }
 
+.resources-list {
+    padding-left: 1.45em;
+}
+
+.resources-link {
+    font-size: 1.55em;
+}
+
 .selected-menu-item {
     display: none;
 }

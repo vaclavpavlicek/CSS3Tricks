@@ -124,6 +124,14 @@ section p {
     padding: 0 1.55em;
 }
 
+.resources-list {
+    padding-left: 1.55em;
+}
+
+.resources-link {
+    font-size: 1.35em;
+}
+
 .selected-menu-item {
     display: flex;
     flex-direction: row;

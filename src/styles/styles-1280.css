@@ -89,6 +89,15 @@ section p {
     padding: 0 2.25em;
 }
 
+.resources-list {
+    font-size: 1.55em;
+    padding-left: 1.45em;
+}
+
+.resources-link {
+    font-size: 1.2em;
+}
+
 .second-color {
     margin-left: 4%;
 }

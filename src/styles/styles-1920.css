@@ -80,6 +80,16 @@ section p {
     font-size: 1.75em;
 }
 
+.resources-list {
+    font-size: 1.55em;
+    padding-left: 1.45em;
+}
+
+.resources-link {
+    font-size: 1.2em;
+}
+
+
 .selected-menu-item {
     display: none;
 }
