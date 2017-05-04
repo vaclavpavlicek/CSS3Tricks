@@ -341,6 +341,10 @@ section h5 {
     padding: 0 2.5em;
 }
 
+.single-color {
+    width: 100%;
+}
+
 .tag-attribute {
     color: #0000FF;
 }
@@ -359,4 +363,12 @@ section h5 {
 
 .twitter {
     background: #00aced
+}
+
+.two-inputs {
+    width: 45%;
+}
+
+.two-inputs .input {
+    width: 100%;
 }

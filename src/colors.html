@@ -108,18 +108,28 @@
                     </div>
                 </div>
                 <form class="colors-form">
-                    <div class="color-picker">
+                    <div class="single-color">
                         <h5>Color</h5>
-                        <label>Red
-                            <input data-ng-change="ctrl.inputChanged()" data-ng-model="ctrl.red" type="text"
-                                   value="13">
-                        </label><label>Green
-                        <input data-ng-change="ctrl.inputChanged()" data-ng-model="ctrl.green"
-                               type="text" value="87">
-                    </label><label>Blue
-                        <input data-ng-change="ctrl.inputChanged()" data-ng-model="ctrl.blue"
-                               type="text" value="167">
-                    </label>
+                        <div class="form-inputs">
+                            <div class="form-input">
+                                <label class="label" for="rgba-red">Red</label>
+                                <input class="input" data-ng-change="ctrl.inputChanged()"
+                                       data-ng-model="ctrl.red" id="rgba-red" type="text"
+                                       value="255">
+                            </div>
+                            <div class="form-input">
+                                <label class="label" for="rgba-green">Green</label>
+                                <input class="input" data-ng-change="ctrl.inputChanged()"
+                                       data-ng-model="ctrl.green" id="rgba-green"
+                                       type="text">
+                            </div>
+                            <div class="form-input">
+                                <label class="label" for="rgba-blue">Blue</label>
+                                <input class="input" data-ng-change="ctrl.inputChanged()"
+                                       data-ng-model="ctrl.blue" id="rgba-blue"
+                                       type="text">
+                            </div>
+                        </div>
                     </div>
                 </form>
                 <code class="code-snippet">
@@ -228,15 +238,22 @@
                     </div>
                 </div>
                 <form class="colors-form">
-                    <div class="color-picker">
+                    <div class="single-color">
                         <h5>Color</h5>
-                        <label>Hue
-                            <input data-ng-change="ctrl.inputChanged()" data-ng-model="ctrl.hue" type="text"
-                                   value="13">
-                        </label><label>Saturation
-                        <input data-ng-change="ctrl.inputChanged()" data-ng-model="ctrl.saturation"
-                               type="text" value="87">
-                    </label>
+                        <div class="form-inputs">
+                            <div class="two-inputs">
+                                <label class="label" for="hsl-hue">Hue</label>
+                                <input class="input" data-ng-change="ctrl.inputChanged()"
+                                       data-ng-model="ctrl.hue" id="hsl-hue" type="text"
+                                       value="255">
+                            </div>
+                            <div class="two-inputs">
+                                <label class="label" for="hsl-green">Saturation</label>
+                                <input class="input" data-ng-change="ctrl.inputChanged()"
+                                       data-ng-model="ctrl.saturation" id="hsl-green"
+                                       type="text">
+                            </div>
+                        </div>
                     </div>
                 </form>
                 <code class="code-snippet">
@@ -330,15 +347,22 @@
                     </div>
                 </div>
                 <form class="colors-form">
-                    <div class="color-picker">
+                    <div class="single-color">
                         <h5>Color</h5>
-                        <label>Hue
-                            <input data-ng-change="ctrl.inputChanged()" data-ng-model="ctrl.hue" type="text"
-                                   value="13">
-                        </label><label>Saturation
-                        <input data-ng-change="ctrl.inputChanged()" data-ng-model="ctrl.saturation"
-                               type="text" value="87">
-                    </label>
+                        <div class="form-inputs">
+                            <div class="two-inputs">
+                                <label class="label" for="hsla-hue">Hue</label>
+                                <input class="input" data-ng-change="ctrl.inputChanged()"
+                                       data-ng-model="ctrl.hue" id="hsla-hue" type="text"
+                                       value="255">
+                            </div>
+                            <div class="two-inputs">
+                                <label class="label" for="hsla-green">Saturation</label>
+                                <input class="input" data-ng-change="ctrl.inputChanged()"
+                                       data-ng-model="ctrl.saturation" id="hsla-green"
+                                       type="text">
+                            </div>
+                        </div>
                     </div>
                 </form>
                 <code class="code-snippet">
@@ -441,18 +465,28 @@
                     </div>
                 </div>
                 <form class="colors-form">
-                    <div class="color-picker">
+                    <div class="single-color">
                         <h5>Color</h5>
-                        <label>Red
-                            <input data-ng-change="ctrl.inputChanged()" data-ng-model="ctrl.red" type="text"
-                                   value="13">
-                        </label><label>Green
-                        <input data-ng-change="ctrl.inputChanged()" data-ng-model="ctrl.green"
-                               type="text" value="87">
-                    </label><label>Blue
-                        <input data-ng-change="ctrl.inputChanged()" data-ng-model="ctrl.blue"
-                               type="text" value="167">
-                    </label>
+                        <div class="form-inputs">
+                            <div class="form-input">
+                                <label class="label" for="rgb-red">Red</label>
+                                <input class="input" data-ng-change="ctrl.inputChanged()"
+                                       data-ng-model="ctrl.red" id="rgb-red" type="text"
+                                       value="255">
+                            </div>
+                            <div class="form-input">
+                                <label class="label" for="rgb-green">Green</label>
+                                <input class="input" data-ng-change="ctrl.inputChanged()"
+                                       data-ng-model="ctrl.green" id="rgb-green"
+                                       type="text">
+                            </div>
+                            <div class="form-input">
+                                <label class="label" for="rgb-blue">Blue</label>
+                                <input class="input" data-ng-change="ctrl.inputChanged()"
+                                       data-ng-model="ctrl.blue" id="rgb-blue"
+                                       type="text">
+                            </div>
+                        </div>
                     </div>
                 </form>
                 <code class="code-snippet">
