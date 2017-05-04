@@ -18,9 +18,9 @@
                 "blue": $ctrl.firstColorBlue.length === 0 ? 0 : $ctrl.firstColorBlue
             };
             const secondColorRGB = {
-                "red": $ctrl.secondColorRed === 0 ? 0 : $ctrl.secondColorRed,
-                "green": $ctrl.secondColorGreen === 0 ? 0 : $ctrl.secondColorGreen,
-                "blue": $ctrl.secondColorBlue === 0 ? 0 : $ctrl.secondColorBlue
+                "red": $ctrl.secondColorRed.length === 0 ? 0 : $ctrl.secondColorRed,
+                "green": $ctrl.secondColorGreen.length === 0 ? 0 : $ctrl.secondColorGreen,
+                "blue": $ctrl.secondColorBlue.length === 0 ? 0 : $ctrl.secondColorBlue
             };
             $ctrl.gradient = RadialGradientsService.createRadialGradient(secondColorRGB, firstColorRGB);
             $ctrl.firstColorInHex = ColorsService.rgbToHex($ctrl.firstColorRed, $ctrl.firstColorBlue, $ctrl.firstColorGreen);

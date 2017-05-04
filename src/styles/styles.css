@@ -104,6 +104,7 @@ section h4 {
 }
 
 section h5 {
+    color: #0d57a7;
     font-family: "Alegreya SC", serif;
     font-size: 1.5em;
     margin: 0;
@@ -142,16 +143,6 @@ section h5 {
 
 .colors-form {
     width: 100%;
-}
-
-.color-picker {
-    display: inline-block;
-    width: 50%;
-}
-
-.color-picker label {
-    display: inline-block;
-    width: 33.3%;
 }
 
 .contacts {
@@ -253,6 +244,16 @@ section h5 {
     margin-right: 2%;
 }
 
+.form-input {
+    width: 30%;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .google-plus {
     background: #dd4b39
 }
@@ -270,6 +271,12 @@ section h5 {
 .index-content {
     padding: 2%;
     width: 96%;
+}
+
+.input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
 }
 
 .keyword {

@@ -11,10 +11,8 @@ section h3 {
 }
 
 section p {
-    font-family: "Sumana", serif;
-    font-size: 1em;
-    margin: 0 0 1em 0;
-    text-align: justify;
+    font-size: 1.25em;
+    line-height: 2em;
 }
 
 .article-content {

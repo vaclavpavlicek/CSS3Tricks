@@ -28,6 +28,15 @@ section p {
     margin-left: 25%;
 }
 
+.color-picker {
+    display: inline-block;
+    width: 48%;
+}
+
+.colors-form {
+    display: inline-flex;
+}
+
 .content-table {
     width: 24.5%;
 }
@@ -63,12 +72,20 @@ section p {
     width: 16.666666667%;
 }
 
+.label {
+    display: block;
+}
+
 .list-in-content {
     font-size: 1.25em;
 }
 
 .opening-text {
     padding: 0 2.25em;
+}
+
+.second-color {
+    margin-left: 4%;
 }
 
 .selected-menu-item {
